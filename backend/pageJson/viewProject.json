@@ -1,0 +1,61 @@
+{
+    "title": "Project",
+    "description": "List of Projects",
+    "pageType": "view",
+    "sendIdWithCreate": true,
+    "urlFields": ["_id"],
+    "fields": [{
+        "name": "Admin Url",
+        "isSort": "",
+        "tableRef": "adminurl"
+    }, {
+        "name": "server",
+        "isSort": "",
+        "tableRef": "server"
+    }, {
+        "name": "port",
+        "isSort": "",
+        "tableRef": "port"
+    }, {
+        "name": "server",
+        "isSort": "",
+        "tableRef": "server"
+    }, {
+        "name": "status",
+        "isSort": "",
+        "tableRef": "status"
+    }],
+    "action": [{
+        "name": "edit",
+        "icon": "fa-pencil",
+        "buttonClass": "btn-primary",
+        "type": "page",
+        "action": "editProject",
+        "fieldsToSend": {
+            "_id": "_id"
+        }
+    }, {
+        "name": "delete",
+        "icon": "fa-trash",
+        "buttonClass": "btn-danger",
+        "type": "apiCallConfirm",
+        "title": "Delete Project",
+        "content": "Are you sure you want to delete Project?",
+        "api": "Project/delete",
+        "fieldsToSend": {
+            "name": "_id",
+            "value": "_id"
+        }
+    }],
+    "button": [{
+        "name": "Create",
+        "icon": "plus",
+        "class": "btn-success",
+        "type": "page",
+        "action": "createProject"
+    }],
+    "apiCall": {
+        "url": "Project/search",
+        "params": "_id"
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "title": "Create Project",
+    "name": "Project",
+    "jsonPage": "viewProject",
+    "desciption": "",
+    "pageType": "create",
+    "urlFields": ["Project"],
+    "fields": [{
+            "name": "Admin url",
+            "type": "text",
+            "tableRef": "adminurl",
+            "placeholder": "Enter admin url",
+            "id": "adminurl",
+            "validation": ["required", "trim", ""],
+            "url": ""
+        },
+        {
+            "name": "server",
+            "type": "text",
+            "tableRef": "server",
+            "placeholder": "Enter server",
+            "id": "server",
+            "validation": ["", "trim", ""],
+            "url": ""
+        },
+        {
+            "name": "port",
+            "type": "text",
+            "tableRef": "port",
+            "placeholder": "Enter port",
+            "id": "port",
+            "validation": ["", "trim", ""],
+            "url": ""
+        }, {
+            "name": "status",
+            "type": "tags",
+            "tableRef": "status",
+            "placeholder": "Enter status",
+            "id": "status",
+            "validation": ["", "trim", ""],
+            "url": "",
+            "dropDownField": "",
+            "dropDownType": "single",
+            "onView": true,
+            "dropDown": ["yes", "no"]
+        }
+    ],
+    "action": [{
+        "name": "submit",
+        "action": "submitProject",
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewProject"
+            }
+        }
+    }, {
+        "name": "cancel",
+        "sideMenuRedirect": true,
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewProject"
+            }
+        }
+    }],
+    "apiCall": {
+        "url": "Project/save"
+    }
+}

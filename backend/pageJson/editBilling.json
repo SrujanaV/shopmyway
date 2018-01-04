@@ -1,0 +1,64 @@
+{
+    "title": "Edit Billing",
+    "name": "Billing",
+    "jsonPage": "viewBilling",
+    "desciption": "",
+    "pageType": "edit",
+    "urlFields": ["_id"],
+    "fields": [{
+            "name": "Name",
+            "type": "text",
+            "tableRef": "name",
+            "placeholder": "Enter Name",
+            "id": "name",
+            "validation": ["required", "trim", ""],
+            "url": ""
+        },
+        {
+            "name": "Expiry Date",
+            "type": "date",
+            "tableRef": "expiry",
+            "placeholder": "Enter expiry date",
+            "id": "expiry",
+            "validation": ["required", "trim", ""],
+            "url": ""
+        },
+        {
+            "name": "Amount",
+            "type": "number",
+            "tableRef": "amount",
+            "placeholder": "Enter Amount",
+            "id": "name",
+            "validation": ["", "trim", ""],
+            "url": ""
+        }
+    ],
+    "action": [{
+        "name": "submit",
+        "action": "submitBilling",
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewBilling"
+            }
+        }
+    }, {
+        "name": "cancel",
+        "sideMenuRedirect": true,
+        "stateName": {
+            "page": "page",
+            "json": {
+                "id": "viewBilling"
+            }
+        }
+    }],
+    "apiCall": {
+        "url": "Billing/save",
+        "params": "_id"
+    },
+    "preApi": {
+        "url": "Billing/getOne",
+        "params": "_id"
+    }
+
+}
