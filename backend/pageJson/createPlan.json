@@ -24,13 +24,24 @@
             "url": ""
         },
         {
-            "name": "features",
-            "type": "text",
+            "name": "Add Features",
+            "type": "box",
             "tableRef": "features",
-            "placeholder": "Enter features",
+            "placeholder": "Add features for Plan",
             "id": "features",
+            "onView": true,
             "validation": ["", "trim", ""],
-            "url": ""
+            "url": "",
+            "fields": [{
+                "name": "Features",
+                "type": "text",
+                "tableRef": "feature",
+                "onView": true,
+                "placeholder": "Add feature",
+                "id": "feature",
+                "url": "",
+                "validation": ["", "trim", ""]
+            }]
         }
     ],
     "action": [{

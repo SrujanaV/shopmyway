@@ -5,7 +5,7 @@ var schema = new Schema({
     },
     validity: Date,
     features: [{
-        type: String,
+        feature: String
     }]
 });
 

@@ -11,6 +11,7 @@
     }, {
         "name": "Validity",
         "isSort": "",
+        "type": "date",
         "tableRef": "validity"
     }],
     "action": [{
