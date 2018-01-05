@@ -5,6 +5,8 @@ $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
+$text-yellow: #f9ec38 !default;
+$text-white:white;
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 /* Bootstrap Variables Goes Here */
@@ -130,5 +132,38 @@ header {
         .navbar-nav>li>a {
             padding: 20px;
         }
+    }
+}
+.plans{
+    background-color: #1c84c8;
+    .plans-page{
+        margin: 50px 0;
+    }
+    .store-text{
+        color: $text-yellow;
+    }
+    .table-design{
+        color: $text-white;
+    }
+    .features{
+        padding: 5px;
+        width: 400px;
+        color: $text-white;
+        font-size: 22px;        
+    }
+    .table-head{
+        padding: 5px;
+        width: 150px;
+        font-size: 22px;
+        color: $text-yellow;
+    }
+    td{
+        font-size: 14px;
+        padding: 20px 50px;
+        text-align: center;
+    }
+    .background-design{
+        background-color: #1774af;
+        border-bottom: solid 2px #1e8bd2;
     }
 }
