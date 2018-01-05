@@ -46,6 +46,7 @@ module.exports = [
   'frontend/js/factories/api.js',
 
   // Controllers
+  'frontend/views/content/home/home-controller.js',  
   'frontend/views/content/plans/plans-controller.js',
   'frontend/views/content/register/register-controller.js',
   'frontend/views/content/login/login-controller.js',  
