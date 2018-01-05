@@ -45,7 +45,10 @@ module.exports = [
   'frontend/js/factories/navigation.js',
   'frontend/js/factories/api.js',
 
-  // Contorllers
+  // Controllers
+  'frontend/views/content/plans/plans-controller.js',
+  'frontend/views/content/register/register-controller.js',
+  'frontend/views/content/login/login-controller.js',  
   'frontend/js/controllers/controller.js',
   'frontend/js/controllers/header-controller.js',
   'frontend/js/controllers/language-controller.js',

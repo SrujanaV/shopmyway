@@ -25,6 +25,21 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'HomeCtrl'
         })
+        .state('login', {
+            url: "/login",
+            templateUrl: tempateURL,
+            controller: 'LoginCtrl'
+        })
+        .state('register', {
+            url: "/register",
+            templateUrl: tempateURL,
+            controller: 'RegisterCtrl'
+        })
+        .state('plans', {
+            url: "/plans",
+            templateUrl: tempateURL,
+            controller: 'PlansCtrl'
+        })
         .state('links', {
             url: "/links",
             templateUrl: tempateURL,
