@@ -2,6 +2,7 @@ myApp.factory('NavigationService', function () {
     var navigation = [{
         name: "Home",
         classis: "active",
+        icon:"",
         anchor: "home",
     }, {
         name: "Links",
