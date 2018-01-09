@@ -11,3 +11,30 @@
     src: url("../fonts/glyphicons-halflings-regular.eot");
     src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
+
+//Font Used in website
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url("../fonts/Lato-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url("../fonts/Lato-Regular.ttf");
+}
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url("../fonts/Lato-Regular.ttf");
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Lato-Bold', sans-serif;
+    src: url("../fonts/Lato-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url("../fonts/Lato-Black.ttf");
+    font-weight: 900;
+}

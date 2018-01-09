@@ -1,11 +1,14 @@
 /* Bootstrap Variables Goes Here */
 
-$brand-primary: #0d9dff !default;
+// Variables
+$brand-primary: #00bfe8 !default;
+$brand-pink: #d70b8c !default;
+$brand-black:#333333 !default;
+$text-yellow: #f9ec38 !default;
 $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
-$text-yellow: #f9ec38 !default;
 $text-white:white;
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
@@ -14,6 +17,21 @@ $text-white:white;
 @import "other/font-fix";
 body {
     padding-top: 70px;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 
 img.loading {
@@ -114,10 +132,12 @@ footer {
     display: block;
 }
 
+//header
 header {
     @include transition(all 300ms ease);
 }
 
+//sidemenu
 .nav-up {
     @include transform(translateY(-100%));
 }
@@ -134,35 +154,40 @@ header {
         }
     }
 }
-.plans{
+
+//plans scss
+.plans {
     background-color: #1c84c8;
-    .plans-page{
+    .plans-page {
         margin: 50px 0;
     }
-    .store-text{
+    .store-text {
         color: $text-yellow;
+        h4 {
+            font-size: 36px;
+        }
     }
-    .table-design{
+    .table-design {
         color: $text-white;
     }
-    .features{
+    .features {
         padding: 5px;
         width: 400px;
         color: $text-white;
-        font-size: 22px;        
+        font-size: 22px;
     }
-    .table-head{
+    .table-head {
         padding: 5px;
         width: 150px;
         font-size: 22px;
         color: $text-yellow;
     }
-    td{
+    td {
         font-size: 14px;
         padding: 20px 50px;
         text-align: center;
     }
-    .background-design{
+    .background-design {
         background-color: #1774af;
         border-bottom: solid 2px #1e8bd2;
     }
