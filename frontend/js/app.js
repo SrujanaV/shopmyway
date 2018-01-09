@@ -40,6 +40,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'PlansCtrl'
         })
+        .state('products', {
+            url: "/Manage-Products",
+            templateUrl: tempateURL,
+            controller: 'ProductsCtrl'
+        })
         .state('links', {
             url: "/links",
             templateUrl: tempateURL,

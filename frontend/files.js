@@ -50,6 +50,8 @@ module.exports = [
   'frontend/views/content/plans/plans-controller.js',
   'frontend/views/content/register/register-controller.js',
   'frontend/views/content/login/login-controller.js',  
+  'frontend/views/content/products/products-controller.js',  
+
   'frontend/js/controllers/controller.js',
   'frontend/js/controllers/header-controller.js',
   'frontend/js/controllers/language-controller.js',
