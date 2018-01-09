@@ -10113,6 +10113,32 @@ header {
     .navbar.navbar-default .navbar-nav > li > a {
       padding: 20px; }
 
+.plans {
+  background-color: #1c84c8; }
+  .plans .plans-page {
+    margin: 50px 0; }
+  .plans .store-text {
+    color: #f9ec38; }
+  .plans .table-design {
+    color: white; }
+  .plans .features {
+    padding: 5px;
+    width: 400px;
+    color: white;
+    font-size: 22px; }
+  .plans .table-head {
+    padding: 5px;
+    width: 150px;
+    font-size: 22px;
+    color: #f9ec38; }
+  .plans td {
+    font-size: 14px;
+    padding: 20px 50px;
+    text-align: center; }
+  .plans .background-design {
+    background-color: #1774af;
+    border-bottom: solid 2px #1e8bd2; }
+
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,
