@@ -1,15 +1,26 @@
 myApp.factory('NavigationService', function () {
     var navigation = [{
-        name: "Home",
+        name: "Website",
         classis: "active",
         icon:"",
         anchor: "home",
     }, {
-        name: "Links",
+        name: "Marketing",
         classis: "active",
         anchor: "links",
         subnav: []
     },{
+        name: "Couriers",
+        classis: "active",
+        anchor: "links",
+        subnav: []
+    },{
+        name: "Marketplace",
+        classis: "active",
+        anchor: "links",
+        subnav: []
+    },
+    {
         name: "Manage-Products",
         classis: "active",
         anchor: "products",

@@ -9,15 +9,16 @@ $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
+$section-background:#f1f1f1;
 $text-white:white;
+$navbar-border:#626161;
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 /* Bootstrap Variables Goes Here */
 
 @import "other/font-fix";
 body {
-    padding-top: 70px;
-    // margin-top: 20px;
+    padding-top: 40px; // margin-top: 20px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -72,6 +73,13 @@ footer {
     padding: 10px 0;
     p {
         margin: 0;
+    }
+    ul{
+        display: flex;
+        li{
+            list-style-type: none;
+            border-right: solid 1px $navbar-border;
+        }
     }
 }
 
@@ -194,6 +202,262 @@ header {
     }
 }
 
-//products page css
+//navbar css
+.navbar-brand {
+    padding: 2px 15px;
+    height: 40px;
+}
 
+.navbar {
+    min-height: 40px;
+    border-radius: 0;
+}
+
+.navbar-inverse {
+    border: 0;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+    color: black;
+    background-color: $brand-primary;
+}
+
+.nav>li {
+    border-right: solid 1px $navbar-border;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    font-size: 12px;
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: white;
+    background-color: black;
+}
+
+.nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+//default navbar
+.navbar.navbar-default {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    nav {
+        li {
+            padding: 15px;
+        }
+    }
+}
+
+.navbar.navbar-default .navbar-nav>li>a {
+    padding: 10px;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: white;
+    font-size: 12px;
+}
+
+//end of navbar css
+//sidenav
+.sidenav {
+    padding: 10px;
+    height: 85%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: $brand-primary;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    display: block;
+    text-align: center;
+    i {
+        padding: 5px; // font-size: 20px;
+    }
+}
+
+.sidenav a:hover {
+    color: $brand-black;
+}
+
+.main {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+}
+
+//end of side nav
+//products page css
+.products {
+    padding-top: 62px;
+    margin-left: 65px;
+    background-color: $section-background;
+    .category-div {
+        display: flex;
+        padding: 10px 80px;
+        background-color: white;
+        border-bottom: solid 1px #ddd;
+    }
+}
+
+.table-container{
+    padding: 10px 20px;
+    background-color: white;
+    margin: 10px 20px;
+    overflow-y: auto;
+    height: 425px;
+}
+   /* width */
+   ::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.collection-drpdwn {
+    border-radius: 5px;
+    background-color: #f7f7f6;
+    color: $navbar-border;
+    width: 250px;
+    text-align: left;
+    margin: 0 10px;
+    .cllction-arrow {
+        float: right;
+        font-size: 20px;
+    }
+}
+
+.download,
+.upload,
+.rearrange {
+    margin: 0 5px;
+    border-radius: 3px;
+    i {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+}
+
+.table-checkboxclass {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.action {
+    border: solid 1px $brand-primary;
+    border-top: solid 1px $brand-primary !important;
+    background-color: white;
+    .action-text {
+        margin-right: 10px;
+    }
+}
+.icon{
+    width: 25px;
+    height: 25px;
+    background-color: #45bfe9;
+    padding: 5px;
+    color: white;
+    margin-right: 5px;
+    cursor: pointer;  
+    text-align: center;    
+}
+.head{
+    background-color: $brand-primary;
+    color: white;
+}
+.checkbox{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* The checkboxclass */
+.checkboxclass {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxclass input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid 1px #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxclass:hover input ~ .checkmark {
+    border: solid 1px $brand-primary;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxclass input:checked ~ .checkmark {
+    background-color: #F17059;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxclass input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxclass .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 //end of products page
