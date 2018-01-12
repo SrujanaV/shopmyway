@@ -10081,17 +10081,19 @@ a,
 
 footer {
   font-size: 12px;
-  background-color: #eee;
-  padding: 10px 0; }
+  background-color: #eee; }
   footer p {
     margin: 0; }
-  footer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    footer ul li {
-      list-style-type: none;
-      border-right: solid 1px #626161; }
+  footer .footer-menu {
+    background-color: white; }
+    footer .footer-menu .braedcrumb {
+      margin-bottom: 0; }
+    footer .footer-menu ol {
+      margin-bottom: 0;
+      background-color: transparent; }
+    footer .footer-menu .copyright-text {
+      padding: 8px 15px;
+      background-color: transparent; }
 
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
@@ -10275,7 +10277,8 @@ header {
   background-color: white;
   margin: 10px 20px;
   overflow-y: auto;
-  height: 425px; }
+  height: 425px;
+  margin-bottom: 30px; }
 
 /* width */
 ::-webkit-scrollbar {
@@ -10336,6 +10339,11 @@ header {
   margin-right: 5px;
   cursor: pointer;
   text-align: center; }
+  .icon:hover {
+    background-color: #3596b5; }
+
+.quick-add:hover .icon-text {
+  color: #3596b5; }
 
 .head {
   background-color: #00bfe8;

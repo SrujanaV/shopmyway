@@ -11,25 +11,25 @@
         <td>
             ProductName
         </td>
-        <td>
+        <td class="text-center">
             Features
         </td>
-        <td>
+        <td class="text-center">
             Sub-Category
         </td>
-        <td>
+        <td class="text-center">
             Price
         </td>
-        <td>
+        <td class="text-center">
             Status
         </td>
-        <td>
+        <td class="text-center">
             Qty Left
         </td>
-        <td>
+        <td class="text-center">
             Qty Sold
         </td>
-        <td>
+        <td class="text-center">
             Action
         </td>
     </tr>
@@ -38,7 +38,7 @@
             &nbsp;
         </td>
         <td colspan="8">
-            <span><i class="fa fa-plus icon" aria-hidden="true"></i></span><span>Quick-Add A Product</span>
+            <div class="quick-add"><span class="icon-text"><i class="fa fa-plus icon" aria-hidden="true"></i> Quick-Add A Product</span></div>
         </td>
     </tr>
     <tr ng-repeat="product in products">
@@ -54,25 +54,25 @@
             <td>
                 {{product.ProductName}}
             </td>
-            <td>
+            <td class="text-center">
                 <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
             </td>
-            <td>
+            <td class="text-center">
                 {{product.SubCategory}}
             </td>
-            <td>
+            <td class="text-center">
                 {{product.Price}}
             </td>
-            <td>
+            <td class="text-center">
                 {{product.Status}}
             </td>
-            <td>
+            <td class="text-center">
                 {{product.QtyLeft}}
             </td>
-            <td>
+            <td class="text-center">
                 {{product.QtySold}}
             </td>
-            <td class="action-column">
+            <td class="action-column text-center">
                 <span><i class="fa fa-share-alt icon" aria-hidden="true"></i></i></span><span><i class="fa fa-eye icon" aria-hidden="true"></i></span><span><i class="fa fa-pencil icon" aria-hidden="true"></i></span><span><i class="fa fa-trash-o icon" aria-hidden="true"></i></span><span><i class="fa fa-clone icon" aria-hidden="true"></i></span>
             </td>
         </form>
