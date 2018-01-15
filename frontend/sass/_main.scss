@@ -40,7 +40,7 @@ h6 {
 img.loading {
     text-align: center;
     opacity: 1;
-    width: 32px !important;
+    width: 20px !important;
     height: auto;
 }
 
@@ -76,6 +76,7 @@ footer {
     }
     .footer-menu {
         background-color: white;
+        margin-left: 80px;
         .braedcrumb {
             margin-bottom: 0;
         }
@@ -86,6 +87,14 @@ footer {
         .copyright-text {
             padding: 8px 15px;
             background-color: transparent;
+            a{
+                text-decoration: none;
+                color: $brand-black;
+                &:hover{
+                    color: $brand-primary;
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
@@ -147,7 +156,11 @@ footer {
     width: 100%;
     display: block;
 }
-
+.space-right{
+    margin-right: 15px;
+    padding: 10px 0;
+    cursor: pointer;
+}
 //header
 header {
     @include transition(all 300ms ease);
@@ -160,14 +173,41 @@ header {
 
 .navbar {
     min-height: 60px;
-    &.navbar-default {
-        background-color: #ffffff;
-        .navbar-brand {
-            padding: 4px 15px;
+    .navbar-right {
+        .paddallright {
+            padding: 8px;
         }
-        .navbar-nav>li>a {
-            padding: 20px;
+        .slider {
+            border-left: solid 1px #dad5d5;
+            a {
+                color: $brand-primary;
+            }
+            &:hover {
+                a {
+                    color: black;
+                }
+            }
         }
+    }
+}
+
+.inverse-navbar{
+    color: white;
+    height: 40px;
+    .days{
+        color: $brand-primary;
+    }
+    .border-left{
+        border-left: solid 1px #626161;
+    }
+    .badge-info{
+        background-color: #3a87ad;
+    }
+    .badge-info:hover {
+      background-color: #2d6987;
+    }
+    .remove-border{
+        border-right: 0;
     }
 }
 
@@ -253,15 +293,36 @@ header {
     z-index: 2;
     position: fixed;
     width: 100%;
-    nav {
+    background-color: #ffffff;
+    max-height: 65px;
+    .paddall {
+        padding: 17px;
+    }
+    .manage {
+        font-size: 18px;
+        font-weight: bold;
+        color: #666;
+        border-right: 0 !important;
+    }
+    .nav {
         li {
-            padding: 15px;
+            border-right: solid 1px #dad5d5;
         }
     }
-}
-
-.navbar.navbar-default .navbar-nav>li>a {
-    padding: 10px;
+    .ellipsis {
+        a {
+            background-color: $brand-primary;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            padding: 0px 15px 10px 15px;
+            &:hover {
+                color: black;
+                background-color: $brand-primary;
+            }
+        }
+    }
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -308,23 +369,40 @@ header {
 //products page css
 .products {
     padding-top: 62px;
-    margin-left: 65px;
+    margin-left: 80px;
     background-color: $section-background;
     .category-div {
         display: flex;
-        padding: 10px 80px;
+        padding: 10px 55px;
         background-color: white;
         border-bottom: solid 1px #ddd;
+    }
+    .arrange-elements {
+        text-align: right;
+        width: 100%;
     }
 }
 
 .table-container {
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: white;
-    margin: 10px 20px;
+    margin: 10px;
     overflow-y: auto;
-    height: 425px;
-    margin-bottom: 30px;
+    height: 450px;
+    margin-bottom: 25px;
+    .tooltiptext {
+        color: black;
+    }
+    .tooltip.customClass .tooltip-inner {
+        color: white;
+        background-color: $brand-primary;
+    }
+    .tooltip.left .tooltip-arrow {
+        border-left-color: $brand-primary;
+    }
+    .tooltip.bottom .tooltip-arrow {
+        border-bottom-color: $brand-primary;
+    }
 }
 
 
@@ -356,7 +434,6 @@ header {
 }
 
 .collection-drpdwn {
-    border-radius: 5px;
     background-color: #f7f7f6;
     color: $navbar-border;
     width: 250px;
@@ -368,17 +445,43 @@ header {
     }
 }
 
+//directive css
+.search {
+    margin-right: 10px;
+    input {
+        background-color: #f9f9f8;
+    }
+    i {
+        color: grey;
+    }
+}
+
 .download,
 .upload,
 .rearrange {
     margin: 0 5px;
-    border-radius: 3px;
     i {
         font-size: 18px;
         margin-right: 10px;
     }
 }
 
+.talk {
+    position: absolute;
+    right: 0;
+    bottom: 7%;
+    background-color: $brand-primary;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    &:hover{
+        color: black;
+    }
+}
+
+//directive css end
 .table-checkboxclass {
     margin: 10px 0;
     padding: 10px 20px;
@@ -405,12 +508,18 @@ header {
     text-align: center;
     &:hover {
         background-color: $icon-hover;
+        transition: all 0.1s ease-in;
     }
 }
-.quick-add{
-    &:hover{
-        .icon-text{
+
+.quick-add {
+    cursor: pointer;
+    &:hover {
+        .icon-text {
             color: $icon-hover;
+        }
+        .icon {
+            background-color: $icon-hover;
         }
     }
 }

@@ -4,6 +4,7 @@ myApp.factory('NavigationService', function () {
         classis: "active",
         icon:"",
         anchor: "home",
+        subnav: []
     }, {
         name: "Marketing",
         classis: "active",

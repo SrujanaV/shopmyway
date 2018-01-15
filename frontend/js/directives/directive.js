@@ -135,5 +135,13 @@ myApp.directive('img', function ($compile, $parse) {
         };
     })
 
+    .directive('talktous', function ($http, $filter) {
+        return {
+            templateUrl: 'views/content/directive/talktous.html',
+            link: function ($scope, element, attrs) {
+            }
+        };
+    })
+
 
 ;
