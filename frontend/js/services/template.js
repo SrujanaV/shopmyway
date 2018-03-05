@@ -7,8 +7,7 @@ myApp.service('TemplateService', function () {
     this.year = d.getFullYear();
 
     this.init = function () {
-        this.header = "views/template/header.html";
-        this.sidemenu = "views/template/sidemenu.html";        
+        this.header = "views/template/header.html";        
         this.menu = "views/template/menu.html";
         this.content = "views/content/content.html";
         this.footer = "views/template/footer.html";

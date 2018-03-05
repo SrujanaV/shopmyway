@@ -25,6 +25,31 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'HomeCtrl'
         })
+        .state('website', {
+            url: "/website",
+            templateUrl: tempateURL,
+            controller: 'WebsiteCtrl'
+        })
+        .state('ecommerce', {
+            url: "/ecommerce",
+            templateUrl: tempateURL,
+            controller: 'EcommerceCtrl'
+        })
+        .state('couriers', {
+            url: "/couriers",
+            templateUrl: tempateURL,
+            controller: 'CouriersCtrl'
+        })
+        .state('marketing', {
+            url: "/marketing",
+            templateUrl: tempateURL,
+            controller: 'MarketingCtrl'
+        })
+        .state('marketplace', {
+            url: "/marketplace",
+            templateUrl: tempateURL,
+            controller: 'MarketplaceCtrl'
+        })
         .state('login', {
             url: "/login",
             templateUrl: tempateURL,
@@ -34,21 +59,6 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/register",
             templateUrl: tempateURL,
             controller: 'RegisterCtrl'
-        })
-        .state('plans', {
-            url: "/plans",
-            templateUrl: tempateURL,
-            controller: 'PlansCtrl'
-        })
-        .state('products', {
-            url: "/Manage-Products",
-            templateUrl: tempateURL,
-            controller: 'ProductsCtrl'
-        })
-        .state('links', {
-            url: "/links",
-            templateUrl: tempateURL,
-            controller: 'LinksCtrl'
         });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
