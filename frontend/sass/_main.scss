@@ -1,46 +1,148 @@
 /* Bootstrap Variables Goes Here */
 
-// Variables
-$brand-primary: #00bfe8 !default;
-$brand-pink: #d70b8c !default;
-$brand-black:#333333 !default;
-$text-yellow: #f9ec38 !default;
-$brand-success: #84ce3c !default;
-$brand-warning: #ffec39 !default;
-$brand-danger: #fc483f !default;
-$brand-info: #000072 !default;
-$section-background:#f1f1f1;
-$text-white:white;
-$navbar-border:#626161;
-$icon-hover:#3596b5;
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-
-/* Bootstrap Variables Goes Here */
-
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+// Start with assigning color names to specific hex values.
+$white: #fff !default;
+$black: #000 !default;
+$red: #d9534f !default;
+$orange: #f0ad4e !default;
+$yellow: #ffd500 !default;
+$green: #5cb85c !default;
+$blue: #0275d8 !default;
+$teal: #5bc0de !default;
+$pink: #ff5b77 !default;
+$purple: #613d7c !default;
+// Create grayscale
+$gray-dark: #292b2c !default;
+$gray: #464a4c !default;
+$gray-light: #636c72 !default;
+$gray-lighter: #eceeef !default;
+$gray-lightest: #f7f7f9 !default;
+// Reassign color vars to semantic color scheme
+$brand-primary: $blue !default;
+$brand-success: $green !default;
+$brand-info: $teal !default;
+$brand-warning: $orange !default;
+$brand-danger: $red !default;
+$brand-inverse: $gray-dark !default;
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer: 1rem !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+// Style anchor elements.
+$link-color: $brand-primary !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif: -apple-system,
+system-ui,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif !default;
+$font-family-serif: Georgia,
+"Times New Roman",
+Times,
+serif !default;
+$font-family-monospace: Menlo,
+Monaco,
+Consolas,
+"Liberation Mono",
+"Courier New",
+monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: 1.25rem !default;
+$font-size-sm: .875rem !default;
+$font-size-xs: .75rem !default;
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.75rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1.25rem !default;
+$font-size-h6: 1rem !default;
+$headings-margin-bottom: ($spacer / 2) !default;
+$headings-font-family: inherit !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.1 !default;
+$headings-color: inherit !default;
+// Components
+//
+// Define common padding and border radius sizes and more.
+$line-height-lg: (4 / 3) !default;
+$line-height-sm: 1.5 !default;
+$border-radius: .25rem !default;
+$border-radius-lg: .3rem !default;
+$border-radius-sm: .2rem !default;
+$component-active-color: $white !default;
+$component-active-bg: $brand-primary !default;
+$caret-width: .3em !default;
+$transition-base: all .2s ease-in-out !default;
+$transition-fade: opacity .15s linear !default;
+$transition-collapse: height .35s ease !default;
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+$btn-padding-x: 1rem !default;
+$btn-padding-y: .5rem !default;
+$btn-line-height: 1.25 !default;
+$btn-font-weight: $font-weight-normal !default;
+$btn-box-shadow: inset 0 1px 0 rgba($white, .15),
+0 1px 1px rgba($black, .075) !default;
+$btn-focus-box-shadow: 0 0 0 2px rgba($brand-primary, .25) !default;
+$btn-active-box-shadow: inset 0 3px 5px rgba($black, .125) !default;
+// Forms
+$input-padding-x: .75rem !default;
+$input-padding-y: .5rem !default;
+$input-line-height: 1.25 !default;
+$input-bg: $white !default;
+$input-bg-disabled: $gray-lighter !default;
+$input-color: $gray !default;
+// Dropdowns
+//
+// Dropdown menu container and contents.
+$dropdown-min-width: 10rem !default;
+$dropdown-padding-y: .5rem !default;
+$dropdown-margin-top: .125rem !default;
+$dropdown-bg: $white !default;
+$dropdown-border-color: rgba($black, .15) !default;
+$dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
+// @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../bower_components/bootstrap/scss/bootstrap";
 @import "other/font-fix";
 body {
-    padding-top: 40px; // margin-top: 20px;
-    font-family: 'Lato', sans-serif;
-}
-
-p {
-    font-family: 'Lato', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
+    padding-top: 70px;
 }
 
 img.loading {
     text-align: center;
     opacity: 1;
-    width: 20px !important;
+    width: 32px !important;
     height: auto;
 }
 
@@ -71,31 +173,9 @@ a,
 footer {
     font-size: 12px;
     background-color: #eee;
+    padding: 10px 0;
     p {
         margin: 0;
-    }
-    .footer-menu {
-        background-color: white;
-        margin-left: 80px;
-        .braedcrumb {
-            margin-bottom: 0;
-        }
-        ol {
-            margin-bottom: 0;
-            background-color: transparent;
-        }
-        .copyright-text {
-            padding: 8px 15px;
-            background-color: transparent;
-            a{
-                text-decoration: none;
-                color: $brand-black;
-                &:hover{
-                    color: $brand-primary;
-                    text-decoration: underline;
-                }
-            }
-        }
     }
 }
 
@@ -156,466 +236,11 @@ footer {
     width: 100%;
     display: block;
 }
-.space-right{
-    margin-right: 15px;
-    padding: 10px 0;
-    cursor: pointer;
-}
-//header
+
 header {
-    @include transition(all 300ms ease);
+    transition: all 300ms ease;
 }
 
-//sidemenu
 .nav-up {
-    @include transform(translateY(-100%));
+    transform: translateY(-100%);
 }
-
-.navbar {
-    min-height: 60px;
-    .navbar-right {
-        .paddallright {
-            padding: 8px;
-        }
-        .slider {
-            border-left: solid 1px #dad5d5;
-            a {
-                color: $brand-primary;
-            }
-            &:hover {
-                a {
-                    color: black;
-                }
-            }
-        }
-    }
-}
-
-.inverse-navbar{
-    color: white;
-    height: 40px;
-    .days{
-        color: $brand-primary;
-    }
-    .border-left{
-        border-left: solid 1px #626161;
-    }
-    .badge-info{
-        background-color: #3a87ad;
-    }
-    .badge-info:hover {
-      background-color: #2d6987;
-    }
-    .remove-border{
-        border-right: 0;
-    }
-}
-
-//plans scss
-.plans {
-    background-color: #1c84c8;
-    .plans-page {
-        margin: 50px 0;
-    }
-    .store-text {
-        color: $text-yellow;
-        h4 {
-            font-size: 36px;
-        }
-    }
-    .table-design {
-        color: $text-white;
-    }
-    .features {
-        padding: 5px;
-        width: 400px;
-        color: $text-white;
-        font-size: 22px;
-    }
-    .table-head {
-        padding: 5px;
-        width: 150px;
-        font-size: 22px;
-        color: $text-yellow;
-    }
-    td {
-        font-size: 14px;
-        padding: 20px 50px;
-        text-align: center;
-    }
-    .background-design {
-        background-color: #1774af;
-        border-bottom: solid 2px #1e8bd2;
-    }
-}
-
-//navbar css
-.navbar-brand {
-    padding: 2px 15px;
-    height: 40px;
-}
-
-.navbar {
-    min-height: 40px;
-    border-radius: 0;
-}
-
-.navbar-inverse {
-    border: 0;
-}
-
-.navbar-inverse .navbar-nav>.active>a {
-    color: black;
-    background-color: $brand-primary;
-}
-
-.nav>li {
-    border-right: solid 1px $navbar-border;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    font-size: 12px;
-    color: white;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover {
-    color: white;
-    background-color: black;
-}
-
-.nav>li>a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-//default navbar
-.navbar.navbar-default {
-    z-index: 2;
-    position: fixed;
-    width: 100%;
-    background-color: #ffffff;
-    max-height: 65px;
-    .paddall {
-        padding: 17px;
-    }
-    .manage {
-        font-size: 18px;
-        font-weight: bold;
-        color: #666;
-        border-right: 0 !important;
-    }
-    .nav {
-        li {
-            border-right: solid 1px #dad5d5;
-        }
-    }
-    .ellipsis {
-        a {
-            background-color: $brand-primary;
-            border-radius: 20px;
-            font-size: 20px;
-            font-weight: bold;
-            color: white;
-            padding: 0px 15px 10px 15px;
-            &:hover {
-                color: black;
-                background-color: $brand-primary;
-            }
-        }
-    }
-}
-
-.navbar-default .navbar-nav>.active>a {
-    background-color: white;
-    font-size: 12px;
-}
-
-//end of navbar css
-//sidenav
-.sidenav {
-    padding: 10px;
-    height: 85%;
-    width: 80px;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    background-color: $brand-primary;
-    padding-top: 20px;
-}
-
-.sidenav a {
-    padding: 10px;
-    text-decoration: none;
-    font-size: 12px;
-    color: white;
-    display: block;
-    text-align: center;
-    i {
-        padding: 5px; // font-size: 20px;
-    }
-}
-
-.sidenav a:hover {
-    color: $brand-black;
-}
-
-.main {
-    margin-left: 200px;
-    /* Same as the width of the sidenav */
-}
-
-//end of side nav
-//products page css
-.products {
-    padding-top: 62px;
-    margin-left: 80px;
-    background-color: $section-background;
-    .category-div {
-        display: flex;
-        padding: 10px 55px;
-        background-color: white;
-        border-bottom: solid 1px #ddd;
-    }
-    .arrange-elements {
-        text-align: right;
-        width: 100%;
-    }
-}
-
-.table-container {
-    padding: 10px 30px;
-    background-color: white;
-    margin: 10px;
-    overflow-y: auto;
-    height: 450px;
-    margin-bottom: 25px;
-    .tooltiptext {
-        color: black;
-    }
-    .tooltip.customClass .tooltip-inner {
-        color: white;
-        background-color: $brand-primary;
-    }
-    .tooltip.left .tooltip-arrow {
-        border-left-color: $brand-primary;
-    }
-    .tooltip.bottom .tooltip-arrow {
-        border-bottom-color: $brand-primary;
-    }
-}
-
-
-/* width */
-
- ::-webkit-scrollbar {
-    width: 3px;
-}
-
-
-/* Track */
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-
-/* Handle */
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-
-/* Handle on hover */
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-.collection-drpdwn {
-    background-color: #f7f7f6;
-    color: $navbar-border;
-    width: 250px;
-    text-align: left;
-    margin: 0 10px;
-    .cllction-arrow {
-        float: right;
-        font-size: 20px;
-    }
-}
-
-//directive css
-.search {
-    margin-right: 10px;
-    input {
-        background-color: #f9f9f8;
-    }
-    i {
-        color: grey;
-    }
-}
-
-.download,
-.upload,
-.rearrange {
-    margin: 0 5px;
-    i {
-        font-size: 18px;
-        margin-right: 10px;
-    }
-}
-
-.talk {
-    position: absolute;
-    right: 0;
-    bottom: 7%;
-    background-color: $brand-primary;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-    &:hover{
-        color: black;
-    }
-}
-
-//directive css end
-.table-checkboxclass {
-    margin: 10px 0;
-    padding: 10px 20px;
-    background-color: white;
-}
-
-.action {
-    border: solid 1px $brand-primary;
-    border-top: solid 1px $brand-primary !important;
-    background-color: white;
-    .action-text {
-        margin-right: 10px;
-    }
-}
-
-.icon {
-    width: 25px;
-    height: 25px;
-    background-color: #45bfe9;
-    padding: 5px;
-    color: white;
-    margin-right: 5px;
-    cursor: pointer;
-    text-align: center;
-    &:hover {
-        background-color: $icon-hover;
-        transition: all 0.1s ease-in;
-    }
-}
-
-.quick-add {
-    cursor: pointer;
-    &:hover {
-        .icon-text {
-            color: $icon-hover;
-        }
-        .icon {
-            background-color: $icon-hover;
-        }
-    }
-}
-
-.head {
-    background-color: $brand-primary;
-    color: white;
-}
-
-.checkbox {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-
-/* The checkboxclass */
-
-.checkboxclass {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-
-/* Hide the browser's default checkbox */
-
-.checkboxclass input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-
-/* Create a custom checkbox */
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: white;
-    border-radius: 50%;
-    border: solid 1px #ccc;
-}
-
-
-/* On mouse-over, add a grey background color */
-
-.checkboxclass:hover input~.checkmark {
-    border: solid 1px $brand-primary;
-}
-
-
-/* When the checkbox is checked, add a blue background */
-
-.checkboxclass input:checked~.checkmark {
-    background-color: #F17059;
-}
-
-
-/* Create the checkmark/indicator (hidden when not checked) */
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-
-/* Show the checkmark when checked */
-
-.checkboxclass input:checked~.checkmark:after {
-    display: block;
-}
-
-
-/* Style the checkmark/indicator */
-
-.checkboxclass .checkmark:after {
-    left: 7px;
-    top: 3px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-//end of products page

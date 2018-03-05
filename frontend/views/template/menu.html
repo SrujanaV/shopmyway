@@ -1,32 +1,12 @@
 <ul class="nav navbar-nav">
-  <li ng-repeat="menu in navigation" ui-sref-active="active">
-    <!--main-menu-->
-    <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor">
-      <i class="fa fa-{{menu.icon}}" ng-if="menu.icon"></i> {{menu.name}}
-    </a>
-    <a href="{{menu.link}}" ng-if="menu.link">
-      <i class="fa fa-{{menu.icon}}" ng-if="menu.icon"></i> {{menu.name}}
-    </a>
-    <!--sub-menu-->
-    <ul class="dropdown-menu" ng-if="menu.subnav!='';">
-      <li ng-repeat="submenu in menu.subnav" ui-sref-active="active">
-        <a ui-serf="{{submenu.anchor}}" ng-if="submenu.anchor">
-          <i class="fa fa-{{menu.icon}}" ng-if="menu.icon"></i> {{submenu.name}}
-        </a>
-        <a herf="{{submenu.link}}" ng-if="submenu.link">
-          <i class="fa fa-{{menu.icon}}" ng-if="menu.icon"></i> {{submenu.name}}
-        </a>
-      </li>
-    </ul>
-    <!--end sub-menu-->
+  <li ng-repeat="menu in navigation" ui-sref-active="active" class="nav-item dropdown">
+    <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor" class="nav-link">{{menu.name}}</a>
+    <a href="{{menu.link}}" ng-if="menu.link" class="nav-link">{{menu.name}}</a>
+    <div class="dropdown-menu" ng-if="menu.subnav!='';">
+      <div ng-repeat="submenu in menu.subnav" ui-sref-active="active">
+        <a ui-serf="{{submenu.anchor}}" ng-if="submenu.anchor" class="dropdown-item">{{submenu.name}}</a>
+        <a herf="{{submenu.link}}" ng-if="submenu.link" class="dropdown-item">{{submenu.name}}</a>
+      </div>
+    </div>
   </li>
-</ul>
-<ul class="nav navbar-nav navbar-right inverse-navbar">
-  <li class="border-left"><a href=""><i class="fa fa-home menu-icon" aria-hidden="true"></i><span> View My Store
-    </span></a></li>
-  <li><a href=""><i class="fa fa-comments" aria-hidden="true"></i><span class="badge badge-info">10%</span></a></li>
-  <li><a href=""><span class="days">2 Days Left</span> - Upgrade Now</a></li>
-  <li><img src="../img/profile.jpg" width="40"></li>
-  <li class="remove-border"><a href="">User ID: <span>100114 </span></a></li>
-  <li class="space-right"><i class="fa fa-ellipsis-v fa-fw" aria-hidden="true"></i></li>
 </ul>

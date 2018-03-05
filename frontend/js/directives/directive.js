@@ -103,45 +103,13 @@ myApp.directive('img', function ($compile, $parse) {
     })
 
 
-    .directive('detailtable', function ($http, $filter) {
-        return {
-            templateUrl: 'views/content/directive/detailtable.html',
-            link: function ($scope, element, attrs) {
-            }
-        };
-    })
 
-    .directive('search', function ($http, $filter) {
-        return {
-            templateUrl: 'views/content/directive/search.html',
-            link: function ($scope, element, attrs) {
-            }
-        };
-    })
 
-    .directive('upload', function ($http, $filter) {
-        return {
-            templateUrl: 'views/content/directive/upload.html',
-            link: function ($scope, element, attrs) {
-            }
-        };
-    })
 
-    .directive('download', function ($http, $filter) {
-        return {
-            templateUrl: 'views/content/directive/download.html',
-            link: function ($scope, element, attrs) {
-            }
-        };
-    })
 
-    .directive('talktous', function ($http, $filter) {
-        return {
-            templateUrl: 'views/content/directive/talktous.html',
-            link: function ($scope, element, attrs) {
-            }
-        };
-    })
+
+
+
 
 
 ;

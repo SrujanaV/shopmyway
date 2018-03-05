@@ -1,3 +1,1 @@
- @media (max-width: $screen-sm-max) {
-     // Tablet
- }
+@media (min-width(var(--breakpoint-sm))) {}
