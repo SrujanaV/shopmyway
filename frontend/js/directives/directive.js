@@ -102,14 +102,11 @@ myApp.directive('img', function ($compile, $parse) {
         };
     })
 
-
-
-
-
-
-
-
-
-
-
+    .directive('pricingbox', function ($http, $filter) {
+        return {
+            templateUrl: 'views/content/directive/pricingbox.html',
+            link: function ($scope, element, attrs) {
+            }
+        };
+    })
 ;

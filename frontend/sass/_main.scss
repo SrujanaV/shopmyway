@@ -6,27 +6,31 @@
 // Start with assigning color names to specific hex values.
 $white: #fff !default;
 $black: #000 !default;
-$red: #d9534f !default;
-$orange: #f0ad4e !default;
-$yellow: #ffd500 !default;
-$green: #5cb85c !default;
-$blue: #0275d8 !default;
-$teal: #5bc0de !default;
-$pink: #ff5b77 !default;
-$purple: #613d7c !default;
+$red: #ff6377 !default;
+// $orange: #f0ad4e !default;
+$yellow: #f7c72e !default;
+$green: #00dbaa !default;
+$blue: #00bfe8 !default;
+// $teal: #5bc0de !default;
+$pink: #cc0099 !default;
+// $purple: #613d7c !default;
+$gray-font:#333333 !default;
 // Create grayscale
-$gray-dark: #292b2c !default;
-$gray: #464a4c !default;
-$gray-light: #636c72 !default;
-$gray-lighter: #eceeef !default;
-$gray-lightest: #f7f7f9 !default;
+// $gray-dark: #292b2c !default;
+$gray: #ebebeb !default;
+// $gray-light: #636c72 !default;
+$gray-lighter: #f8f8f8 !default;
+// $gray-lightest: #f7f7f9 !default;
 // Reassign color vars to semantic color scheme
 $brand-primary: $blue !default;
 $brand-success: $green !default;
-$brand-info: $teal !default;
-$brand-warning: $orange !default;
 $brand-danger: $red !default;
-$brand-inverse: $gray-dark !default;
+$brand-yellow: $yellow !default;
+$brand-pink: $pink !default;
+$brand-font:$gray-font !default;
+// $brand-info: $teal !default;
+// $brand-warning: $orange !default;
+// $brand-inverse: $gray-dark !default;
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
@@ -72,19 +76,19 @@ Consolas,
 "Courier New",
 monospace !default;
 $font-family-base: $font-family-sans-serif !default;
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$paragraph: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg: 1.25rem !default;
 $font-size-sm: .875rem !default;
-$font-size-xs: .75rem !default;
+$span: .75rem !default; //12px
 $font-weight-normal: normal !default;
 $font-weight-bold: bold !default;
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
 $font-size-h1: 2.5rem !default;
-$font-size-h2: 2rem !default;
-$font-size-h3: 1.75rem !default;
-$font-size-h4: 1.5rem !default;
-$font-size-h5: 1.25rem !default;
+$font-size-h2: 3.8125rem !default; //61px
+$font-size-h3 : 2.75rem !default; //44px
+$font-size-h4: 2rem !default; //32px 
+$font-size-h5 : 1.375rem !default; //22px
 $font-size-h6: 1rem !default;
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family: inherit !default;
@@ -96,6 +100,7 @@ $headings-color: inherit !default;
 // Define common padding and border radius sizes and more.
 $line-height-lg: (4 / 3) !default;
 $line-height-sm: 1.5 !default;
+$line-height-para: 1.4rem !default;
 $border-radius: .25rem !default;
 $border-radius-lg: .3rem !default;
 $border-radius-sm: .2rem !default;
@@ -135,6 +140,150 @@ $dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
 // @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../../bower_components/bootstrap/scss/bootstrap";
 @import "other/font-fix";
+@font-face {
+    font-family: NunitoLight;
+    src: url(../fonts/Nunito/Nunito-Light.ttf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: NunitoSemiBold;
+    src: url(../fonts/Nunito/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: NunitoBold;
+    src: url(../fonts/Nunito/Nunito-Bold.ttf);
+}
+@font-face {
+    font-family: NunitoSans;
+    src: url(../fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSansLight;
+    src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: OpenSansRegular;
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSansSemiBold;
+    src: url(../fonts/Open_Sans/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+}
+
+// h2,
+// h3,
+// h4,
+// h5,
+// span {
+//     font-family: OpenSansRegular;
+// }
+
+h2 {
+    font-size: $font-size-h2;
+}
+
+h3 {
+    font-size: $font-size-h3;
+}
+
+h4 {
+    font-size: $font-size-h4;
+}
+
+h5 {
+    font-size: $font-size-h5;
+}
+
+p {
+    font-family: NunitoSans;
+    font-size: $paragraph;
+    line-height: $line-height-para;
+    margin-bottom: 0;
+}
+
+.color-default {
+    color: $gray-font;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-red {
+    color: $brand-danger;
+}
+
+.color-blue {
+    color: $brand-primary;
+}
+
+.color-green {
+    color: $brand-success;
+}
+
+.color-yellow {
+    color: $brand-yellow;
+}
+
+.background-red {
+    background-color: $brand-danger;
+}
+
+.background-blue {
+    background-color: $brand-primary;
+}
+
+.background-green {
+    background-color: $brand-success;
+}
+
+.background-yellow {
+    background-color: $brand-yellow;
+}
+
+.background-gray {
+    background-color: $gray;
+}
+.fontOpensSansLight {
+    font-family: OpenSansLight;
+}
+.fontOpensSansRegular {
+    font-family: OpenSansRegular;
+}
+.fontOpensSansBold {
+    font-family: OpenSansBold !important;
+}
+.fontNunitoSans{
+    font-family: NunitoSans;
+}
+.section-bottom-margin{
+    @include margin(null null 3em null);
+}
+// .header_padding{
+//     @include padding(null 10rem);
+// }
+// .main-section-padding{
+//     @include padding(3rem 10rem);
+// }
+.gray-section {
+    background-color: $gray-lighter;
+}
+.card-block{
+    border: 0;
+}
 body {
     padding-top: 70px;
 }
