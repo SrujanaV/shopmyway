@@ -86,9 +86,9 @@ $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
 $font-size-h1: 2.5rem !default;
 $font-size-h2: 3.8125rem !default; //61px
-$font-size-h3 : 2.75rem !default; //44px
+$font-size-h3: 2.75rem !default; //44px
 $font-size-h4: 2rem !default; //32px 
-$font-size-h5 : 1.375rem !default; //22px
+$font-size-h5: 1.375rem !default; //22px
 $font-size-h6: 1rem !default;
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family: inherit !default;
@@ -110,7 +110,6 @@ $caret-width: .3em !default;
 $transition-base: all .2s ease-in-out !default;
 $transition-fade: opacity .15s linear !default;
 $transition-collapse: height .35s ease !default;
-// Buttons
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 $btn-padding-x: 1rem !default;
@@ -159,10 +158,12 @@ $dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
     font-family: NunitoBold;
     src: url(../fonts/Nunito/Nunito-Bold.ttf);
 }
+
 @font-face {
     font-family: NunitoSans;
     src: url(../fonts/Nunito_Sans/NunitoSans-Regular.ttf);
 }
+
 @font-face {
     font-family: OpenSansLight;
     src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
@@ -190,7 +191,6 @@ $dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
 // span {
 //     font-family: OpenSansRegular;
 // }
-
 h2 {
     font-size: $font-size-h2;
 }
@@ -225,23 +225,21 @@ p {
 .color-red {
     color: $brand-danger;
 }
-
 .color-blue {
     color: $brand-primary;
 }
-
 .color-green {
     color: $brand-success;
 }
-
 .color-yellow {
     color: $brand-yellow;
 }
-
+.background-pink {
+    background-color: $brand-pink;
+}
 .background-red {
     background-color: $brand-danger;
 }
-
 .background-blue {
     background-color: $brand-primary;
 }
@@ -249,29 +247,31 @@ p {
 .background-green {
     background-color: $brand-success;
 }
-
 .background-yellow {
     background-color: $brand-yellow;
 }
-
 .background-gray {
     background-color: $gray;
 }
-.fontOpensSansLight {
+.fontOpenSansLight {
     font-family: OpenSansLight;
 }
-.fontOpensSansRegular {
+.fontOpenSansRegular {
     font-family: OpenSansRegular;
 }
-.fontOpensSansBold {
+
+.fontOpenSansBold {
     font-family: OpenSansBold !important;
 }
-.fontNunitoSans{
+
+.fontNunitoSans {
     font-family: NunitoSans;
 }
-.section-bottom-margin{
+
+.section-bottom-margin {
     @include margin(null null 3em null);
 }
+
 // .header_padding{
 //     @include padding(null 10rem);
 // }
@@ -281,11 +281,13 @@ p {
 .gray-section {
     background-color: $gray-lighter;
 }
-.card-block{
+
+.card-block {
     border: 0;
 }
+
 body {
-    padding-top: 70px;
+    // padding-top: 70px;
 }
 
 img.loading {
@@ -393,3 +395,124 @@ header {
 .nav-up {
     transform: translateY(-100%);
 }
+//scss  for button
+.btn{
+    font-size: 22px;
+    font-family: OpenSansBold;
+}
+.banner-button {
+    background: $brand-primary;
+    color: white !important;
+    border-radius: 25px !important;
+    @include padding(0.5rem 2rem !important);
+}
+.large-button{
+     background: $brand-pink;
+    color: white !important;
+    border-radius: 25px !important;
+    @include padding(0.2rem 4rem !important);
+}
+.medium-button{
+     background: white;
+    color: white !important;
+    border-radius: 10px !important;
+    @include padding(0.5rem 0.5rem !important);
+}
+.small-button{
+    color: white !important;
+    border-radius: 50px !important;
+}
+
+.section-bottom-margin {
+@include margin(null null 3em null);
+}
+
+// .header_padding{
+// @include padding(null 10rem);
+// }
+// .main-section-padding{
+// @include padding(1rem 3rem);
+// }
+// .gray-section {
+// background-color: $gray-lighter;
+// }
+.card-block {
+.border-bottom-style {
+position: relative;
+&:after {
+content: "";
+bottom: -10px;
+left: 79px;
+position: absolute;
+width: 55%;
+height: 2px;
+background-color: white;
+}
+}
+}
+//custom checkbox
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+position: absolute;
+left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+position: relative;
+padding-left: 1.95em;
+cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+content: '';
+position: absolute;
+left: 0; top: 0.3em;
+width: 1em; height: 1em;
+border: 1px solid $brand-primary;
+background: #fff;
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+content: '✔';
+position: absolute;
+top: -0.2em;
+left: .0em;
+font-size: 2em;
+line-height: 0.8;
+color: $brand-primary;
+transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+opacity: 0;
+transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+opacity: 1;
+transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+box-shadow: none;
+border-color: #bbb;
+background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+color: #999;
+}
+[type="checkbox"]:disabled + label {
+color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+border: 1px solid $brand-primary;
+}
+
+/* hover style just for information */
+label:hover:before {
+border: 1px solid $brand-primary !important;
