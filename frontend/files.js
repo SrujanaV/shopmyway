@@ -51,6 +51,7 @@ module.exports = [
   'frontend/js/controllers/language-controller.js',
 
   //Individual controllers
+  'frontend/views/content/home/home.js',
   'frontend/views/content/ecommerce/ecommerce.js',
   'frontend/views/content/website/website.js',
   'frontend/views/content/couriers/couriers.js',

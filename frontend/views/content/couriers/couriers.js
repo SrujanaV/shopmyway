@@ -2,4 +2,5 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
     $scope.template = TemplateService.getHTML("../views/content/couriers/couriers.html");
     TemplateService.title = "Couriers"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
+     TemplateService.backgoundChange = "";
 })
