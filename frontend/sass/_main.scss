@@ -214,6 +214,7 @@ p {
     margin-bottom: 0;
 }
 
+//font-color scss
 .color-default {
     color: $gray-font;
 }
@@ -225,21 +226,32 @@ p {
 .color-red {
     color: $brand-danger;
 }
+
 .color-blue {
     color: $brand-primary;
 }
+
 .color-green {
     color: $brand-success;
 }
+
 .color-yellow {
     color: $brand-yellow;
 }
+
+.color-pink {
+    color: $brand-pink;
+}
+
+//background-color scss
 .background-pink {
     background-color: $brand-pink;
 }
+
 .background-red {
     background-color: $brand-danger;
 }
+
 .background-blue {
     background-color: $brand-primary;
 }
@@ -247,17 +259,26 @@ p {
 .background-green {
     background-color: $brand-success;
 }
+
 .background-yellow {
     background-color: $brand-yellow;
 }
+
 .background-gray {
     background-color: $gray;
 }
+
+//font-family scss
 .fontOpenSansLight {
     font-family: OpenSansLight;
 }
+
 .fontOpenSansRegular {
     font-family: OpenSansRegular;
+}
+
+.fontOpenSansSemiBold {
+    font-family: OpenSansSemiBold
 }
 
 .fontOpenSansBold {
@@ -268,16 +289,10 @@ p {
     font-family: NunitoSans;
 }
 
-.section-bottom-margin {
-    @include margin(null null 3em null);
+.main-section-padding {
+    @include padding(1rem 5rem);
 }
 
-// .header_padding{
-//     @include padding(null 10rem);
-// }
-// .main-section-padding{
-//     @include padding(3rem 10rem);
-// }
 .gray-section {
     background-color: $gray-lighter;
 }
@@ -395,36 +410,37 @@ header {
 .nav-up {
     transform: translateY(-100%);
 }
-//scss  for button
-.btn{
+
+//scss  for buttons
+.btn {
     font-size: 22px;
     font-family: OpenSansBold;
 }
+
 .banner-button {
     background: $brand-primary;
     color: white !important;
     border-radius: 25px !important;
     @include padding(0.5rem 2rem !important);
 }
-.large-button{
-     background: $brand-pink;
+
+.large-button {
+    background: $brand-pink;
     color: white !important;
     border-radius: 25px !important;
     @include padding(0.2rem 4rem !important);
 }
-.medium-button{
-     background: white;
+
+.medium-button {
+    background: white;
     color: white !important;
     border-radius: 10px !important;
     @include padding(0.5rem 0.5rem !important);
 }
-.small-button{
+
+.small-button {
     color: white !important;
     border-radius: 50px !important;
-}
-
-.section-bottom-margin {
-@include margin(null null 3em null);
 }
 
 // .header_padding{
@@ -436,84 +452,165 @@ header {
 // .gray-section {
 // background-color: $gray-lighter;
 // }
+
+//scss for pricingbox html directive
 .card-block {
-.border-bottom-style {
-position: relative;
-&:after {
-content: "";
-bottom: -10px;
-left: 79px;
-position: absolute;
-width: 55%;
-height: 2px;
-background-color: white;
+    .border-bottom-style {
+        &:after {
+            content: "";
+            bottom: -10px;
+            left: 79px;
+            position: absolute;
+            width: 55%;
+            height: 2px;
+            background-color: white;
+        }
+    }
 }
-}
-}
+
 //custom checkbox
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
-position: absolute;
-left: -9999px;
+    position: absolute;
+    left: -9999px;
 }
-[type="checkbox"]:not(:checked) + label,
-[type="checkbox"]:checked + label {
-position: relative;
-padding-left: 1.95em;
-cursor: pointer;
+
+[type="checkbox"]:not(:checked)+label,
+[type="checkbox"]:checked+label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer;
 }
 
 /* checkbox aspect */
-[type="checkbox"]:not(:checked) + label:before,
-[type="checkbox"]:checked + label:before {
-content: '';
-position: absolute;
-left: 0; top: 0.3em;
-width: 1em; height: 1em;
-border: 1px solid $brand-primary;
-background: #fff;
+
+[type="checkbox"]:not(:checked)+label:before,
+[type="checkbox"]:checked+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    width: 1em;
+    height: 1em;
+    border: 1px solid $brand-primary;
+    background: #fff;
 }
+
 /* checked mark aspect */
-[type="checkbox"]:not(:checked) + label:after,
-[type="checkbox"]:checked + label:after {
-content: '✔';
-position: absolute;
-top: -0.2em;
-left: .0em;
-font-size: 2em;
-line-height: 0.8;
-color: $brand-primary;
-transition: all .2s;
+
+[type="checkbox"]:not(:checked)+label:after,
+[type="checkbox"]:checked+label:after {
+    content: '✔';
+    position: absolute;
+    top: -0.2em;
+    left: .0em;
+    font-size: 2em;
+    line-height: 0.8;
+    color: $brand-primary;
+    transition: all .2s;
 }
+
 /* checked mark aspect changes */
-[type="checkbox"]:not(:checked) + label:after {
-opacity: 0;
-transform: scale(0);
+
+[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    transform: scale(0);
 }
-[type="checkbox"]:checked + label:after {
-opacity: 1;
-transform: scale(1);
+
+[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    transform: scale(1);
 }
+
 /* disabled checkbox */
-[type="checkbox"]:disabled:not(:checked) + label:before,
-[type="checkbox"]:disabled:checked + label:before {
-box-shadow: none;
-border-color: #bbb;
-background-color: #ddd;
+
+[type="checkbox"]:disabled:not(:checked)+label:before,
+[type="checkbox"]:disabled:checked+label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
 }
-[type="checkbox"]:disabled:checked + label:after {
-color: #999;
+
+[type="checkbox"]:disabled:checked+label:after {
+    color: #999;
 }
-[type="checkbox"]:disabled + label {
-color: #aaa;
+
+[type="checkbox"]:disabled+label {
+    color: #aaa;
 }
+
 /* accessibility */
-[type="checkbox"]:checked:focus + label:before,
-[type="checkbox"]:not(:checked):focus + label:before {
-border: 1px solid $brand-primary;
+
+[type="checkbox"]:checked:focus+label:before,
+[type="checkbox"]:not(:checked):focus+label:before {
+    border: 1px solid $brand-primary;
 }
 
 /* hover style just for information */
+
 label:hover:before {
-border: 1px solid $brand-primary !important;
+    border: 1px solid $brand-primary !important;
+}
+
+//scss for header 
+.navbar {
+    background: transparent;
+    .banner-button {
+        background: white;
+        color: black !important;
+    }
+}
+
+.nav {
+    width: 100%;
+    .nav-link {
+        padding: 0.5rem 2rem;
+        &:hover,
+        &:active,
+        &:focus {
+            color: white;
+        }
+    }
+    .dropdown-menu,
+    .dropdown-item,
+        {
+        background: black !important;
+        color: white !important;
+    }
+    .dropdown-item {
+        &:active,
+        &:hover,
+        &:focus {
+            background: black !important;
+            color: $brand-pink !important;
+        }
+    }
+}
+
+.submenu-class:first-child {
+    padding: 10px 0;
+    border-bottom: 1px solid $brand-primary !important;
+}
+
+.backgoundChange {
+    background-color: $black !important;
+}
+
+//Banner Image Scss
+.bg-img {
+    background-image: url(../img/ecommerce/ecommerce_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 70vh;
+}
+
+.bg-overlay {
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.70);
+    z-index: 1;
+}
+
+.bg-desc {
+    z-index: 2;
 }
