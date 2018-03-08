@@ -3,6 +3,7 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
     TemplateService.title = "Couriers"; //This is the Title of the Website
       TemplateService.backgoundChange = "";
     $scope.navigation = NavigationService.getNavigation();
+    $scope.banner=[{}]
     $scope.pricing = [{
         "name": "standard",
         "price": "₹ 50,000",
