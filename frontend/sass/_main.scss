@@ -416,6 +416,14 @@ header {
     font-size: 16px;
     font-family: OpenSansBold;
 }
+.header-button {
+    font-size: 18px;
+    font-family: OpenSansBold;
+    background: $white;
+    color: $black !important;
+    border-radius: 25px !important;
+    @include padding(0.5rem 1rem !important);
+}
 
 .banner-button {
     background: $brand-primary;
@@ -598,6 +606,15 @@ label:hover:before {
 
 .backgoundChange {
     background-color: $black !important;
+}
+//scss for footer
+.footer-bg {
+    background: #231f20;
+    color: $white;
+}
+
+.footer-menu {
+    font-size: 22px;
 }
 
 //Banner Image Scss
