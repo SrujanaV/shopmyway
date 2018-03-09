@@ -1,16 +1,18 @@
-<div class="row">
-    <div class="col p-2" ng-repeat="price in pricing">
-        <div class="card">
-            <div class="card-block background-color rounded-top color-white border p-2">
-                <h5 class="fontOpenSansBold text-uppercase position-relative border-bottom-style mb-3">{{price.name}}</h5>
-                <h3 class="fontOpenSansBold text-uppercase mt-3">{{price.price}}</h3>
-                <h5 class="fontOpenSansRegular">PER{{price.period}}</h5>
-                <p class="fontOpenSansRegular text-capitalize">{{price.minper}}</p>
-                <h5 class="fontOpenSansRegular">OR</h5>
-                <p class="fontOpenSansBold text-capitalize">{{price.otp}}</p>
-            </div>
-            <div class="card-block my-3 px-4 text-left">
-                <p class="my-1" ng-repeat="service in price.services"><input id="{{$index}}" type="checkbox"><label for="{{$index}}">{{service}}</label></p>
+<div class="container">
+    <div class="row">
+        <div class="col p-2" ng-repeat="price in pricing">
+            <div class="card">
+                <div class="card-block text-center background-color rounded-top color-white border p-2">
+                    <h5 class="fontOpenSansBold text-uppercase position-relative border-bottom-style mb-3">{{price.name}}</h5>
+                    <h3 class="fontOpenSansBold text-uppercase mt-3">{{price.price}}</h3>
+                    <h5 class="fontOpenSansRegular">PER{{price.period}}</h5>
+                    <p class="fontOpenSansRegular text-capitalize">{{price.minper}}</p>
+                    <h5 class="fontOpenSansRegular">OR</h5>
+                    <p class="fontOpenSansBold text-capitalize">{{price.otp}}</p>
+                </div>
+                <div class="card-block my-3 px-4 text-left">
+                    <p class="my-1" ng-repeat="service in price.services"><input id="{{$index}}" type="checkbox"><label for="{{$index}}">{{service}}</label></p>
+                </div>
             </div>
         </div>
     </div>

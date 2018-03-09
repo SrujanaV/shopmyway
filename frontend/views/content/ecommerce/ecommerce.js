@@ -5,8 +5,8 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
     $scope.navigation = NavigationService.getNavigation();
     $scope.banners = [{
         "image": "../img/ecommerce/ecommerce_bg.png",
-        "title": "Introducing - Your Online Business Partner!",
-        "subtitle": "With our Complete E-commerce Solution, we guarantee you growth in your online sales",
+        "title": "Introducing - Your Online <br> Business Partner!",
+        "subtitle": "With our Complete E-commerce Solution, we guarantee you growth in your <br> online sales",
         "btntext": "Arrange A Call Back"
     }]
     $scope.pricing = [{

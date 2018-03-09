@@ -1,42 +1,54 @@
-<div class="d-flex position-relative bg-img" ng-repeat="banner in banners" style="background-image:url({{banner.image}})">
+<div class="position-relative bg-img" ng-repeat="banner in banners" style="background-image:url({{banner.image}})">
         <div class="position-absolute w-100 h-100 bg-overlay"></div>
-        <div class="d-flex align-items-center position-absolute w-100 h-100 main-section-padding color-white bg-desc">
-                <div class="mr-5">
-                        <h2 class="fontOpenSansBold">{{banner.title}}</h2>
-                        <h6 class="fontOpenSansLight">{{banner.subtitle}}</h6>
-                        <div class="text-center my-4"><a class="btn banner-button" role="button">{{banner.btntext}}
-                        </a></div>
-                </div>
-                <div>
-                        <div class="d-flex">
-                                <div class="d-flex w-50 background-red color-white m-1 p-3 rounded">
-                                        <div><img src="../../img/ecommerce/globe.png" width="40"></div>
-                                        <div class="ml-2">
-                                                <img src="../../img/ecommerce/shopmyway.png" width="80">
-                                                <h6 class="fontOpenSansSemiBold">Website</h6>
-                                        </div>
+        <div class="">
+                <div class="position-absolute w-100 h-100 bg-desc">
+                        <div class="row align-items-center h-100 color-white bg-desc">
+                                <div class="col">
+                                        <h2 class="fontOpenSansBold" ng-bind-html="banner.title"></h2>
+                                        <h6 class="fontOpenSansLight" ng-bind-html="banner.subtitle"></h6>
+                                        <div class="text-center my-4"><a class="btn banner-button" role="button">{{banner.btntext}}
+                                                </a></div>
                                 </div>
-                                <div class="d-flex w-50 background-green color-white m-1 p-3 rounded">
-                                        <div><img src="../../img/ecommerce/speaker.png" width="40"></div>
-                                        <div class="ml-2">
-                                                <img src="../../img/ecommerce/shopmyway.png" width="80">
-                                                <h6 class="fontOpenSansSemiBold">Marketing</h6>
+                                <div class="col">
+                                        <div class="row">
+                                                <div class="col">
+                                                        <div class="d-flex  background-red color-white m-1 p-3 rounded">
+                                                                <div class=""><img src="../../img/ecommerce/globe.png" width="40"></div>
+                                                                <div class=" ml-2">
+                                                                        <img src="../../img/ecommerce/shopmyway.png" width="80">
+                                                                        <h6 class="fontOpenSansSemiBold">Website</h6>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col">
+                                                        <div class="d-flex  background-green color-white m-1 p-3 rounded">
+                                                                <div class=""><img src="../../img/ecommerce/speaker.png" width="40"></div>
+                                                                <div class="ml-2">
+                                                                        <img src="../../img/ecommerce/shopmyway.png" width="80">
+                                                                        <h6 class="fontOpenSansSemiBold">Marketing</h6>
+                                                                </div>
+                                                        </div>
+                                                </div>
                                         </div>
-                                </div>
-                        </div>
-                        <div class="d-flex">
-                                <div class="d-flex w-50 background-blue color-white m-1 p-3 rounded">
-                                        <div><img src="../../img/ecommerce/van.png" width="55"></div>
-                                        <div class="ml-2">
-                                                <img src="../../img/ecommerce/shopmyway.png" width="80">
-                                                <h6 class="fontOpenSansSemiBold">Couriers</h6>
-                                        </div>
-                                </div>
-                                <div class="d-flex w-50 background-yellow color-white m-1 p-3 rounded">
-                                        <div><img src="../../img/ecommerce/home.png" width="40"></div>
-                                        <div class="ml-2">
-                                                <img src="../../img/ecommerce/shopmyway.png" width="80">
-                                                <h6 class="fontOpenSansSemiBold">Marketplace</h6>
+                                        <div class="row">
+                                                <div class="col">
+                                                        <div class="d-flex  background-blue color-white m-1 p-3 rounded">
+                                                                <div class=""><img src="../../img/ecommerce/van.png" width="40"></div>
+                                                                <div class=" ml-2">
+                                                                        <img src="../../img/ecommerce/shopmyway.png" width="80">
+                                                                        <h6 class="fontOpenSansSemiBold">Couriers</h6>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col">
+                                                        <div class="d-flex  background-yellow color-white m-1 p-3 rounded">
+                                                                <div class=""><img src="../../img/ecommerce/home.png" width="40"></div>
+                                                                <div class=" ml-2">
+                                                                        <img src="../../img/ecommerce/shopmyway.png" width="80">
+                                                                        <h6 class="fontOpenSansSemiBold">Marketplace</h6>
+                                                                </div>
+                                                        </div>
+                                                </div>
                                         </div>
                                 </div>
                         </div>
@@ -85,26 +97,32 @@
                                 Shopmyway Marketing
                         </h3>
                         <div class="d-flex">
-                                <div class="d-block text-left mr-3">
-                                        <div class="color-white background-green p-3">
-                                                <h6 class="mb-3 fontOpenSansBold">Advertise On Google &amp; Facebook</h6>
-                                                <p>An intelligent software automatically selects your best selling products
-                                                        &amp; pushes ads
-                                                </p>
-                                        </div>
-                                        <div class="color-default background-gray p-3">
-                                                <h6 class="mb-3 fontOpenSansBold">Automated Email &amp; SMS Marketing</h6>
-                                                <p>Upsell new products or run offers via personalized email, sms &amp; pop-up
-                                                        campaigns.
-                                                </p>
-                                        </div>
-                                        <div class="color-default background-gray p-3">
-                                                <h6 class="mb-3 fontOpenSansBold">Get Up To 4X Return On Investment</h6>
-                                                <p>Our team helps you track performance &amp; optimize campaigns so you get
-                                                        the best ROI
-                                                </p>
-                                        </div>
-                                </div>
+                                <ul class="d-block mr-3 text-left list-unstyled">
+                                        <li class="color-white background-green p-3 green-coloured-background">
+                                                <a>
+                                                        <h6 class="mb-3 fontOpenSansBold">Advertise On Google &amp; Facebook</h6>
+                                                        <p>An intelligent software automatically selects your best selling products
+                                                                &amp; pushes ads
+                                                        </p>
+                                                </a>
+                                        </li>
+                                        <li class="color-default background-gray p-3 green-coloured-background">
+                                                <a>
+                                                        <h6 class="mb-3 fontOpenSansBold">Automated Email &amp; SMS Marketing</h6>
+                                                        <p>Upsell new products or run offers via personalized email, sms &amp;
+                                                                pop-up campaigns.
+                                                        </p>
+                                                </a>
+                                        </li>
+                                        <li class="color-default background-gray p-3 green-coloured-background">
+                                                <a>
+                                                        <h6 class="mb-3 fontOpenSansBold">Get Up To 4X Return On Investment</h6>
+                                                        <p>Our team helps you track performance &amp; optimize campaigns so
+                                                                you get the best ROI
+                                                        </p>
+                                                </a>
+                                        </li>
+                                </ul>
                                 <div><img src="../../img/ecommerce/ecommerce.png" class="img-fluid"></div>
                         </div>
                 </div>
@@ -114,24 +132,30 @@
                         </h3>
                         <div class="d-flex">
                                 <div><img src="../../img/ecommerce/ecommerce.png" class="img-fluid"></div>
-                                <div class="text-left ml-3">
-                                        <div class="color-white background-yellow p-3">
-                                                <h6 class="mb-3 fontOpenSansBold">Multiple Courier Partners</h6>
-                                                <p>Ship to 15000+ pincodes via Fedex, Aramex, Delhivery, Dotzot &amp; Bluedart.
-                                                        Accept Cash on Delivery &amp; Card on Delivery.</p>
-                                        </div>
-                                        <div class="color-default background-gray p-3">
-                                                <h6 class="mb-3 fontOpenSansBold">Best In Industry Rates</h6>
-                                                <p>Send shipments economically with rates starting from INR 31 / 500 gms without
-                                                        any minimum commitment</p>
-                                        </div>
-                                        <div class="color-default background-gray p-3">
-                                                <h6 class="mb-3 fontOpenSansBold">Easy To Schedule &amp; Manage</h6>
-                                                <p>Compare shipping rates, schedule and track couriers and COD remittance with
-                                                        ease.
-                                                </p>
-                                        </div>
-                                </div>
+                                <ul class="text-left ml-3 list-unstyled">
+                                        <li class="color-white background-yellow p-3 yellow-coloured-background">
+                                                <a>
+                                                        <h6 class="mb-3 fontOpenSansBold">Multiple Courier Partners</h6>
+                                                        <p>Ship to 15000+ pincodes via Fedex, Aramex, Delhivery, Dotzot &amp;
+                                                                Bluedart. Accept Cash on Delivery &amp; Card on Delivery.</p>
+                                                </a>
+                                        </li>
+                                        <li class="color-default background-gray p-3 yellow-coloured-background">
+                                                <a>
+                                                        <h6 class="mb-3 fontOpenSansBold">Best In Industry Rates</h6>
+                                                        <p>Send shipments economically with rates starting from INR 31 / 500
+                                                                gms without any minimum commitment</p>
+                                                </a>
+                                        </li>
+                                        <li class="color-default background-gray p-3 yellow-coloured-background">
+                                                <a>
+                                                        <h6 class="mb-3 fontOpenSansBold">Easy To Schedule &amp; Manage</h6>
+                                                        <p>Compare shipping rates, schedule and track couriers and COD remittance
+                                                                with ease.
+                                                        </p>
+                                                </a>
+                                        </li>
+                                </ul>
                         </div>
                 </div>
                 <div class="text-center section-bottom-margin">
@@ -139,26 +163,34 @@
                                 Shopmyway Marketplace
                         </h3>
                         <div class="d-flex">
-                                <div class="d-block text-left mr-3">
-                                        <div class="color-white background-blue p-3">
-                                                <h6 class="mb-3 fontOpenSansBold">List Your Products Everywhere</h6>
-                                                <p>We help you register and upload products on Amazon, Flipkart, Snapdeal, PayTM,
-                                                        etc
-                                                </p>
-                                        </div>
-                                        <div class="color-default background-gray p-3">
-                                                <h6 class="mb-3 fontOpenSansBold">Manage Orders &amp; Inventory Easily</h6>
-                                                <p>Sync inventory across multiple marketplaces &amp; manage orders from a single
-                                                        dashboard
-                                                </p>
-                                        </div>
-                                        <div class="color-default background-gray p-3">
-                                                <h6 class="mb-3 fontOpenSansBold">Reconcile &amp; Manage Taxations</h6>
-                                                <p>Audit payments, invoices and pending payouts. Check penalties and identify
-                                                        frauds
-                                                </p>
-                                        </div>
-                                </div>
+                                <ul class="d-block text-left mr-3 list-unstyled">
+                                        <li class="color-white background-blue p-3 blue-coloured-background">
+                                                <a>
+
+                                                        <h6 class="mb-3 fontOpenSansBold">List Your Products Everywhere</h6>
+                                                        <p>We help you register and upload products on Amazon, Flipkart, Snapdeal,
+                                                                PayTM, etc
+                                                        </p>
+                                                </a>
+                                        </li>
+                                        <li class="color-default background-gray p-3 blue-coloured-background">
+                                                <a>
+
+                                                        <h6 class="mb-3 fontOpenSansBold">Manage Orders &amp; Inventory Easily</h6>
+                                                        <p>Sync inventory across multiple marketplaces &amp; manage orders from
+                                                                a single dashboard
+                                                        </p>
+                                                </a>
+                                        </li>
+                                        <li class="color-default background-gray p-3 blue-coloured-background">
+                                                <a>
+                                                        <h6 class="mb-3 fontOpenSansBold">Reconcile &amp; Manage Taxations</h6>
+                                                        <p>Audit payments, invoices and pending payouts. Check penalties and
+                                                                identify frauds
+                                                        </p>
+                                                </a>
+                                        </li>
+                                </ul>
                                 <div><img src="../../img/ecommerce/ecommerce.png" class="img-fluid"></div>
                         </div>
                 </div>

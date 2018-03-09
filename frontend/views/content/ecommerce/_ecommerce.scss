@@ -2,23 +2,9 @@
     h3 {
         font-family: NunitoSans;
     }
-    .card-block{
-        border: 0 !important;
-        p{
-            font-family: OpenSansRegular;
-        }
-    }
-    .ecommerce-pricing{
-        .card{
-            border: solid 1px $brand-primary;
-        }
-        .background-color{
-            background-color: $brand-primary;
-        }
-    }
-    .red-coloured-background{
+    .red-coloured-background {
         position: relative;
-        &:before{
+        &:before {
             // content: "";
             // width: 0;
             // height: 0;
@@ -30,8 +16,26 @@
             // left: -16px;
         }
         border: solid 1px transparent;
-        &:hover{
+        &:hover {
             border: solid 1px $brand-danger;
+        }
+    }
+    .green-coloured-background {
+        border: solid 1px transparent;
+        &:hover {
+            @extend .border-green;
+        }
+    }
+    .blue-coloured-background {
+        border: solid 1px transparent;
+        &:hover {
+            @extend .border-blue;
+        }
+    }
+    .yellow-coloured-background {
+        border: solid 1px transparent;
+        &:hover {
+            @extend .border-yellow;
         }
     }
 }

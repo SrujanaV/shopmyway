@@ -3,13 +3,15 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
     TemplateService.title = "Couriers"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
     TemplateService.backgoundChange = "";
+    //data for banner image and content   
     $scope.banners = [{
         "image": "../img/couriers/couriers_bg.jpg",
         "title": "Simplified Courier Solution For Your Business!",
         "subtitle": "Manage & send all your e-commerce shipments at a discounted rate with an easy-to-use dashboard.",
         "btntext": "Start your free trial"
     }]
-    $scope.couriers=[{
+    //data for pagedivision html directive
+    $scope.pagedivision=[{
         "image": "../img/couriers/weigh.png",
         "title": "Compare Prices",
         "subtitle": "Provide your product details and Compare prices of the courier partner"
@@ -26,6 +28,22 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
         "title": "Handover Shipments",
         "subtitle": "Handover the shipments & Stay updated about the shipping status"
     }]
+    //data for alternatediv html directive    
+    $scope.alternatesection=[{
+        "image1": "../img/couriers/mac.png",
+        "maintitle1": "Choose From Multiple Courier Partners & Services",
+        "subtitle1":"Run Product Ads On Top Social Media Platforms",
+        "sub1content1": "Run Product Ads across Facebook and Instagram with Social Media Advertising.",
+        "sub1content2": "Attract the right audience on your website with great Ad relevancy and Accurate Targeting.",
+        "sub1content3": "Get Real-time Report of your every campaign's ROI with Ad Analytics.",
+        "image2": "../img/couriers/mac.png",
+        "maintitle2": "Choose From Multiple Courier Partners & Services",
+        "subtitle2":"Run Product Ads On Top Social Media Platforms",
+        "sub2content1": "Run Product Ads across Facebook and Instagram with Social Media Advertising.",
+        "sub2content2": "Attract the right audience on your website with great Ad relevancy and Accurate Targeting.",
+        "sub2content3": "Get Real-time Report of your every campaign's ROI with Ad Analytics."
+    }]
+    //data for pricing html directive    
     $scope.pricing = [{
         "name": "standard",
         "price": "₹ 50,000",
