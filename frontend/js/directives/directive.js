@@ -116,4 +116,11 @@ myApp.directive('img', function ($compile, $parse) {
             }
         };
     })
+    .directive('solutionpagediv', function ($http, $filter) {
+        return {
+            templateUrl: 'views/content/directive/solutionpagediv.html',
+            link: function ($scope, element, attrs) {
+            }
+        };
+    })
 ;

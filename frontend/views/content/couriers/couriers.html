@@ -12,23 +12,15 @@
         </div>
     </div>
 </div>
-<section class="container my-5">
+<section class="couriers-section my-5">
     <div class="spacing-y">
         <div class="text-center">
             <h2 class="color-blue mb-4">
                 How Shopmyway Couriers Work?
             </h2>
         </div>
-        <div class="row justify-content-center">
-            <div class="col p-2 text-center" ng-repeat="courier in couriers">
-                <div class="d-flex align-items-center justify-content-center img-bg-div background-blue mx-auto mb-3"><img src="{{courier.image}}" width="50"></div>
-                <h5>{{courier.title}}</h5>
-                <p>{{courier.subtitle}}</p>
-            </div>
-        </div>
+        <solutionpagediv></solutionpagediv>
     </div>
-</section>
-<alternatediv></alternatediv>
-<section class="container">
-    <pricingbox></pricingbox>
+    <alternatediv ng-repeat="alternate in alternatesection"></alternatediv>
+    <pricingbox class="couriers-pricing"></pricingbox>
 </section>

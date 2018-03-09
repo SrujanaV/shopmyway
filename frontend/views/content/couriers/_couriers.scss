@@ -1,8 +1,18 @@
-.banner-image{
+.banner-image {
     width: 50%;
     right: 6%;
     bottom: -20px;
 }
-.spacing-y{
+
+.spacing-y {
     @include margin(null 4rem);
+}
+
+.couriers-section {
+    .background-color {
+        background-color: $brand-primary;
+    }
+    .text-color{
+        color: $brand-primary;
+    }
 }
