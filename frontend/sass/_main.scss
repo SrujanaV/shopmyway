@@ -15,6 +15,7 @@ $blue: #00bfe8 !default;
 $pink: #cc0099 !default;
 // $purple: #613d7c !default;
 $gray-font:#333333 !default;
+$gray-home:#666666 !default;
 // Create grayscale
 // $gray-dark: #292b2c !default;
 $gray: #ebebeb !default;
@@ -213,7 +214,9 @@ p {
     line-height: $line-height-para;
     margin-bottom: 0;
 }
-
+span{
+    font-size: $span;
+}
 //font-color scss
 .color-default {
     color: $gray-font;
@@ -242,7 +245,9 @@ p {
 .color-pink {
     color: $brand-pink;
 }
-
+.color-grey{
+    color:$gray-home;
+}
 //background-color scss
 .background-pink {
     background-color: $brand-pink;
@@ -284,7 +289,9 @@ p {
 .fontOpenSansBold {
     font-family: OpenSansBold !important;
 }
-
+.fontNunitoLight {
+font-family: NunitoLight;
+}
 .fontNunitoSans {
     font-family: NunitoSans;
 }
@@ -303,6 +310,7 @@ p {
 
 body {
     // padding-top: 70px;
+    overflow-x: hidden;
 }
 
 img.loading {
@@ -334,15 +342,6 @@ a,
 [ui-sref] {
     cursor: pointer;
     transition: all ease 300ms;
-}
-
-footer {
-    font-size: 12px;
-    background-color: #eee;
-    padding: 10px 0;
-    p {
-        margin: 0;
-    }
 }
 
 //bootstrap forms
@@ -417,8 +416,6 @@ header {
     font-family: OpenSansBold;
 }
 .header-button {
-    font-size: 18px;
-    font-family: OpenSansBold;
     background: $white;
     color: $black !important;
     border-radius: 25px !important;
@@ -565,6 +562,73 @@ label:hover:before {
 }
 
 //scss for header 
+.hamburger {
+   padding: 8px 16px;
+    position: relative;
+    cursor: pointer;
+    @include transition (all ease 300ms);
+    font-family: Nunito-SemiBold;
+    &:hover {
+        opacity: 0.8;
+    }
+    .menu-line {
+        position: absolute;
+        right: 0;
+        top: 0;
+        span {
+            @include size(18px,
+            2px);
+            margin-bottom: 4px;
+            display: block;
+            border-radius: 5px;
+            background-color: $white;
+            @include transition (all ease 300ms);
+            &.third-line {
+                width: 10px;
+                float: right;
+            }
+            &.firstbar {
+                transform:translate(0px, 6px);
+                 transform: rotate(50deg);
+            }
+            &.secondbar {
+                 transform:translate(0px, 0px);
+                 transform: rotate(-50deg);
+               
+            }
+            &.thirdbar {
+                opacity: 0;
+            }
+        }
+    }
+}
+.sidemenu {
+    background: #000;
+    padding: 50px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition:all ease 300ms;
+    transform:translateY(-100%);
+    z-index: 5;
+    ul li a {
+        color: $white;
+        font-family: Nunito-SemiBold;
+        padding: 15px;
+        display: block;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        &:hover {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+    &.menu-in {
+        transform:translateY(0);
+    }
+}
+
 .navbar {
     background: transparent;
     .banner-button {
@@ -585,7 +649,7 @@ label:hover:before {
     }
     .dropdown-menu,
     .dropdown-item,
-        {
+    {
         background: black !important;
         color: white !important;
     }
@@ -608,18 +672,29 @@ label:hover:before {
     background-color: $black !important;
 }
 //scss for footer
-.footer-bg {
-    background: #231f20;
-    color: $white;
+footer {
+    .footer-bg {
+        background: #231f20;
+        color: $white;
+    }
+    
+    .footer-menu {
+        font-size: 15px;
+        font-family: Nunito;
+    }
+    .footer-band {
+        background: #333333;
+        height: 70px;
+    }
+    .footer-desc {
+        p {
+            color: #b2b2b2;
+            font-family: NunitoLight;
+        }
+    }
 }
-
-.footer-menu {
-    font-size: 22px;
-}
-
 //Banner Image Scss
 .bg-img {
-    background-image: url(../img/ecommerce/ecommerce_bg.png);
     background-repeat: no-repeat;
     background-position: center center;
     height: 70vh;
@@ -629,9 +704,15 @@ label:hover:before {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.70);
-    z-index: 1;
+                       z-index: 1;
 }
 
 .bg-desc {
     z-index: 2;
+}
+
+//icons background div scss
+.img-bg-div {
+width: 70px;
+height: 70px;
 }

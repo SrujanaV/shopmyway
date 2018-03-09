@@ -1,4 +1,4 @@
-<header hide-on-scroll>
+<header  ng-controller="headerCtrl">
     <nav class="navbar navbar-light navbar-expand-sm fixed-top {{template.backgoundChange}}">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse" aria-controls="nav-collapse"
@@ -12,6 +12,18 @@
                 <ul class="nav justify-content-end" ng-include="template.menu"></ul>
                 <div class=""><a class="btn header-button" role="button">Started Now</a></div>
             </div>
+                <div class="hamburger pointer pull-right" ng-click="getnav();">
+                <div class="menu-line">
+                    <span class="icon-bar box-shadow {{onebar}}"></span>
+                    <span class="icon-bar box-shadow {{secondbar}}"></span>
+                    <span class="icon-bar box-shadow third-line {{thirdbar}}"></span>
+                </div>
+            </div>
         </div>
     </nav>
+       <div class="sidemenu {{getslide}}">
+        <!--<div class="navbar-collapse">
+            <div ng-include="template.menu" class="template menu"></div>
+        </div>-->
+    </div>
 </header>
