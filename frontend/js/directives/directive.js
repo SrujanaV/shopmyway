@@ -109,4 +109,11 @@ myApp.directive('img', function ($compile, $parse) {
             }
         };
     })
+    .directive('alternatediv', function ($http, $filter) {
+        return {
+            templateUrl: 'views/content/directive/alternatediv.html',
+            link: function ($scope, element, attrs) {
+            }
+        };
+    })
 ;

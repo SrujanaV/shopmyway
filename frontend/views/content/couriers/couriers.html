@@ -1,15 +1,34 @@
-<div class="d-flex position-relative bg-img">
+<div class="d-flex position-relative bg-img" ng-repeat="banner in banners" style="background-image:url({{banner.image}})">
     <div class="position-absolute w-100 h-100 bg-overlay"></div>
     <div class="d-flex align-items-center position-absolute w-100 h-100 main-section-padding color-white bg-desc">
         <div class="mr-5">
-            <h3 class="fontOpenSansBold">Introducing - Your Online Business Partner!</h3>
-            <h6 class="fontOpenSansLight">With our Complete E-commerce Solution, we guarantee you growth in your online sales</h6>
-            <div class="text-center my-4"><a class="btn banner-button" role="button">Arrange A Call Back
-                    </a>
-            </div>
+            <h2 class="fontOpenSansBold">{{banner.title}}</h2>
+            <h6 class="fontOpenSansLight">{{banner.subtitle}}</h6>
+            <div class="text-center my-4"><a class="btn banner-button" role="button">{{banner.btntext}}
+                    </a></div>
         </div>
-        <div>
-            <img src="../../img/couriers/macbook.png" width="500">
+        <div class="position-absolute banner-image">
+            <img src="../img/couriers/macbook.png" class="img-fluid">
         </div>
     </div>
 </div>
+<section class="container my-5">
+    <div class="spacing-y">
+        <div class="text-center">
+            <h2 class="color-blue mb-4">
+                How Shopmyway Couriers Work?
+            </h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col p-2 text-center" ng-repeat="courier in couriers">
+                <div class="d-flex align-items-center justify-content-center img-bg-div background-blue mx-auto mb-3"><img src="{{courier.image}}" width="50"></div>
+                <h5>{{courier.title}}</h5>
+                <p>{{courier.subtitle}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+<alternatediv></alternatediv>
+<section class="container">
+    <pricingbox></pricingbox>
+</section>
