@@ -214,40 +214,44 @@ p {
     line-height: $line-height-para;
     margin-bottom: 0;
 }
-span{
+
+span {
     font-size: $span;
 }
+
 //font-color scss
 .color-default {
-    color: $gray-font;
+    color: $gray-font !important;
 }
 
 .color-white {
-    color: white;
+    color: white !important;
 }
 
 .color-red {
-    color: $brand-danger;
+    color: $brand-danger !important;
 }
 
 .color-blue {
-    color: $brand-primary;
+    color: $brand-primary !important;
 }
 
 .color-green {
-    color: $brand-success;
+    color: $brand-success !important;
 }
 
 .color-yellow {
-    color: $brand-yellow;
+    color: $brand-yellow !important;
 }
 
 .color-pink {
-    color: $brand-pink;
+    color: $brand-pink !important;
 }
-.color-grey{
-    color:$gray-home;
+
+.color-grey-home {
+    color: $gray-home;
 }
+
 //background-color scss
 .background-pink {
     background-color: $brand-pink;
@@ -273,6 +277,10 @@ span{
     background-color: $gray;
 }
 
+.background-white {
+    background-color: $white;
+}
+
 //font-family scss
 .fontOpenSansLight {
     font-family: OpenSansLight;
@@ -289,9 +297,11 @@ span{
 .fontOpenSansBold {
     font-family: OpenSansBold !important;
 }
+
 .fontNunitoLight {
-font-family: NunitoLight;
+    font-family: NunitoLight;
 }
+
 .fontNunitoSans {
     font-family: NunitoSans;
 }
@@ -308,11 +318,24 @@ font-family: NunitoLight;
     border: 0;
 }
 
+//classes for border
+.border-pink {
+    border: 1px solid $pink;
+}
+
+.border-green {
+    border: 1px solid $green;
+}
+.border-blue {
+    border: 1px solid $blue;
+}
+.border-yellow {
+    border: 1px solid $yellow;
+}
 body {
     // padding-top: 70px;
     overflow-x: hidden;
 }
-
 img.loading {
     text-align: center;
     opacity: 1;
@@ -415,6 +438,7 @@ header {
     font-size: 16px;
     font-family: OpenSansBold;
 }
+
 .header-button {
     background: $white;
     color: $black !important;
@@ -427,7 +451,7 @@ header {
     color: white !important;
     border-radius: 25px !important;
     @include padding(0.5rem 2rem !important);
-    &:hover{
+    &:hover {
         background: white;
         color: $brand-primary !important;
     }
@@ -441,8 +465,7 @@ header {
 }
 
 .medium-button {
-    background: white;
-    color: white !important;
+    // background: white;
     border-radius: 10px !important;
     @include padding(0.5rem 0.5rem !important);
 }
@@ -461,7 +484,6 @@ header {
 // .gray-section {
 // background-color: $gray-lighter;
 // }
-
 //scss for pricingbox html directive
 .card-block {
     .border-bottom-style {
@@ -476,7 +498,21 @@ header {
         }
     }
 }
+.couriers-pricing,.ecommerce-pricing{
+.card{
+border: solid 1px $brand-primary;
+}
+.background-color{
+background-color: $brand-primary;
+}
+}
 
+.card-block{
+border: 0 !important;
+p{
+font-family: OpenSansRegular;
+}
+}
 //custom checkbox
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
@@ -490,6 +526,7 @@ header {
     padding-left: 1.95em;
     cursor: pointer;
 }
+
 
 /* checkbox aspect */
 
@@ -505,6 +542,7 @@ header {
     background: #fff;
 }
 
+
 /* checked mark aspect */
 
 [type="checkbox"]:not(:checked)+label:after,
@@ -519,6 +557,7 @@ header {
     transition: all .2s;
 }
 
+
 /* checked mark aspect changes */
 
 [type="checkbox"]:not(:checked)+label:after {
@@ -530,6 +569,7 @@ header {
     opacity: 1;
     transform: scale(1);
 }
+
 
 /* disabled checkbox */
 
@@ -548,12 +588,14 @@ header {
     color: #aaa;
 }
 
+
 /* accessibility */
 
 [type="checkbox"]:checked:focus+label:before,
 [type="checkbox"]:not(:checked):focus+label:before {
     border: 1px solid $brand-primary;
 }
+
 
 /* hover style just for information */
 
@@ -563,7 +605,7 @@ label:hover:before {
 
 //scss for header 
 .hamburger {
-   padding: 8px 16px;
+    padding: 8px 16px;
     position: relative;
     cursor: pointer;
     @include transition (all ease 300ms);
@@ -576,8 +618,7 @@ label:hover:before {
         right: 0;
         top: 0;
         span {
-            @include size(18px,
-            2px);
+            @include size(18px, 2px);
             margin-bottom: 4px;
             display: block;
             border-radius: 5px;
@@ -588,13 +629,12 @@ label:hover:before {
                 float: right;
             }
             &.firstbar {
-                transform:translate(0px, 6px);
-                 transform: rotate(50deg);
+                transform: translate(0px, 6px);
+                transform: rotate(50deg);
             }
             &.secondbar {
-                 transform:translate(0px, 0px);
-                 transform: rotate(-50deg);
-               
+                transform: translate(0px, 0px);
+                transform: rotate(-50deg);
             }
             &.thirdbar {
                 opacity: 0;
@@ -602,14 +642,15 @@ label:hover:before {
         }
     }
 }
+
 .sidemenu {
     background: #000;
     padding: 50px 0;
     position: fixed;
     top: 0;
     width: 100%;
-    transition:all ease 300ms;
-    transform:translateY(-100%);
+    transition: all ease 300ms;
+    transform: translateY(-100%);
     z-index: 5;
     ul li a {
         color: $white;
@@ -625,7 +666,7 @@ label:hover:before {
         }
     }
     &.menu-in {
-        transform:translateY(0);
+        transform: translateY(0);
     }
 }
 
@@ -671,13 +712,13 @@ label:hover:before {
 .backgoundChange {
     background-color: $black !important;
 }
+
 //scss for footer
 footer {
     .footer-bg {
         background: #231f20;
         color: $white;
     }
-    
     .footer-menu {
         font-size: 15px;
         font-family: Nunito;
@@ -693,6 +734,7 @@ footer {
         }
     }
 }
+
 //Banner Image Scss
 .bg-img {
     background-repeat: no-repeat;
@@ -704,7 +746,7 @@ footer {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.70);
-                       z-index: 1;
+    z-index: 1;
 }
 
 .bg-desc {
@@ -713,6 +755,6 @@ footer {
 
 //icons background div scss
 .img-bg-div {
-width: 70px;
-height: 70px;
+    width: 70px;
+    height: 70px;
 }

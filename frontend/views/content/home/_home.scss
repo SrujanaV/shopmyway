@@ -5,6 +5,12 @@
     min-height: 100vh;
     padding-top: 120px;
 }
+.home-bg-2{
+    background: url('../img/home/bg-2.png');
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
 .ecommerce-title{
 p{
     font-size: 30px;
@@ -19,4 +25,23 @@ width: 80%;
     p{
         color: #018caa;
     }
+}
+.home-sub-title{
+      color: #018caa;
+}
+.home-title{
+    @extend .color-grey-home;
+     @extend .fontOpenSansBold;
+}
+.planning-subtitle{
+p{
+    font-size: 22px;
+    color: #16568b;
+    @extend .fontNunitoLight;
+}
+}
+.order-form .form-control{
+        background: rgba(253, 253, 253, 0.68);
+    border: none;
+    border-bottom: 1px solid $pink;
 }
