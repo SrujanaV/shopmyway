@@ -1,47 +1,85 @@
-.home-bg{
+.home-bg {
     background: url('../img/home/bg.png');
     background-position: center center;
     background-size: cover;
     min-height: 100vh;
     padding-top: 120px;
 }
-.home-bg-2{
+
+.home-bg-2 {
     background: url('../img/home/bg-2.png');
     background-position: center center;
     background-size: cover;
     min-height: 100vh;
 }
-.ecommerce-title{
-p{
-    font-size: 30px;
-    font-family: NunitoLight;
-}
-}
-  .ecommerce-description{
-width: 80%;
-  }  
 
-.set-up-title{
-    p{
+.ecommerce-title {
+    p {
+        font-size: 30px;
+        font-family: NunitoLight;
+    }
+}
+
+.home-banner-button {
+    background: white;
+    color: grey !important;
+    border-radius: 25px !important;
+    @include padding(0.5rem 2rem !important);
+    &:hover {
+        background: grey;
+        color: white !important;
+    }
+}
+
+.ecommerce-description {
+    width: 80%;
+}
+
+.set-up-title {
+    p {
         color: #018caa;
     }
 }
-.home-sub-title{
-      color: #018caa;
+
+.home-sub-title {
+    color: #018caa;
 }
-.home-title{
+
+.home-title {
     @extend .color-grey-home;
-     @extend .fontOpenSansBold;
+    @extend .fontOpenSansBold;
 }
-.planning-subtitle{
-p{
-    font-size: 22px;
-    color: #16568b;
-    @extend .fontNunitoLight;
+
+.planning-subtitle {
+    p {
+        font-size: 22px;
+        color: #16568b;
+        @extend .fontNunitoLight;
+    }
 }
-}
-.order-form .form-control{
-        background: rgba(253, 253, 253, 0.68);
+
+.order-form .form-control {
+    background: rgba(253, 253, 253, 0.68);
     border: none;
     border-bottom: 1px solid $pink;
+}
+
+.set-up-knowmore {
+    font-size: .75rem;
+}
+
+.qoute p {
+    position: relative;
+    &:after {
+        content: "";
+        background-image: url(../img/home/qoutes.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -25px;
+        top: -15px;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+    }
 }

@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'shopmyway';
+  src: url('../fonts/shopmyway.eot?ay1vil');
+  src: url('../fonts/shopmyway.eot?ay1vil#iefix') format('embedded-opentype'), url('../fonts/shopmyway.ttf?ay1vil') format('truetype'), url('../fonts/shopmyway.woff?ay1vil') format('woff'), url('../fonts/shopmyway.svg?ay1vil#shopmyway') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  font-size: 60px;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'shopmyway' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Code:before {
+  content: "\e900";
+  color: $white;
+}
+
+.icon-Compare:before {
+  content: "\e901";
+  color: $white;
+}
+
+.icon-Courier:before {
+  content: "\e902";
+  color: $white;
+  background: rgba(255, 255, 255, 0.33);
+  padding: 5px;
+}
+
+.icon-Courier2:before {
+  content: "\e903";
+  color: $white;
+}
+
+.icon-Customization:before {
+  content: "\e904";
+  color: $white;
+  background: rgba(255, 255, 255, 0.33);
+  padding: 5px;
+}
+
+.icon-Customization2:before {
+  content: "\e905";
+  color: $white;
+}
+
+.icon-Email-sms:before {
+  content: "\e906";
+  color: $white;
+}
+
+.icon-Handover:before {
+  content: "\e907";
+  color: $white;
+}
+
+.icon-Logo:before {
+  content: "\e908";
+  color: $white;
+}
+
+.icon-marketing:before {
+  content: "\e909";
+  color: $white;
+}
+
+.icon-Marketplace:before {
+  content: "\e90a";
+  color: $white;
+}
+
+.icon-Mobile-Optimized-2:before {
+  content: "\e90b";
+  color: $white;
+}
+
+.icon-Mobile-Optimized:before {
+  content: "\e90c";
+  color: $white;
+  background: rgba(255, 255, 255, 0.33);
+  padding: 5px;
+}
+
+.icon-Order_nventory:before {
+  content: "\e90d";
+  color: $white;
+}
+
+.icon-Registration:before {
+  content: "\e90e";
+  color: $white;
+}
+
+.icon-Schedule:before {
+  content: "\e90f";
+  color: $white;
+}
+
+.icon-Seo:before {
+  content: "\e910";
+  color: $white;
+}
+
+.icon-Social-media:before {
+  content: "\e911";
+  color: $white;
+}
+
+.icon-Support:before {
+  content: "\e912";
+  color: $white;
+  background: rgba(255, 255, 255, 0.33);
+  padding: 5px;
+}
+
+.icon-Support2:before {
+  content: "\e913";
+  color: $white;
+}
+
+.icon-web:before {
+  content: "\e914";
+  color: $white;
+}

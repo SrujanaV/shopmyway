@@ -144,7 +144,10 @@ $dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
     font-family: NunitoLight;
     src: url(../fonts/Nunito/Nunito-Light.ttf);
 }
-
+@font-face {
+    font-family: NunitoLightItalic;
+    src: url(../fonts/Nunito/Nunito-LightItalic.ttf);
+}
 @font-face {
     font-family: Nunito;
     src: url(../fonts/Nunito/Nunito-Regular.ttf);
@@ -297,7 +300,6 @@ span {
 .fontOpenSansBold {
     font-family: OpenSansBold !important;
 }
-
 .fontNunitoLight {
     font-family: NunitoLight;
 }
@@ -305,7 +307,11 @@ span {
 .fontNunitoSans {
     font-family: NunitoSans;
 }
-
+.NunitoLightItalic {
+font-family: NunitoLightItalic;
+}
+  
+///
 .main-section-padding {
     @include padding(1rem 10rem);
 }
@@ -322,32 +328,39 @@ span {
 .border-pink {
     border: 1px solid $pink;
 }
-
 .border-green {
     border: 1px solid $green;
 }
+
 .border-blue {
     border: 1px solid $blue;
 }
+
 .border-yellow {
     border: 1px solid $yellow;
+}
+//spacing for all pages
+.spacing-y{
+@include margin(5em null);
+}
+.spacing-padd-y{
+@include padding(5em null);
 }
 body {
     // padding-top: 70px;
     overflow-x: hidden;
 }
+
 img.loading {
     text-align: center;
     opacity: 1;
     width: 32px !important;
     height: auto;
 }
-
 img {
     opacity: 0;
     transition: all 300ms ease;
 }
-
 img.doneLoading {
     opacity: 1;
 }
@@ -376,6 +389,7 @@ a,
 .form-control {
     border-radius: 0;
     box-shadow: none;
+   
 }
 
 .form-control:focus {
@@ -383,7 +397,9 @@ a,
     outline: 0;
     box-shadow: none;
 }
-
+.form-control{
+     color:grey !important;
+}
 .form-group {
     position: relative;
 }
@@ -498,21 +514,24 @@ header {
         }
     }
 }
-.couriers-pricing,.ecommerce-pricing{
-.card{
-border: solid 1px $brand-primary;
-}
-.background-color{
-background-color: $brand-primary;
-}
+
+.couriers-pricing,
+.ecommerce-pricing {
+    .card {
+        border: solid 1px $brand-primary;
+    }
+    .background-color {
+        background-color: $brand-primary;
+    }
 }
 
-.card-block{
-border: 0 !important;
-p{
-font-family: OpenSansRegular;
+.card-block {
+    border: 0 !important;
+    p {
+        font-family: OpenSansRegular;
+    }
 }
-}
+
 //custom checkbox
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
@@ -540,6 +559,39 @@ font-family: OpenSansRegular;
     height: 1em;
     border: 1px solid $brand-primary;
     background: #fff;
+}
+
+.for-pink {
+    [type="checkbox"]:not(:checked)+label:before,
+    [type="checkbox"]:checked+label:before {
+        border: 1px solid $pink !important;
+    }
+    [type="checkbox"]:not(:checked)+label:after,
+    [type="checkbox"]:checked+label:after {
+        color: $pink !important;
+    }
+}
+
+.for-blue {
+    [type="checkbox"]:not(:checked)+label:before,
+    [type="checkbox"]:checked+label:before {
+        border: 1px solid $blue !important;
+    }
+    [type="checkbox"]:not(:checked)+label:after,
+    [type="checkbox"]:checked+label:after {
+        color: $blue !important;
+    }
+}
+
+.for-yellow {
+    [type="checkbox"]:not(:checked)+label:before,
+    [type="checkbox"]:checked+label:before {
+        border: 1px solid $yellow !important;
+    }
+    [type="checkbox"]:not(:checked)+label:after,
+    [type="checkbox"]:checked+label:after {
+        color: $yellow !important;
+    }
 }
 
 
