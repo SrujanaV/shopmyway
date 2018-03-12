@@ -346,6 +346,9 @@ font-family: NunitoLightItalic;
 .spacing-padd-y{
 @include padding(5em null);
 }
+.padd-x{
+    @include padding(null 8em);
+}
 body {
     // padding-top: 70px;
     overflow-x: hidden;
@@ -489,6 +492,8 @@ header {
 .small-button {
     color: white !important;
     border-radius: 50px !important;
+    padding: 5px;
+    line-height: 1em;
 }
 
 // .header_padding{
@@ -561,14 +566,14 @@ header {
     background: #fff;
 }
 
-.for-pink {
+.for-red {
     [type="checkbox"]:not(:checked)+label:before,
     [type="checkbox"]:checked+label:before {
-        border: 1px solid $pink !important;
+        border: 1px solid $brand-danger !important;
     }
     [type="checkbox"]:not(:checked)+label:after,
     [type="checkbox"]:checked+label:after {
-        color: $pink !important;
+        color: $brand-danger !important;
     }
 }
 

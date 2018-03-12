@@ -2,12 +2,29 @@
     .background-color {
         background-color: $brand-yellow;
     }
-    .text-color{
+    .text-color {
         color: $brand-yellow;
     }
+    .pricing-option {
+        @extend .for-yellow
+    }
+    .small-button {
+        &:hover {
+            background-color: white;
+            @extend .border-yellow;
+            @extend .color-yellow;
+        }
+    }
+    .content-height {
+        height: 25px;
+    }
+    h6{
+        @extend .fontOpenSansRegular;
+    }
 }
-.marketplace-pricing{
-    .card{
+
+.marketplace-pricing {
+    .card {
         border: solid 1px $brand-yellow;
     }
 }

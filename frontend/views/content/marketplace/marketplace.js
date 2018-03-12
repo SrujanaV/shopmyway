@@ -13,16 +13,20 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
      //data for pagedivision html directive
      $scope.pagedivision=[{
       "image": "../img/couriers/weigh.png",
-      "title": "Order And Inventory Management"
+      "title": "Order And Inventory Management",
+      "btn":"Know More",
   },{
       "image": "../img/couriers/calendar.png",
-      "title": "Reconciliation & Accounting Compliance"
+      "title": "Reconciliation & Accounting Compliance",
+      "btn":"Know More",
   },{
       "image": "../img/couriers/code.png",
-      "title": "Listing & Registration Assistance"
+      "title": "Listing & Registration Assistance",
+      "btn":"Know More",
   },{
       "image": "../img/couriers/shipment.png",
-      "title": "Advertise Products On Marketplaces."
+      "title": "Advertise Products On Marketplaces.",
+      "btn":"Know More",
   }]
   //data for alternatediv html directive    
   $scope.alternatesection=[{

@@ -4,8 +4,11 @@
             <div class="col p-2 text-center" ng-repeat="data in pagedivision">
                 <div class="d-flex align-items-center justify-content-center img-bg-div background-color mx-auto mb-3"><img src="{{data.image}}" width="50">
                 </div>
-                <h6 class="fontOpenSansSemiBold">{{data.title}}</h6>
-                <p>{{data.subtitle}}</p>
+                <div class="content-height">
+                    <h6 class="fontOpenSansSemiBold">{{data.title}}</h6>
+                    <p>{{data.subtitle}}</p>
+                </div>
+                <a class="btn mt-3 small-button background-yellow" role="button">{{data.btn}}</a>
             </div>
         </div>
     </div>

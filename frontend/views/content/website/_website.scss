@@ -2,12 +2,19 @@
     .background-color {
         background-color: $brand-danger;
     }
-    .text-color{
+    .text-color {
         color: $brand-danger;
     }
+    .pricing-option {
+        @extend .for-red
+    }
+    .small-button{
+        display: none;
+    }
 }
-.website-pricing{
-    .card{
+
+.website-pricing {
+    .card {
         border: solid 1px $brand-danger;
     }
 }
