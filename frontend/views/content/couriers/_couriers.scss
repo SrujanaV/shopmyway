@@ -4,10 +4,6 @@
     bottom: -20px;
 }
 
-.spacing-y {
-    @include margin(null 4rem);
-}
-
 .couriers-section {
     .background-color {
         background-color: $brand-primary;

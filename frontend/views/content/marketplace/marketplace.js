@@ -5,52 +5,44 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
       TemplateService.backgoundChange = "";
       //data for banner image and content
       $scope.banners = [{
-        "image": "../img/marketing/marketing_bg.png",
-        "title": "Grow Your Online Sales!",
-        "subtitle": "We understand your business and provide you ROI guaranteed digital marketing services",
+        "image": "../img/marketplace/marketplace_bg.png",
+        "title": "One Stop Solution For Selling On Marketplaces",
+        "subtitle": "Choose India's leading E-Commerce website service & grow your brand online!",
         "btntext": "Start your free trial"
     }]
      //data for pagedivision html directive
      $scope.pagedivision=[{
       "image": "../img/couriers/weigh.png",
-      "title": "Online Ads Marketing"
+      "title": "Order And Inventory Management"
   },{
       "image": "../img/couriers/calendar.png",
-      "title": "Social Media Management"
+      "title": "Reconciliation & Accounting Compliance"
   },{
       "image": "../img/couriers/code.png",
-      "title": "E-Mail And SMS Marketing"
+      "title": "Listing & Registration Assistance"
   },{
       "image": "../img/couriers/shipment.png",
-      "title": "SEO Optimization"
+      "title": "Advertise Products On Marketplaces."
   }]
   //data for alternatediv html directive    
   $scope.alternatesection=[{
-    "image1": "../img/couriers/mac.png",
-    "maintitle1": "Choose From Multiple Courier Partners & Services",
-    "subtitle1":"Run Product Ads On Top Social Media Platforms",
-    "sub1content1": "Run Product Ads across Facebook and Instagram with Social Media Advertising.",
-    "sub1content2": "Attract the right audience on your website with great Ad relevancy and Accurate Targeting.",
-    "sub1content3": "Get Real-time Report of your every campaign's ROI with Ad Analytics.",
-    "image2": "../img/couriers/mac.png",
-    "maintitle2": "Choose From Multiple Courier Partners & Services",
-    "subtitle2":"Run Product Ads On Top Social Media Platforms",
-    "sub2content1": "Run Product Ads across Facebook and Instagram with Social Media Advertising.",
-    "sub2content2": "Attract the right audience on your website with great Ad relevancy and Accurate Targeting.",
-    "sub2content3": "Get Real-time Report of your every campaign's ROI with Ad Analytics."
+    "image1": "../img/marketplace/section1.png",
+    "maintitle1": "Process Orders From Multiple Marketplaces And Your Website",
+    "subtitle1":"Manage Orders Of All Marketplaces In A Single Dashboard",
+    "subcontent1": "<p>Process all orders with Ease with Centralized order management and bulk order processing</p><p>Sync Inventory across channels with real-time syncing and centralized inventory update</p><p>Generate Shipping Labels and Manifests and deliver using Integrated Couriers</p>",
+    "image2": "../img/marketplace/section2.png",
+    "maintitle2": "The Most Advanced Marketplace Reconciliation Dashboard",
+    "subtitle2":"Get Paid Right By Keeping A Track Of Your Reconciliations",
+    "subcontent2": "<p>Get Automatic Reconciliation reports with Minimal Human intervention</p><p>Track your Reconciliation by checking penalties and Claim unpaid orders</p><p>Manage your account with integration with accounting softwares like Tally & Busy</p>"
 },{
-  "image1": "../img/couriers/mac.png",
-  "maintitle1": "Choose From Multiple Courier Partners & Services",
-  "subtitle1":"Run Product Ads On Top Social Media Platforms",
-  "sub1content1": "Run Product Ads across Facebook and Instagram with Social Media Advertising.",
-  "sub1content2": "Attract the right audience on your website with great Ad relevancy and Accurate Targeting.",
-  "sub1content3": "Get Real-time Report of your every campaign's ROI with Ad Analytics.",
-  "image2": "../img/couriers/mac.png",
-  "maintitle2": "Choose From Multiple Courier Partners & Services",
-  "subtitle2":"Run Product Ads On Top Social Media Platforms",
-  "sub2content1": "Run Product Ads across Facebook and Instagram with Social Media Advertising.",
-  "sub2content2": "Attract the right audience on your website with great Ad relevancy and Accurate Targeting.",
-  "sub2content3": "Get Real-time Report of your every campaign's ROI with Ad Analytics."
+  "image1": "../img/marketplace/section3.png",
+  "maintitle1": "Get Straight To Growing Your Business",
+  "subtitle1":"Directly Start Selling On Marketplaces With Our Assistance",
+  "subcontent1": "<p>Get registered on Marketplaces with brand approval and necessary documentation processing</p><p>Provide basic product details and get listed on Marketplaces without hassle</p><p>Get Search engine optimized content writing for better organic visibility</p>",
+  "image2": "../img/marketplace/section4.png",
+  "maintitle2": "Get More Sales With Marketplace Ads",
+  "subtitle2":"Boost Your Sales With Targeted Product Ads",
+  "subcontent2": "<p>Advertise your products with Sponsored ads on top Marketplaces.</p><p>Increase your sales with better visibility for as low as Rs 10,000/-</p><p>Get Free consultation on Marketplace promotions and listing</p>"
 }]
 //data for pricing html directive    
 $scope.pricing = [{

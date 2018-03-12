@@ -33,15 +33,11 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
         "image1": "../img/couriers/mac.png",
         "maintitle1": "Choose From Multiple Courier Partners & Services",
         "subtitle1":"Run Product Ads On Top Social Media Platforms",
-        "sub1content1": "Run Product Ads across Facebook and Instagram with Social Media Advertising.",
-        "sub1content2": "Attract the right audience on your website with great Ad relevancy and Accurate Targeting.",
-        "sub1content3": "Get Real-time Report of your every campaign's ROI with Ad Analytics.",
+        "subcontent1": "<p>Run Product Ads across Facebook and Instagram with Social Media Advertising.</p><p>Attract the right audience on your website with great Ad relevancy and Accurate Targeting.</p><p>Get Real-time Report of your every campaign's ROI with Ad Analytics.</p>",
         "image2": "../img/couriers/mac.png",
         "maintitle2": "Choose From Multiple Courier Partners & Services",
         "subtitle2":"Run Product Ads On Top Social Media Platforms",
-        "sub2content1": "Run Product Ads across Facebook and Instagram with Social Media Advertising.",
-        "sub2content2": "Attract the right audience on your website with great Ad relevancy and Accurate Targeting.",
-        "sub2content3": "Get Real-time Report of your every campaign's ROI with Ad Analytics."
+        "subcontent2": "<p>Run Product Ads across Facebook and Instagram with Social Media Advertising.</p><p>Attract the right audience on your website with great Ad relevancy and Accurate Targeting.</p><p>Get Real-time Report of your every campaign's ROI with Ad Analytics.</p>"
     }]
     //data for pricing html directive    
     $scope.pricing = [{

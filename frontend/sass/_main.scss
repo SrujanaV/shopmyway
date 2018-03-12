@@ -164,7 +164,7 @@ $dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175) !default;
 }
 
 @font-face {
-    font-family: NunitoSans;
+    font-family: NunitoSansRegular;
     src: url(../fonts/Nunito_Sans/NunitoSans-Regular.ttf);
 }
 
@@ -212,7 +212,7 @@ h5 {
 }
 
 p {
-    font-family: NunitoSans;
+    font-family: NunitoSansRegular;
     font-size: $paragraph;
     line-height: $line-height-para;
     margin-bottom: 0;
@@ -304,8 +304,8 @@ span {
     font-family: NunitoLight;
 }
 
-.fontNunitoSans {
-    font-family: NunitoSans;
+.fontNunitoSansRegular {
+    font-family: NunitoSansRegular;
 }
 .NunitoLightItalic {
 font-family: NunitoLightItalic;
