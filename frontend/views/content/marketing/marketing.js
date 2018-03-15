@@ -7,7 +7,7 @@ myApp.controller('MarketingCtrl', function ($scope, TemplateService, NavigationS
       $scope.banners = [{
         "image": "../img/marketing/marketing_bg.png",
         "title": "Grow Your Online Sales!",
-        "subtitle": "We understand your business and provide you ROI guaranteed digital marketing services",
+        "subtitle": "We understand your business <br> and provide you ROI guaranteed digital marketing services",
         "btntext": "Start your free trial"
     }]
     //data for pagedivision html directive
@@ -15,13 +15,13 @@ myApp.controller('MarketingCtrl', function ($scope, TemplateService, NavigationS
       "image": "../img/couriers/weigh.png",
       "title": "Online Ads Marketing"
   },{
-      "image": "../img/couriers/calendar.png",
+      "image": "icon-Social-media",
       "title": "Social Media Management"
   },{
-      "image": "../img/couriers/code.png",
+      "image": "icon-Email-sms",
       "title": "E-Mail And SMS Marketing"
   },{
-      "image": "../img/couriers/shipment.png",
+      "image": "icon-Seo",
       "title": "SEO Optimization"
   }]
   //data for alternatediv html directive    

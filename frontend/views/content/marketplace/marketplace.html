@@ -1,10 +1,10 @@
 <div class="d-flex position-relative bg-img" ng-repeat="banner in banners" style="background-image:url({{banner.image}})">
     <div class="position-absolute w-100 h-100 bg-overlay"></div>
-    <div class="d-flex align-items-center position-absolute w-100 h-100 main-section-padding color-white bg-desc">
-        <div class="mr-5">
-            <h2 class="fontOpenSansBold">{{banner.title}}</h2>
-            <h6 class="fontOpenSansLight">{{banner.subtitle}}</h6>
-            <div class="text-center my-4"><a class="btn banner-button" role="button">{{banner.btntext}}
+    <div class="row align-items-center position-absolute w-100 h-100 main-section-padding color-white bg-desc">
+        <div class="col-md-8">
+            <h1 class="fontOpenSansBold" ng-bind-html="banner.title"></h1>
+            <h6 class="fontOpenSansLight" ng-bind-html="banner.subtitle"></h6>
+            <div class="text-center pt-3"><a class="btn banner-button" role="button">{{banner.btntext}}
                         </a></div>
         </div>
         <div class="position-absolute banner-image">
@@ -13,32 +13,30 @@
     </div>
 </div>
 <section class="marketplace-section my-5">
-    <div class="spacing-y">
-        <div class="text-center">
-            <h3 class="color-yellow mb-4">
-                Grow Your Business With The Leader In Marketplace E-Commerce
-            </h3>
-        </div>
-        <solutionpagediv></solutionpagediv>
-        <!-- <a class="btn small-button background-yellow" role="button">Know more</a> -->
-        <alternatediv ng-repeat="alternate in alternatesection"></alternatediv>
-        <div class="text-center">
-            <h4 class="color-yellow mb-5">Powerful Integrations</h4>
-            <p class="w-50 mx-auto mb-5">One dashboard connects you to infinite possibilities. Integrations with marketplaces, shipping and fulfillment
-                companies let you focus on your core business.</p>
-            <div class="row m-5 integration">
-                <div class="col-md-4">
-                    <h6 class="color-yellow">Powerful Integrations</h6>
-                    <img src="../img/marketplace/integration1.png">
-                </div>
-                <div class="col-md-4">
-                    <h6 class="color-yellow">Powerful Integrations</h6>
-                    <img src="../img/marketplace/integration2.png">
-                </div>
-                <div class="col-md-4">
-                    <h6 class="color-yellow">Powerful Integrations</h6>
-                    <img src="../img/marketplace/integration3.png">
-                </div>
+    <div class="text-center">
+        <h3 class="color-yellow mb-4">
+            Grow Your Business With The Leader In Marketplace E-Commerce
+        </h3>
+    </div>
+    <solutionpagediv></solutionpagediv>
+    <!-- <a class="btn small-button background-yellow" role="button">Know more</a> -->
+    <alternatediv ng-repeat="alternate in alternatesection"></alternatediv>
+    <div class="text-center">
+        <h4 class="color-yellow mb-5">Powerful Integrations</h4>
+        <p class="w-50 mx-auto mb-5">One dashboard connects you to infinite possibilities. Integrations with marketplaces, shipping and fulfillment companies
+            let you focus on your core business.</p>
+        <div class="row m-5 integration">
+            <div class="col-md-4">
+                <h6 class="color-yellow">Powerful Integrations</h6>
+                <img src="../img/marketplace/integration1.png">
+            </div>
+            <div class="col-md-4">
+                <h6 class="color-yellow">Powerful Integrations</h6>
+                <img src="../img/marketplace/integration2.png">
+            </div>
+            <div class="col-md-4">
+                <h6 class="color-yellow">Powerful Integrations</h6>
+                <img src="../img/marketplace/integration3.png">
             </div>
         </div>
         <div>

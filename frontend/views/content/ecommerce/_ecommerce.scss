@@ -2,40 +2,128 @@
     h3 {
         font-family: NunitoSansRegular;
     }
-    .red-coloured-background {
-        position: relative;
-        &:before {
-            // content: "";
-            // width: 0;
-            // height: 0;
-            // border-top: 15px solid transparent;
-            // border-bottom: 15px solid transparent;
-            // border-right: 15px solid red;
-            // position: absolute;
-            // top: 0;
-            // left: -16px;
+    .red-background-div {
+        .nav-tabs>.style-hover-red.active {
+            @extend .border-red;
+            &:before {
+                display: block
+            }
         }
-        border: solid 1px transparent;
-        &:hover {
-            border: solid 1px $brand-danger;
+        .nav-tabs>.style-hover-red.active>a,
+        .nav-tabs>li.active>a:hover,
+        .nav-tabs>li.active>a:focus {
+            @extend .background-red;
+            @extend .color-white;
+        }
+        .style-hover-red {
+            position: relative;
+            border: solid 1px $gray;
+            &:before {
+                content: "";
+                width: 0;
+                height: 0;
+                @include position(absolute, 0 null null -16px);
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;
+                border-right: 15px solid $brand-danger;
+                display: none;
+            }
+            &:hover {
+                @extend .border-red;
+            }
         }
     }
-    .green-coloured-background {
-        border: solid 1px transparent;
-        &:hover {
+    .green-background-div {
+        .nav-tabs>.style-hover-green.active {
             @extend .border-green;
+            &:before {
+                display: block
+            }
+        }
+        .nav-tabs>.style-hover-green.active>a,
+        .nav-tabs>li.active>a:hover,
+        .nav-tabs>li.active>a:focus {
+            @extend .background-green;
+            @extend .color-white;
+        }
+        .style-hover-green {
+            position: relative;
+            border: solid 1px $gray;
+            &:before {
+                content: "";
+                width: 0;
+                height: 0;
+                @include position(absolute, 0 -16px null null);
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;
+                border-left: 15px solid $brand-success;
+                display: none;
+            }
+            &:hover {
+                @extend .border-green;
+            }
         }
     }
-    .blue-coloured-background {
-        border: solid 1px transparent;
-        &:hover {
+    .blue-background-div {
+        .nav-tabs>.style-hover-blue.active {
             @extend .border-blue;
+            &:before {
+                display: block
+            }
+        }
+        .nav-tabs>.style-hover-blue.active>a,
+        .nav-tabs>li.active>a:hover,
+        .nav-tabs>li.active>a:focus {
+            @extend .background-blue;
+            @extend .color-white;
+        }
+        .style-hover-blue {
+            position: relative;
+            border: solid 1px $gray;
+            &:before {
+                content: "";
+                width: 0;
+                height: 0;
+                @include position(absolute, 0 null null -16px);
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;
+                border-right: 15px solid $brand-primary;
+                display: none;
+            }
+            &:hover {
+                @extend .border-blue;
+            }
         }
     }
-    .yellow-coloured-background {
-        border: solid 1px transparent;
-        &:hover {
+    .yellow-background-div {
+        .nav-tabs>.style-hover-yellow.active {
             @extend .border-yellow;
+            &:before {
+                display: block
+            }
+        }
+        .nav-tabs>.style-hover-yellow.active>a,
+        .nav-tabs>li.active>a:hover,
+        .nav-tabs>li.active>a:focus {
+            @extend .background-yellow;
+            @extend .color-white;
+        }
+        .style-hover-yellow {
+            position: relative;
+            border: solid 1px $gray;
+            &:before {
+                content: "";
+                width: 0;
+                height: 0;
+                @include position(absolute, 0 -16px null null);
+                border-top: 15px solid transparent;
+                border-bottom: 15px solid transparent;
+                border-left: 15px solid $brand-yellow;
+                display: none;
+            }
+            &:hover {
+                @extend .border-yellow;
+            }
         }
     }
 }

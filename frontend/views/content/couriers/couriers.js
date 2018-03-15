@@ -6,17 +6,17 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
     //data for banner image and content   
     $scope.banners = [{
         "image": "../img/couriers/couriers_bg.jpg",
-        "title": "Simplified Courier Solution For Your Business!",
-        "subtitle": "Manage & send all your e-commerce shipments at a discounted rate with an easy-to-use dashboard.",
+        "title": "Simplified Courier Solution <br> For Your Business!",
+        "subtitle": "Manage & send all your e-commerce shipments <br> at a discounted rate with an easy-to-use dashboard.",
         "btntext": "Start your free trial"
     }]
     //data for pagedivision html directive
     $scope.pagedivision=[{
-        "image": "../img/couriers/weigh.png",
+        "image": "icon-Compare",
         "title": "Compare Prices",
         "subtitle": "Provide your product details and Compare prices of the courier partner"
     },{
-        "image": "../img/couriers/calendar.png",
+        "image": "icon-Schedule",
         "title": "Schedule Pickup",
         "subtitle": "Choose the Courier partner that best fits your expected rate and schedule the pickup"
     },{
@@ -24,7 +24,7 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
         "title": "Print Shipping Label",
         "subtitle": "Print necessary invoices and wait for the Pickup by courier guy to happen before the Daily Cutoff time"
     },{
-        "image": "../img/couriers/shipment.png",
+        "image": "icon-Handover",
         "title": "Handover Shipments",
         "subtitle": "Handover the shipments & Stay updated about the shipping status"
     }]

@@ -6,13 +6,13 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
       //data for banner image and content
       $scope.banners = [{
         "image": "../img/marketplace/marketplace_bg.png",
-        "title": "One Stop Solution For Selling On Marketplaces",
-        "subtitle": "Choose India's leading E-Commerce website service & grow your brand online!",
+        "title": "One Stop Solution For Selling <br> On Marketplaces",
+        "subtitle": "Choose India's leading E-Commerce website service & <br> grow your brand online!",
         "btntext": "Start your free trial"
     }]
      //data for pagedivision html directive
      $scope.pagedivision=[{
-      "image": "../img/couriers/weigh.png",
+      "image": "icon-Order_nventory",
       "title": "Order And Inventory Management",
       "btn":"Know More",
   },{
@@ -20,7 +20,7 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
       "title": "Reconciliation & Accounting Compliance",
       "btn":"Know More",
   },{
-      "image": "../img/couriers/code.png",
+      "image": "icon-Registration",
       "title": "Listing & Registration Assistance",
       "btn":"Know More",
   },{

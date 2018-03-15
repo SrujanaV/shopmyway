@@ -6,22 +6,22 @@ myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationSer
       //data for banner image and content
       $scope.banners = [{
         "image": "../img/ecommerce/ecommerce_bg.png",
-        "title": "Give Your Brand The Website It Deserves",
-        "subtitle": "Choose India's leading E-Commerce website service & grow your brand online!",
+        "title": "Give Your Brand The Website <br> It Deserves",
+        "subtitle": "Choose India's leading E-Commerce website service & <br> grow your brand online!",
         "btntext": "Arrange A Call Back"
     }]
      //data for pagedivision html directive
      $scope.pagedivision=[{
-      "image": "../img/couriers/weigh.png",
+      "image": "icon-Mobile-Optimized-2",
       "title": "Beautiful Mobile-Optimized Website"
   },{
-      "image": "../img/couriers/calendar.png",
+      "image": "icon-Customization2",
       "title": "Unlimited Customization Options"
   },{
-      "image": "../img/couriers/code.png",
+      "image": "icon-Courier2",
       "title": "Integrated Courier Solution"
   },{
-      "image": "../img/couriers/shipment.png",
+      "image": "icon-Support2",
       "title": "Complete Business Support"
   }]
   //data for alternatediv html directive    
