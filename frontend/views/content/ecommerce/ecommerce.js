@@ -5,7 +5,7 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
     TemplateService.homefooterNone = "";
     $scope.navigation = NavigationService.getNavigation();
     $scope.banners = [{
-        "image": "../img/ecommerce/ecommerce_bg.png",
+        "image": "img/ecommerce/ecommerce_bg.png",
         "title": "Introducing - Your Online <br> Business Partner!",
         "subtitle": "With our Complete E-commerce Solution, we guarantee you growth in your online sales!",
         "btntext": "Arrange A Call Back"

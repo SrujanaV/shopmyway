@@ -6,7 +6,7 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
       TemplateService.homefooterNone = "";
       //data for banner image and content
       $scope.banners = [{
-        "image": "../img/marketplace/marketplace_bg.png",
+        "image": "img/marketplace/marketplace_bg.png",
         "title": "One Stop Solution For Selling <br> On Marketplaces",
         "subtitle": "Choose India's leading E-Commerce website service & <br> grow your brand online!",
         "btntext": "Start your free trial"
@@ -31,20 +31,20 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
   }]
   //data for alternatediv html directive    
   $scope.alternatesection=[{
-    "image1": "../img/marketplace/section1.png",
+    "image1": "img/marketplace/section1.png",
     "maintitle1": "Process Orders From Multiple Marketplaces And Your Website",
     "subtitle1":"Manage Orders Of All Marketplaces In A Single Dashboard",
     "subcontent1": "<p>Process all orders with Ease with Centralized order management and bulk order processing</p><p>Sync Inventory across channels with real-time syncing and centralized inventory update</p><p>Generate Shipping Labels and Manifests and deliver using Integrated Couriers</p>",
-    "image2": "../img/marketplace/section2.png",
+    "image2": "img/marketplace/section2.png",
     "maintitle2": "The Most Advanced Marketplace Reconciliation Dashboard",
     "subtitle2":"Get Paid Right By Keeping A Track Of Your Reconciliations",
     "subcontent2": "<p>Get Automatic Reconciliation reports with Minimal Human intervention</p><p>Track your Reconciliation by checking penalties and Claim unpaid orders</p><p>Manage your account with integration with accounting softwares like Tally & Busy</p>"
 },{
-  "image1": "../img/marketplace/section3.png",
+  "image1": "img/marketplace/section3.png",
   "maintitle1": "Get Straight To Growing Your Business",
   "subtitle1":"Directly Start Selling On Marketplaces With Our Assistance",
   "subcontent1": "<p>Get registered on Marketplaces with brand approval and necessary documentation processing</p><p>Provide basic product details and get listed on Marketplaces without hassle</p><p>Get Search engine optimized content writing for better organic visibility</p>",
-  "image2": "../img/marketplace/section4.png",
+  "image2": "img/marketplace/section4.png",
   "maintitle2": "Get More Sales With Marketplace Ads",
   "subtitle2":"Boost Your Sales With Targeted Product Ads",
   "subcontent2": "<p>Advertise your products with Sponsored ads on top Marketplaces.</p><p>Increase your sales with better visibility for as low as Rs 10,000/-</p><p>Get Free consultation on Marketplace promotions and listing</p>"

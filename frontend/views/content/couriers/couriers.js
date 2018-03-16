@@ -6,7 +6,7 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
     TemplateService.homefooterNone = "";
     //data for banner image and content   
     $scope.banners = [{
-        "image": "../img/couriers/couriers_bg.jpg",
+        "image": "img/couriers/couriers_bg.jpg",
         "title": "Simplified Courier Solution <br> For Your Business!",
         "subtitle": "Manage & send all your e-commerce shipments <br> at a discounted rate with an easy-to-use dashboard.",
         "btntext": "Start your free trial"
@@ -31,11 +31,11 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
     }]
     //data for alternatediv html directive    
     $scope.alternatesection=[{
-        "image1": "../img/couriers/mac.png",
+        "image1": "img/couriers/mac.png",
         "maintitle1": "Choose From Multiple Courier Partners & Services",
         "subtitle1":"Run Product Ads On Top Social Media Platforms",
         "subcontent1": "<p>Run Product Ads across Facebook and Instagram with Social Media Advertising.</p><p>Attract the right audience on your website with great Ad relevancy and Accurate Targeting.</p><p>Get Real-time Report of your every campaign's ROI with Ad Analytics.</p>",
-        "image2": "../img/couriers/mac.png",
+        "image2": "img/couriers/mac.png",
         "maintitle2": "Choose From Multiple Courier Partners & Services",
         "subtitle2":"Run Product Ads On Top Social Media Platforms",
         "subcontent2": "<p>Run Product Ads across Facebook and Instagram with Social Media Advertising.</p><p>Attract the right audience on your website with great Ad relevancy and Accurate Targeting.</p><p>Get Real-time Report of your every campaign's ROI with Ad Analytics.</p>"
