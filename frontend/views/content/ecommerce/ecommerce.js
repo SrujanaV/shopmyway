@@ -2,6 +2,7 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
     $scope.template = TemplateService.getHTML("../views/content/ecommerce/ecommerce.html");
     TemplateService.title = "Couriers"; //This is the Title of the Website
     TemplateService.backgoundChange = "";
+    TemplateService.homefooterNone = "";
     $scope.navigation = NavigationService.getNavigation();
     $scope.banners = [{
         "image": "../img/ecommerce/ecommerce_bg.png",

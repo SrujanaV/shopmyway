@@ -32,4 +32,14 @@ myApp.controller('headerCtrl', function ($scope, TemplateService, $uibModal) {
             $scope.enquiry.close();
         };
     }
+
+     //for header scroll scss change
+     $(window).scroll(function () {
+        if ($(document).scrollTop() > 100) {
+             $(".navbar").addClass("background-black");
+
+        } else {
+              $(".navbar").removeClass("background-black");
+        }
+    });
 });

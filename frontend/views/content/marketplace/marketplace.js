@@ -3,6 +3,7 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
     TemplateService.title = "Marketplace"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
       TemplateService.backgoundChange = "";
+      TemplateService.homefooterNone = "";
       //data for banner image and content
       $scope.banners = [{
         "image": "../img/marketplace/marketplace_bg.png",
@@ -16,7 +17,7 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
       "title": "Order And Inventory Management",
       "btn":"Know More",
   },{
-      "image": "../img/couriers/calendar.png",
+      "image": "icon-Registration",
       "title": "Reconciliation & Accounting Compliance",
       "btn":"Know More",
   },{
@@ -24,7 +25,7 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
       "title": "Listing & Registration Assistance",
       "btn":"Know More",
   },{
-      "image": "../img/couriers/shipment.png",
+      "image": "icon-Registration",
       "title": "Advertise Products On Marketplaces.",
       "btn":"Know More",
   }]

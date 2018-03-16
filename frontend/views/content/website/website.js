@@ -3,6 +3,7 @@ myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationSer
     TemplateService.title = "Website"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
       TemplateService.backgoundChange = "";
+      TemplateService.homefooterNone = "";
       //data for banner image and content
       $scope.banners = [{
         "image": "../img/ecommerce/ecommerce_bg.png",

@@ -70,6 +70,13 @@ i {
   color: $white;
 }
 
+.icon-Email-sms-background:before {
+  content: "\e906";
+  background: rgba(255, 255, 255, 0.33);
+  color: $white;
+  padding: 5px;
+}
+
 .icon-Handover:before {
   content: "\e907";
   color: $white;
@@ -122,9 +129,23 @@ i {
   color: $white;
 }
 
+.icon-Seo-background:before{
+  content: "\e910";
+  color: $white;
+  background: rgba(255, 255, 255, 0.33);
+  padding: 5px;
+}
+
 .icon-Social-media:before {
   content: "\e911";
   color: $white;
+}
+
+.icon-Social-media-background:before {
+  content: "\e911";
+  color: $white;
+  background: rgba(255, 255, 255, 0.33);
+padding: 5px;  
 }
 
 .icon-Support:before {

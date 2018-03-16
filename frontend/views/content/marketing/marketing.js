@@ -3,6 +3,7 @@ myApp.controller('MarketingCtrl', function ($scope, TemplateService, NavigationS
     TemplateService.title = "Marketing"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
       TemplateService.backgoundChange = "";
+      TemplateService.homefooterNone = "";
       //data for banner image and content
       $scope.banners = [{
         "image": "../img/marketing/marketing_bg.png",
@@ -12,7 +13,7 @@ myApp.controller('MarketingCtrl', function ($scope, TemplateService, NavigationS
     }]
     //data for pagedivision html directive
     $scope.pagedivision=[{
-      "image": "../img/couriers/weigh.png",
+      "image": "icon-Social-media",
       "title": "Online Ads Marketing"
   },{
       "image": "icon-Social-media",

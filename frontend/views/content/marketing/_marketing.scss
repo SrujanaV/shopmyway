@@ -5,7 +5,9 @@
     .text-color{
         color: $brand-success;
     }
-    .small-button{
-        display: none;
+    .solution{
+        .small-button{
+            display: none;
+        }
     }
 }

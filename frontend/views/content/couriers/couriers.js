@@ -3,6 +3,7 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
     TemplateService.title = "Couriers"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
     TemplateService.backgoundChange = "";
+    TemplateService.homefooterNone = "";
     //data for banner image and content   
     $scope.banners = [{
         "image": "../img/couriers/couriers_bg.jpg",
@@ -20,7 +21,7 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
         "title": "Schedule Pickup",
         "subtitle": "Choose the Courier partner that best fits your expected rate and schedule the pickup"
     },{
-        "image": "../img/couriers/code.png",
+        "image": "icon-Handover",
         "title": "Print Shipping Label",
         "subtitle": "Print necessary invoices and wait for the Pickup by courier guy to happen before the Daily Cutoff time"
     },{

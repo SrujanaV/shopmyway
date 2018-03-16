@@ -1,3 +1,14 @@
 /* Breakpoint for medium viewport */
 
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-down(md) {
+    .align-content{
+        text-align: center;
+    }
+    .banner-image{
+        right: 22%;
+        bottom: -10px;
+    }
+    .bg-desc{
+        @include padding(1em 0);
+    }
+}

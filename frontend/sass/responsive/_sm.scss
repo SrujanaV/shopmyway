@@ -1,3 +1,20 @@
 /* Breakpoint for medium viewport */
 
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-down(sm) {
+    .bg-img {
+        height: 125vh;
+    }
+    .align-sm-content {
+        text-align: center;
+    }
+    .banner-image {
+        width: 70%;
+        right: 12% !important;
+    }
+    .section1,
+    .section2 {
+        img {
+            width: 100% !important;
+        }
+    }
+}
