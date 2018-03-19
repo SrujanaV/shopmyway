@@ -539,7 +539,7 @@ header {
         &:after {
             content: "";
             bottom: -10px;
-            left: 79px;
+            left: 65px;
             position: absolute;
             width: 55%;
             height: 2px;
@@ -865,20 +865,6 @@ footer {
 }
 
 //scss for modal
-.fade.in {
-    opacity: 1;
-}
-
-.modal.in .modal-dialog {
-    -webkit-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    transform: translate(0, 0);
-}
-
-.modal-backdrop.in {
-    filter: alpha(opacity=90);
-    opacity: .9;
-}
 
 .modal_bg {
     background: url('../img/home/bg.png');

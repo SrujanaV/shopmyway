@@ -83,23 +83,23 @@
 
                         <div class="row no-gutters">
                                 <div class="col-12 col-lg-7">
-                                        <div class="tab-content">
-                                                <div class="tab-pane active" id="website1"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
-                                                <div class="tab-pane" id="website2"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
-                                                <div class="tab-pane" id="website3"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
+                                        <div>
+                                                <div ng-show="tab10"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
+                                                <div ng-show="tab11"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
+                                                <div ng-show="tab12"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
                                         </div>
                                 </div>
                                 <div class="col-12 col-lg-5">
-                                        <ul class="nav nav-tabs text-left pl-3 list-unstyled">
-                                                <li class="background-gray style-hover-red w-100 active">
-                                                        <a href="#website1" data-toggle="tab" class="d-block p-3">
+                                        <ul class="navigation text-left pl-3 list-unstyled">
+                                                <li id="tab10" ng-click="navigation3('tab10')" ng-class="{'active':tab10==true}" class="background-gray style-hover-red w-100 active">
+                                                        <a class="d-block p-3">
                                                                 <h6 class="mb-3 fontOpenSansBold">Create A Beautiful Ecommerce Website</h6>
                                                                 <p>Choose from 200+ best looking themes &amp; customize it to
                                                                         match your brand image</p>
                                                         </a>
                                                 </li>
-                                                <li class="background-gray style-hover-red w-100">
-                                                        <a href="#website2" data-toggle="tab" class="d-block p-3">
+                                                <li id="tab11" ng-click="navigation3('tab11')" ng-class="{'active':tab11==true}" class="background-gray style-hover-red w-100">
+                                                        <a class="d-block p-3">
                                                                 <h6 class="mb-3 fontOpenSansBold">Accept Online Payments Easily</h6>
                                                                 <p>
                                                                         Let your customers pay via Debit card, Credit card, UPI &amp; Wallets for as less as 2% fee
@@ -107,8 +107,8 @@
                                                                 </p>
                                                         </a>
                                                 </li>
-                                                <li class="background-gray style-hover-red w-100">
-                                                        <a href="#website3" data-toggle="tab" class="d-block p-3">
+                                                <li id="tab12" ng-click="navigation3('tab12')" ng-class="{'active':tab12==true}" class="background-gray style-hover-red w-100">
+                                                        <a class="d-block p-3">
                                                                 <h6 class="mb-3 fontOpenSansBold">Omni-Channnel Ecommerce</h6>
                                                                 <p>
                                                                         Launch your Android, iOS App &amp; Facebook Store &amp; manage it all from a single dashboard
@@ -125,25 +125,25 @@
                         </h3>
                         <div class="row no-gutters">
                                 <div class="col-12 col-lg-5">
-                                        <ul class="nav nav-tabs text-left pr-3 list-unstyled">
-                                                <li class="background-gray style-hover-green w-100 active">
-                                                        <a href="#google" data-toggle="tab" class="d-block p-3">
+                                        <ul class="navigation text-left pr-3 list-unstyled">
+                                                <li id="tab7" ng-click="navigation2('tab7')" ng-class="{'active':tab7==true}" class="background-gray style-hover-green w-100 active">
+                                                        <a class="d-block p-3">
                                                                 <h6 class="mb-3 fontOpenSansBold">Advertise On Google &amp; Facebook</h6>
                                                                 <p>An intelligent software automatically selects your best selling
                                                                         products &amp; pushes ads
                                                                 </p>
                                                         </a>
                                                 </li>
-                                                <li class="background-gray style-hover-green w-100">
-                                                        <a href="#email" data-toggle="tab" class="d-block p-3">
+                                                <li id="tab8" ng-click="navigation2('tab8')" ng-class="{'active':tab8==true}" class="background-gray style-hover-green w-100">
+                                                        <a class="d-block p-3">
                                                                 <h6 class="mb-3 fontOpenSansBold">Automated Email &amp; SMS Marketing</h6>
                                                                 <p>Upsell new products or run offers via personalized email,
                                                                         sms &amp; pop-up campaigns.
                                                                 </p>
                                                         </a>
                                                 </li>
-                                                <li class="background-gray style-hover-green w-100">
-                                                        <a href="#investment" data-toggle="tab" class="d-block p-3">
+                                                <li id="tab9" ng-click="navigation2('tab9')" ng-class="{'active':tab9==true}" class="background-gray style-hover-green w-100">
+                                                        <a class="d-block p-3">
                                                                 <h6 class="mb-3 fontOpenSansBold">Get Up To 4X Return On Investment</h6>
                                                                 <p>Our team helps you track performance &amp; optimize campaigns
                                                                         so you get the best ROI
@@ -154,9 +154,9 @@
                                 </div>
                                 <div class="col-12 col-lg-7">
                                         <div class="tab-content">
-                                                <div class="tab-pane active" id="google"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
-                                                <div class="tab-pane" id="email"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
-                                                <div class="tab-pane" id="investment"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
+                                                <div ng-show="tab7"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
+                                                <div ng-show="tab8"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
+                                                <div ng-show="tab9"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
                                         </div>
                                 </div>
                         </div>
@@ -168,31 +168,31 @@
 
                         <div class="row no-gutters">
                                 <div class="col-12 col-lg-7">
-                                        <div class="tab-content">
-                                                <div class="tab-pane active" id="home"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
-                                                <div class="tab-pane" id="profile"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
-                                                <div class="tab-pane" id="messages"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
+                                        <div>
+                                                <div ng-show="tab4"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
+                                                <div ng-show="tab5"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
+                                                <div ng-show="tab6"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
                                         </div>
                                 </div>
                                 <div class="col-12 col-lg-5">
-                                        <ul class="nav nav-tabs text-left pl-3 list-unstyled">
-                                                <li class="background-gray style-hover-blue w-100 active">
-                                                        <a href="#partners" data-toggle="tab" class="d-block p-3">
+                                        <ul class="navigation text-left pl-3 list-unstyled">
+                                                <li id="tab4" ng-click="navigation1('tab4')" ng-class="{'active':tab4==true}" class="background-gray style-hover-blue w-100 active">
+                                                        <a class="d-block p-3">
                                                                 <h6 class="mb-3 fontOpenSansBold">Multiple Courier Partners</h6>
                                                                 <p>Ship to 15000+ pincodes via Fedex, Aramex, Delhivery, Dotzot
                                                                         &amp; Bluedart. Accept Cash on Delivery &amp; Card
                                                                         on Delivery.</p>
                                                         </a>
                                                 </li>
-                                                <li class="background-gray style-hover-blue w-100">
-                                                        <a href="#rates" data-toggle="tab" class="d-block p-3">
+                                                <li id="tab5" ng-click="navigation1('tab5')" ng-class="{'active':tab5==true}" class="background-gray style-hover-blue w-100">
+                                                        <a class="d-block p-3">
                                                                 <h6 class="mb-3 fontOpenSansBold">Best In Industry Rates</h6>
                                                                 <p>Send shipments economically with rates starting from INR
                                                                         31 / 500 gms without any minimum commitment</p>
                                                         </a>
                                                 </li>
-                                                <li class="background-gray style-hover-blue w-100">
-                                                        <a href="#schedule" data-toggle="tab" class="d-block p-3">
+                                                <li id="tab6" ng-click="navigation1('tab6')" ng-class="{'active':tab6==true}" class="background-gray style-hover-blue w-100">
+                                                        <a class="d-block p-3">
                                                                 <h6 class="mb-3 fontOpenSansBold">Easy To Schedule &amp; Manage</h6>
                                                                 <p>Compare shipping rates, schedule and track couriers and COD
                                                                         remittance with ease.
@@ -209,25 +209,25 @@
                         </h3>
                         <div class="row no-gutters">
                                 <div class="col-12 col-lg-5">
-                                        <ul class="nav nav-tabs text-left pr-3 list-unstyled">
-                                                <li class="background-gray style-hover-yellow w-100 active">
-                                                        <a href="#products" data-toggle="tab" class="d-block p-3">
+                                        <ul class="navigation text-left pr-3 list-unstyled">
+                                                <li id="tab1" ng-class="{'active':tab1==true}" class="background-gray style-hover-yellow w-100">
+                                                        <a ng-click="navigation('tab1')" class="d-block p-3">
                                                                 <h6 class="mb-3 fontOpenSansBold">List Your Products Everywhere</h6>
                                                                 <p>We help you register and upload products on Amazon, Flipkart,
                                                                         Snapdeal, PayTM, etc
                                                                 </p>
                                                         </a>
                                                 </li>
-                                                <li class="background-gray style-hover-yellow w-100">
-                                                        <a href="#orders" data-toggle="tab" class="d-block p-3">
+                                                <li id="tab2" ng-click="navigation('tab2')" class="background-gray style-hover-yellow w-100" ng-class="{'active':tab2==true}">
+                                                        <a class="d-block p-3">
                                                                 <h6 class="mb-3 fontOpenSansBold">Manage Orders &amp; Inventory Easily</h6>
                                                                 <p>Sync inventory across multiple marketplaces &amp; manage
                                                                         orders from a single dashboard
                                                                 </p>
                                                         </a>
                                                 </li>
-                                                <li class="background-gray style-hover-yellow w-100">
-                                                        <a href="#taxations" data-toggle="tab" class="d-block p-3">
+                                                <li id="tab3" ng-click="navigation('tab3')" ng-class="{'active':tab3==true}" class="background-gray style-hover-yellow w-100">
+                                                        <a class="d-block p-3">
                                                                 <h6 class="mb-3 fontOpenSansBold">Reconcile &amp; Manage Taxations</h6>
                                                                 <p>Audit payments, invoices and pending payouts. Check penalties
                                                                         and identify frauds
@@ -237,10 +237,10 @@
                                         </ul>
                                 </div>
                                 <div class="col-12 col-lg-7">
-                                        <div class="tab-content">
-                                                <div class="tab-pane active" id="products"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
-                                                <div class="tab-pane" id="orders"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
-                                                <div class="tab-pane" id="taxations"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
+                                        <div>
+                                                <div ng-show="tab1"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
+                                                <div ng-show="tab2"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
+                                                <div ng-show="tab3"><img src="img/ecommerce/ecommerce.png" class="img-fluid"></div>
                                         </div>
                                 </div>
                         </div>
@@ -253,155 +253,3 @@
                 </div>
         </div>
 </section>
-
-
-
-<!-- <div class="clearfix mhl ptl background-red">
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Code">
-                        </i>
-                        <i class="mls"> icon-Code</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Compare">
-                        </i>
-                        <i class="mls"> icon-Compare</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Courier">
-                        </i>
-                        <i class="mls"> icon-Courier</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Courier2">
-                        </i>
-                        <i class="mls"> icon-Courier2</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Customization">
-                        </i>
-                        <i class="mls"> icon-Customization</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Customization2">
-                        </i>
-                        <i class="mls"> icon-Customization2</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Email-sms">
-                        </i>
-                        <i class="mls"> icon-Email-sms</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Handover">
-                        </i>
-                        <i class="mls"> icon-Handover</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Logo">
-                        </i>
-                        <i class="mls"> icon-Logo</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-marketing">
-                        </i>
-                        <i class="mls"> icon-marketing</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Marketplace">
-                        </i>
-                        <i class="mls"> icon-Marketplace</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Mobile-Optimized-2">
-                        </i>
-                        <i class="mls"> icon-Mobile-Optimized-2</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Mobile-Optimized">
-                        </i>
-                        <i class="mls"> icon-Mobile-Optimized</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Order_nventory">
-                        </i>
-                        <i class="mls"> icon-Order_nventory</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Registration">
-                        </i>
-                        <i class="mls"> icon-Registration</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Schedule">
-                        </i>
-                        <i class="mls"> icon-Schedule</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Seo">
-                        </i>
-                        <i class="mls"> icon-Seo</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Social-media">
-                        </i>
-                        <i class="mls"> icon-Social-media</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Support">
-                        </i>
-                        <i class="mls"> icon-Support</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-Support2">
-                        </i>
-                        <i class="mls"> icon-Support2</i>
-                </div>
-        </div>
-        <div class="glyph fs1">
-                <div class="clearfix bshadow0 pbs">
-                        <i class="icon-web">
-                        </i>
-                        <i class="mls"> icon-web</i>
-                </div>
-        </div>
-</div> -->
