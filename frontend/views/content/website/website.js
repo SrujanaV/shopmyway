@@ -4,6 +4,19 @@ myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationSer
     $scope.navigation = NavigationService.getNavigation();
       TemplateService.backgoundChange = "";
       TemplateService.homefooterNone = "";
+      $scope.modalOpen = function () {
+        console.log("inside modal");
+        $scope.enquiry = $uibModal.open({
+            animation: true,
+            templateUrl: "views/modal/enquiry.html",
+            scope: $scope,
+            size: 'lg',
+           // backdropClass: 'back-drop'
+        });
+        $scope.closeModal = function () {
+            $scope.enquiry.close();
+        };
+    }
       //data for banner image and content
       $scope.banners = [{
         "image": "img/ecommerce/ecommerce_bg.png",

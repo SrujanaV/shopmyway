@@ -4,6 +4,19 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
     TemplateService.backgoundChange = "";
     TemplateService.homefooterNone = "";
     $scope.navigation = NavigationService.getNavigation();
+    $scope.modalOpen = function () {
+        console.log("inside modal");
+        $scope.enquiry = $uibModal.open({
+            animation: true,
+            templateUrl: "views/modal/enquiry.html",
+            scope: $scope,
+            size: 'lg',
+           // backdropClass: 'back-drop'
+        });
+        $scope.closeModal = function () {
+            $scope.enquiry.close();
+        };
+    }
     $scope.banners = [{
         "image": "img/ecommerce/ecommerce_bg.png",
         "title": "Introducing - Your Online <br> Business Partner!",
