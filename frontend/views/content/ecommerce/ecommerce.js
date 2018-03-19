@@ -1,11 +1,10 @@
 myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal) {
-    $scope.template = TemplateService.getHTML("../views/content/ecommerce/ecommerce.html");
-    TemplateService.title = "Couriers"; //This is the Title of the Website
+    $scope.template = TemplateService.getHTML("content/ecommerce/ecommerce.html");
+    TemplateService.title = "Ecommerce"; //This is the Title of the Website
     TemplateService.backgoundChange = "";
     TemplateService.homefooterNone = "";
     $scope.navigation = NavigationService.getNavigation();
     $scope.modalOpen = function () {
-        console.log("inside modal");
         $scope.enquiry = $uibModal.open({
             animation: true,
             templateUrl: "views/modal/enquiry.html",
@@ -18,7 +17,7 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
         };
     }
     $scope.tab1 = true;
-    $scope.navigation = function (tab) {
+    $scope.tabset = function (tab) {
         if (tab == 'tab1') {
             $scope.tab1 = true;
             $scope.tab2 = false;
@@ -34,8 +33,7 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
         }
     }
     $scope.tab4 = true;
-    $scope.navigation1 = function (tab) {
-        console.log(tab)
+    $scope.tabset1 = function (tab) {
         if (tab == 'tab4') {
             $scope.tab4 = true;
             $scope.tab5 = false;
@@ -51,8 +49,7 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
         }
     }
     $scope.tab7 = true;
-    $scope.navigation2 = function (tab) {
-        console.log(tab)
+    $scope.tabset2 = function (tab) {
         if (tab == 'tab7') {
             $scope.tab7 = true;
             $scope.tab8 = false;
@@ -68,8 +65,7 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
         }
     }
     $scope.tab10 = true;
-    $scope.navigation3 = function (tab) {
-        console.log(tab)
+    $scope.tabset3 = function (tab) {
         if (tab == 'tab10') {
             $scope.tab10 = true;
             $scope.tab11 = false;
