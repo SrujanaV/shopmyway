@@ -1,5 +1,5 @@
-myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http) {
-    $scope.template = TemplateService.getHTML("../views/content/couriers/couriers.html");
+myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http,$uibModal) {
+    $scope.template = TemplateService.getHTML("content/couriers/couriers.html");
     TemplateService.title = "Couriers"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
     TemplateService.backgoundChange = "";
@@ -60,20 +60,101 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
         "period": "Month",
         "minper": "Minimum Period 12 months",
         "otp": "Rs 5,99,999 for One Time Payment*",
-        "services": ["Ecommerce Website", "Mobile App Android", "Design service (Banners)", "Couriers Solution", "Advertisement on FB / Google", "Email & SMS Marketing", "Social Media Management", "Marketplace Advertisement", "Personal Account Manager"]
+        "services": [{
+            "id": "s1",
+            "name": "Ecommerce Website"
+        }, {
+            "id": "s2",
+            "name": "Mobile App Android"
+        }, {
+            "id": "s3",
+            "name": "Design service (Banners)"
+        }, {
+            "id": "s4",
+            "name": "Couriers Solution"
+        }, {
+            "id": "s5",
+            "name": "Advertisement on FB / Google"
+        }, {
+            "id": "s6",
+            "name": "Email & SMS Marketing"
+        }, {
+            "id": "s7",
+            "name": "Social Media Management"
+        }, {
+            "id": "s8",
+            "name": "Marketplace Advertisement"
+        }, {
+            "id": "s9",
+            "name": "Personal Account Manager"
+        }]
     }, {
         "name": "Professional",
         "price": "₹ 75,000",
         "period": "Month",
         "minper": "Minimum Period 12 months",
         "otp": "Rs 8,99,999 for One Time Payment*",
-        "services": ["Ecommerce Website", "Mobile App Android + iOS", "Design service (Banners)", "Couriers Solution", "Advertisement on FB / Google", "Email & SMS Marketing", "Social Media Management", "Marketplace Advertisement", "Personal Account Manager"]
+        "services": [{
+            "id": "p1",
+            "name": "Ecommerce Website"
+        }, {
+            "id": "p2",
+            "name": "Mobile App Android"
+        }, {
+            "id": "p3",
+            "name": "Design service (Banners)"
+        }, {
+            "id": "p4",
+            "name": "Couriers Solution"
+        }, {
+            "id": "p5",
+            "name": "Advertisement on FB / Google"
+        }, {
+            "id": "p6",
+            "name": "Email & SMS Marketing"
+        }, {
+            "id": "p7",
+            "name": "Social Media Management"
+        }, {
+            "id": "p8",
+            "name": "Marketplace Advertisement"
+        }, {
+            "id": "p9",
+            "name": "Personal Account Manager"
+        }]
     }, {
         "name": "Premium",
         "price": "₹ 1,00,000",
         "period": "Month",
         "minper": "Minimum Period 12 months",
         "otp": "Rs 9,99,999 for One Time Payment*",
-        "services": ["Ecommerce Website", "Mobile App Android + iOS", "Design service (Banners)", "Couriers Solution", "Advertisement on FB / Google", "Email & SMS Marketing", "Social Media Management", "Marketplace Advertisement", "Personal Account Manager"]
+        "services": [{
+            "id": "pr1",
+            "name": "Ecommerce Website"
+        }, {
+            "id": "pr2",
+            "name": "Mobile App Android"
+        }, {
+            "id": "pr3",
+            "name": "Design service (Banners)"
+        }, {
+            "id": "pr4",
+            "name": "Couriers Solution"
+        }, {
+            "id": "pr5",
+            "name": "Advertisement on FB / Google"
+        }, {
+            "id": "pr6",
+            "name": "Email & SMS Marketing"
+        }, {
+            "id": "pr7",
+            "name": "Social Media Management"
+        }, {
+            "id": "pr8",
+            "name": "Marketplace Advertisement"
+        }, {
+            "id": "pr9",
+            "name": "Personal Account Manager"
+        }]
     }]
 })

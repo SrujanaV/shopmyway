@@ -8,7 +8,7 @@ myApp.factory('NavigationService', function () {
     }, {
         name: "Products",
         classis: "active",
-        anchor: "ecommerce",
+        // anchor: "ecommerce",
         subnav: [{
             name: "Complete Ecommerce Solution",
             classis: "active",

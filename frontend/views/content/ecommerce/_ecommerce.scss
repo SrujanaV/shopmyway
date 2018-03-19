@@ -3,15 +3,15 @@
         font-family: NunitoSansRegular;
     }
     .red-background-div {
-        .nav-tabs>.style-hover-red.active {
+        .maindiv>.style-hover-red.active {
             @extend .border-red;
             &:before {
                 display: block
             }
         }
-        .nav-tabs>.style-hover-red.active>a,
-        .nav-tabs>li.active>a:hover,
-        .nav-tabs>li.active>a:focus {
+        .maindiv>.style-hover-red.active>a,
+        .maindiv>li.active>a:hover,
+        .maindiv>li.active>a:focus {
             @extend .background-red;
             @extend .color-white;
         }
@@ -34,15 +34,15 @@
         }
     }
     .green-background-div {
-        .nav-tabs>.style-hover-green.active {
+        .maindiv>.style-hover-green.active {
             @extend .border-green;
             &:before {
                 display: block
             }
         }
-        .nav-tabs>.style-hover-green.active>a,
-        .nav-tabs>li.active>a:hover,
-        .nav-tabs>li.active>a:focus {
+        .maindiv>.style-hover-green.active>a,
+        .maindiv>li.active>a:hover,
+        .maindiv>li.active>a:focus {
             @extend .background-green;
             @extend .color-white;
         }
@@ -65,17 +65,18 @@
         }
     }
     .blue-background-div {
-        .nav-tabs>.style-hover-blue.active {
+        .maindiv>.style-hover-blue.active {
             @extend .border-blue;
             &:before {
                 display: block
             }
         }
-        .nav-tabs>.style-hover-blue.active>a,
-        .nav-tabs>li.active>a:hover,
-        .nav-tabs>li.active>a:focus {
+        .maindiv>.style-hover-blue.active>a,
+        .maindiv>li.active>a:hover,
+        .maindiv>li.active>a:focus {
             @extend .background-blue;
             @extend .color-white;
+            padding: 50px;
         }
         .style-hover-blue {
             position: relative;
@@ -96,15 +97,15 @@
         }
     }
     .yellow-background-div {
-        .nav-tabs>.style-hover-yellow.active {
+        .maindiv>.style-hover-yellow.active {
             @extend .border-yellow;
             &:before {
                 display: block
             }
         }
-        .nav-tabs>.style-hover-yellow.active>a,
-        .nav-tabs>li.active>a:hover,
-        .nav-tabs>li.active>a:focus {
+        .maindiv>.style-hover-yellow.active>a,
+        .maindiv>li.active>a:hover,
+        .maindiv>li.active>a:focus {
             @extend .background-yellow;
             @extend .color-white;
         }
