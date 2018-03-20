@@ -4,8 +4,9 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
     $scope.navigation = NavigationService.getNavigation();
     TemplateService.backgoundChange = "";
     TemplateService.homefooterNone = "";
+
+    //enquiry form modal
     $scope.modalOpen = function () {
-        console.log("inside modal");
         $scope.enquiry = $uibModal.open({
             animation: true,
             templateUrl: "views/modal/enquiry.html",
@@ -16,6 +17,27 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
         $scope.closeModal = function () {
             $scope.enquiry.close();
         };
+    }
+
+    //data is saved and enquiry modal is closed and thank you modal is shown with timeout
+    $scope.enquirySubmit = function (enquiry) {
+        NavigationService.saveEnquiry(enquiry, function (data) {
+
+            if (data.data.value) {
+                $scope.enquiry.close();
+                $scope.thankyou = $uibModal.open({
+                    animation: true,
+                    templateUrl: 'views/modal/thanks.html',
+                    scope: $scope,
+                    size: 'sm'
+                });
+                $timeout(function () {
+                    $scope.thankyou.close();
+                }, 1500);
+
+            }
+
+        })
     }
     //data for banner image and content   
     $scope.banners = [{

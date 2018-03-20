@@ -4,6 +4,8 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
     TemplateService.backgoundChange = "";
     TemplateService.homefooterNone = "";
     $scope.navigation = NavigationService.getNavigation();
+
+    //enquiry form modal
     $scope.modalOpen = function () {
         $scope.enquiry = $uibModal.open({
             animation: true,
@@ -15,6 +17,27 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
         $scope.closeModal = function () {
             $scope.enquiry.close();
         };
+    }
+
+    //data is saved and enquiry modal is closed and thank you modal is shown with timeout
+    $scope.enquirySubmit = function (enquiry) {
+        NavigationService.saveEnquiry(enquiry, function (data) {
+
+            if (data.data.value) {
+                $scope.enquiry.close();
+                $scope.thankyou = $uibModal.open({
+                    animation: true,
+                    templateUrl: 'views/modal/thanks.html',
+                    scope: $scope,
+                    size: 'sm'
+                });
+                $timeout(function () {
+                    $scope.thankyou.close();
+                }, 1500);
+
+            }
+
+        })
     }
     $scope.tab1 = true;
     $scope.tabset = function (tab) {
@@ -80,7 +103,7 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
             $scope.tab12 = true;
         }
     }
-    
+
     $scope.banners = [{
         "image": "img/ecommerce/ecommerce_bg.png",
         "title": "Introducing - Your Online <br> Business Partner!",

@@ -1,11 +1,10 @@
-myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http,$uibModal) {
+myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal) {
     $scope.template = TemplateService.getHTML("content/website/website.html");
     TemplateService.title = "Website"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
     TemplateService.backgoundChange = "";
     TemplateService.homefooterNone = "";
     $scope.modalOpen = function () {
-        console.log("inside modal");
         $scope.enquiry = $uibModal.open({
             animation: true,
             templateUrl: "views/modal/enquiry.html",
@@ -16,6 +15,26 @@ myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationSer
         $scope.closeModal = function () {
             $scope.enquiry.close();
         };
+    }
+    //data is saved and enquiry modal is closed and thank you modal is shown with timeout
+    $scope.enquirySubmit = function (enquiry) {
+        NavigationService.saveEnquiry(enquiry, function (data) {
+
+            if (data.data.value) {
+                $scope.enquiry.close();
+                $scope.thankyou = $uibModal.open({
+                    animation: true,
+                    templateUrl: 'views/modal/thanks.html',
+                    scope: $scope,
+                    size: 'sm'
+                });
+                $timeout(function () {
+                    $scope.thankyou.close();
+                }, 1500);
+
+            }
+
+        })
     }
     //data for banner image and content
     $scope.banners = [{

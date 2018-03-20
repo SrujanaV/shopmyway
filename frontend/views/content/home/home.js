@@ -3,21 +3,40 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
     TemplateService.title = "Home"; //This is the Title of the Website
     TemplateService.backgoundChange = "backgoundChange";
     TemplateService.homefooterNone = "homefooterNone";
-    console.log();
     $scope.navigation = NavigationService.getNavigation();
+
+    //enquiry form modal
     $scope.modalOpen = function () {
-        console.log("inside modal");
         $scope.enquiry = $uibModal.open({
             animation: true,
             templateUrl: "views/modal/enquiry.html",
             scope: $scope,
             size: 'lg',
-           // backdropClass: 'back-drop'
+            // backdropClass: 'back-drop'
         });
         $scope.closeModal = function () {
             $scope.enquiry.close();
         };
     }
-        //hide upper footer section
-        // document.getElementById('upperFooter').style.display = 'none';
+
+    //data is saved and enquiry modal is closed and thank you modal is shown with timeout
+    $scope.enquirySubmit = function (enquiry) {
+        NavigationService.saveEnquiry(enquiry, function (data) {
+
+            if (data.data.value) {
+                $scope.enquiry.close();
+                $scope.thankyou = $uibModal.open({
+                    animation: true,
+                    templateUrl: 'views/modal/thanks.html',
+                    scope: $scope,
+                    size: 'sm'
+                });
+                $timeout(function () {
+                    $scope.thankyou.close();
+                }, 1500);
+
+            }
+
+        })
+    }
 })

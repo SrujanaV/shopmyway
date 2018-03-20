@@ -1,4 +1,4 @@
-myApp.controller('headerCtrl', function ($scope, TemplateService, $uibModal) {
+myApp.controller('headerCtrl', function ($scope, TemplateService, $uibModal, NavigationService, $timeout) {
     $scope.template = TemplateService;
     $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
@@ -26,20 +26,43 @@ myApp.controller('headerCtrl', function ($scope, TemplateService, $uibModal) {
             templateUrl: "views/modal/enquiry.html",
             scope: $scope,
             size: 'lg',
-           // backdropClass: 'back-drop'
+            // backdropClass: 'back-drop'
         });
         $scope.closeModal = function () {
             $scope.enquiry.close();
         };
     }
 
-     //for header scroll scss change
-     $(window).scroll(function () {
+    $scope.enquirySubmit = function (enquiry) {
+        console.log(enquiry);
+        NavigationService.saveEnquiry(enquiry, function (data) {
+            console.log("in franchise", data);
+
+            if (data.data.value) {
+                $scope.enquiry.close();
+                $scope.thankyou = $uibModal.open({
+                    animation: true,
+                    templateUrl: 'views/modal/thanks.html',
+                    scope: $scope,
+                    size: 'sm'
+                });
+                $timeout(function () {
+                    console.log("modal close");
+                    $scope.thankyou.close();
+                }, 1500);
+
+            }
+
+        })
+    }
+
+    //for header scroll scss change
+    $(window).scroll(function () {
         if ($(document).scrollTop() > 100) {
-             $(".navbar").addClass("background-black");
+            $(".navbar").addClass("background-black");
 
         } else {
-              $(".navbar").removeClass("background-black");
+            $(".navbar").removeClass("background-black");
         }
     });
 });
