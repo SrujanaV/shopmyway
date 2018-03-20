@@ -11,7 +11,7 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
         if ($.jStorage.get("accessToken")) {
 
         } else {
-            $state.go("login");
+            // $state.go("login");
         }
     })
 
@@ -602,17 +602,17 @@ myApp.controller('DashboardCtrl', function ($scope, TemplateService, NavigationS
         $scope.template = TemplateService;
         $scope.currentHost = window.location.origin;
         if ($stateParams.id) {
-            if ($stateParams.id === "AccessNotAvailable") {
-                toastr.error("You do not have access for the Backend.");
-            } else {
-                NavigationService.parseAccessToken($stateParams.id, function () {
-                    NavigationService.profile(function () {
-                        $state.go("dashboard");
-                    }, function () {
-                        $state.go("login");
-                    });
-                });
-            }
+            // if ($stateParams.id === "AccessNotAvailable") {
+            //     toastr.error("You do not have access for the Backend.");
+            // } else {
+            //     NavigationService.parseAccessToken($stateParams.id, function () {
+            //         NavigationService.profile(function () {
+            //             $state.go("dashboard");
+            //         }, function () {
+            //             $state.go("login");
+            //         });
+            //     });
+            // }
         } else {
             NavigationService.removeAccessToken();
         }

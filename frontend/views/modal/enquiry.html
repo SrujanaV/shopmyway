@@ -4,12 +4,12 @@
                         <div class="home-form py-3">
                                 <div class="text-center">
                                         <h4 class="home-title">Arrange Callback</h4>
-                                        <p>If you have any Enquiry kindly take a moment to fill up the form, Our representative will
-                                                contact you shortly
+                                        <p>If you have any Enquiry kindly take a moment to fill up the form, Our representative
+                                                will contact you shortly
                                         </p>
                                 </div>
                                 <div class="order-form">
-                                        <form name="enquiry">
+                                        <form ng-submit="enquirySubmit(formdata)" name="enquiry">
                                                 <div class="row my-3">
                                                         <div class="col-12 col-md-6">
                                                                 <label for="name">Your Name</label>
@@ -23,7 +23,7 @@
                                                 <div class="row my-3">
                                                         <div class="col-12 col-md-6">
                                                                 <label for="phone">Phone Number</label>
-                                                                <input type="text" id="phone" class="form-control" placeholder="Phone Number" ng-model="formdata.phNo" required>
+                                                                <input type="number" id="phone" class="form-control" placeholder="Phone Number" ng-model="formdata.phnNo" required>
                                                         </div>
                                                         <div class="col-12 col-md-6">
                                                                 <label for="city">City</label>
@@ -33,11 +33,12 @@
                                                 <div class="row my-3">
                                                         <div class="col-12">
                                                                 <label for="enquire">Enquiry</label>
-                                                                <textarea class="form-control" rows="7" id="enquire" placeholder="Enquiry" ng-model="formdata.message" ng-model="formdata.enquiry" required></textarea>
+                                                                <textarea class="form-control" rows="7" id="enquire" placeholder="Enquiry" ng-model="formdata.enquiry"
+                                                                        required></textarea>
                                                         </div>
                                                 </div>
                                                 <div class="text-center my-2">
-                                                        <button type="submit" class="btn large-button m-2" role="button" ng-click="enquirySubmit(formdata)">Submit</button>
+                                                        <input type="submit" class="btn large-button m-2" role="button">
                                                         <button type="button" class="btn large-button m-2" role="button" ng-click="closeModal()">Cancel</button>
                                                 </div>
                                         </form>

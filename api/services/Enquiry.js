@@ -7,7 +7,7 @@ var schema = new Schema({
         type: String,
         validate: validators.isEmail(),
     },
-    phnNo: String,
+    phnNo: Number,
     city: String,
     enquiry: String
 });
