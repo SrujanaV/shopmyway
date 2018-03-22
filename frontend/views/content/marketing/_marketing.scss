@@ -2,12 +2,19 @@
     .background-color {
         background-color: $brand-success;
     }
-    .text-color{
+    .text-color {
         color: $brand-success;
     }
-    .solution{
-        .small-button{
+    .solution {
+        .small-button {
             display: none;
+        }
+    }
+    .small-button {
+        &:hover {
+            color: $brand-success !important;
+            background-color: white;
+            border: solid 1px $brand-success;
         }
     }
 }
