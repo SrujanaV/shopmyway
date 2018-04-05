@@ -60,7 +60,13 @@
 .set-up-knowmore {
     font-size: .75rem;
 }
-
+.set-up-inner{
+    h6{
+            height: 30px;
+    align-items: center;
+    display: inline-flex;
+    }
+}
 .qoute p {
     position: relative;
     &:after {

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 317.255 178.001" style="enable-background:new 0 0 317.255 178.001;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#CECECF;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#231F20;}
+	.st3{fill:#CCCCCC;}
+	.st4{fill:#B7B7B7;}
+	.st5{fill:#F3EFF0;}
+	.st6{fill:#333333;}
+	.st7{fill:none;stroke:#0E4164;stroke-width:3;stroke-miterlimit:10;}
+	.st8{fill:#D70B8C;}
+	.st9{fill:#00BFE8;}
+	.st10{fill:#093F62;}
+	.st11{font-family:'MyriadPro-Regular';}
+	.st12{font-size:12px;}
+	.st13{font-size:12px;glyph-orientation-vertical:1;writing-mode:tb;}
+</style>
+<g id="XMLID_21_">
+	<path id="XMLID_28_" class="st0" d="M158.627,168.444H0v0c0,3.516,3.923,6.522,9.297,7.124l8.38,0.939
+		c8.869,0.994,17.855,1.494,26.858,1.494h114.092h114.092c9.003,0,17.988-0.5,26.858-1.494l8.38-0.939
+		c5.374-0.602,9.297-3.608,9.297-7.124v0H158.627z"/>
+	<path id="XMLID_27_" class="st1" d="M18.424,168.963V14.829C18.424,6.652,25.076,0,33.253,0h250.748
+		c8.176,0,14.829,6.652,14.829,14.829v154.134H18.424z"/>
+	<path id="XMLID_26_" class="st2" d="M282.533,1.797H34.722c-8.008,0-14.5,6.492-14.5,14.5v150.868h276.812V16.297
+		C297.033,8.289,290.541,1.797,282.533,1.797z"/>
+	<rect id="XMLID_25_" x="31.006" y="16.987" class="st3" width="255.242" height="138.045"/>
+	<path id="XMLID_24_" class="st4" d="M158.627,168.444H0v0c0,3.516,3.923,6.522,9.297,7.124l8.38,0.939
+		c8.869,0.994,17.855,1.494,26.858,1.494h114.092h114.092c9.003,0,17.988-0.5,26.858-1.494l8.38-0.939
+		c5.374-0.602,9.297-3.608,9.297-7.124v0H158.627z"/>
+	<path id="XMLID_22_" class="st1" d="M2.186,172.725h312.882c1.377-1.207,2.186-2.69,2.186-4.281H158.627H0
+		C0,170.035,0.809,171.518,2.186,172.725z"/>
+</g>
+<g>
+	<rect x="38.988" y="28.807" class="st5" width="239.812" height="124.751"/>
+	<rect x="38.988" y="16.733" class="st6" width="239.812" height="12.074"/>
+	<line class="st7" x1="50.051" y1="90.346" x2="104.613" y2="90.346"/>
+	<path class="st7" d="M50.051,97.591h18.56H50.051z"/>
+	<path class="st7" d="M67.746,97.591H83.23H67.746z"/>
+	<path class="st7" d="M96.502,97.591h8.111H96.502z"/>
+	<path class="st7" d="M85.442,97.591h8.111H85.442z"/>
+	<path class="st7" d="M50.051,104.836h54.562H50.051z"/>
+	<line class="st7" x1="114.313" y1="90.346" x2="167.662" y2="90.346"/>
+	<path class="st7" d="M114.313,97.591h15.14H114.313z"/>
+	<path class="st7" d="M131.615,97.591h25.233H131.615z"/>
+	<path class="st7" d="M159.011,97.591h7.93H159.011z"/>
+	<path class="st7" d="M114.313,104.836h53.35H114.313z"/>
+	<line class="st7" x1="177.362" y1="90.346" x2="230.712" y2="90.346"/>
+	<path class="st7" d="M177.362,97.591h15.14H177.362z"/>
+	<path class="st7" d="M194.665,97.591h15.14H194.665z"/>
+	<path class="st7" d="M212.688,97.591h18.024H212.688z"/>
+	<path class="st7" d="M177.362,104.836h53.35H177.362z"/>
+	<rect x="50.777" y="38.467" class="st6" width="216.557" height="9.66"/>
+	<rect x="92.199" y="38.467" class="st8" width="36.335" height="9.66"/>
+	<rect x="50.533" y="55.034" class="st9" width="181.371" height="22.522"/>
+	<rect x="240.096" y="53.94" class="st9" width="26.276" height="90.09"/>
+	<g>
+		<rect x="50.638" y="112.131" class="st3" width="53.906" height="36.8"/>
+		<rect x="114.127" y="112.131" class="st3" width="53.906" height="36.8"/>
+		<rect x="176.419" y="112.131" class="st3" width="53.906" height="36.8"/>
+	</g>
+	<text transform="matrix(1 0 0 1 118.658 71.1289)" class="st10 st11 st12">Your brand</text>
+	<text transform="matrix(1 0 0 1 254.6577 72.4616)" class="st10 st11 st13">Your brand</text>
+</g>
+</svg>
