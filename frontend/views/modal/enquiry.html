@@ -3,10 +3,11 @@
                 <section class="px-5">
                         <div class="home-form py-3">
                                 <div class="text-center">
-                                        <h4 class="home-title">Arrange Callback</h4>
-                                        <p>If you have any Enquiry kindly take a moment to fill up the form, Our representative
+                                        <h4 class="home-title">Decided to grow tour business!
+                                                <br>Let our ecommerce experts call you to get started</h4>
+                                        <!-- <p>If you have any Enquiry kindly take a moment to fill up the form, Our representative
                                                 will contact you shortly
-                                        </p>
+                                        </p> -->
                                 </div>
                                 <div class="order-form">
                                         <form ng-submit="enquirySubmit(formdata)" name="enquiry">
@@ -31,15 +32,21 @@
                                                         </div>
                                                 </div>
                                                 <div class="row my-3">
+                                                        <div class="col-12 col-md-6">
+                                                                <label for="company">Organization Name</label>
+                                                                <input type="text" id="company" class="form-control" placeholder="Organization Name" ng-model="formdata.company" required>
+                                                        </div>
+
+                                                </div>
+                                                <div class="row my-3">
                                                         <div class="col-12">
-                                                                <label for="enquire">Enquiry</label>
-                                                                <textarea class="form-control" rows="7" id="enquire" placeholder="Enquiry" ng-model="formdata.enquiry"
-                                                                        required></textarea>
+                                                                <label for="enquire">Comment</label>
+                                                                <textarea class="form-control" rows="7" id="enquire" placeholder="Comment" ng-model="formdata.enquiry" required></textarea>
                                                         </div>
                                                 </div>
                                                 <div class="text-center my-2">
-                                                        <input type="submit" class="btn large-button m-2" role="button">
-                                                        <button type="button" class="btn large-button m-2" role="button" ng-click="closeModal()">Cancel</button>
+                                                        <input type="submit" class="btn banner-button m-2" role="button">
+                                                        <button type="button" class="btn banner-button m-2" role="button" ng-click="closeModal()">Cancel</button>
                                                 </div>
                                         </form>
                                 </div>
