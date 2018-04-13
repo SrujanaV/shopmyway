@@ -11412,6 +11412,9 @@ img.doneLoading {
 nav li:hover .dropdown-menu {
   display: block; }
 
+.dropdown-menu {
+  top: 95%; }
+
 #map img {
   opacity: 1; }
 
@@ -11730,10 +11733,6 @@ label:hover:before {
     background: black !important;
     color: #cc0099 !important; }
 
-.submenu-class:first-child {
-  padding: 10px 0;
-  border-bottom: 1px solid #00bfe8 !important; }
-
 .backgoundChange {
   background-color: white !important; }
 
@@ -11752,6 +11751,8 @@ footer .footer-bg {
 footer .footer-menu {
   font-size: 15px;
   font-family: Nunito; }
+  footer .footer-menu .form-control {
+    background: gainsboro; }
 
 footer .footer-band {
   background: #333333;
@@ -11791,6 +11792,31 @@ footer .footer-desc p {
   background: url("../img/home/bg.png");
   background-position: center center;
   background-repeat: no-repeat; }
+
+.price-main {
+  padding-top: 70px; }
+  .price-main table {
+    font-family: OpenSansRegular; }
+    .price-main table thead {
+      color: white; }
+    .price-main table td {
+      text-align: center; }
+
+.price-footer {
+  background: rgba(128, 128, 128, 0.09); }
+  .price-footer ul li {
+    font-family: NunitoSansRegular;
+    padding-bottom: 1em; }
+
+.price-foot {
+  font-family: OpenSansRegular; }
+
+.price-banner {
+  background: url("../img/price/bg-play.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 5em 0;
+  color: #444; }
 
 @font-face {
   font-family: 'shopmyway';
@@ -11955,6 +11981,17 @@ i {
     width: 18%;
     border-bottom: 3px solid #00bfe8; }
 
+.test-img img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border: 2px solid #cc0099;
+  border-radius: 50px; }
+
+.complete-after h4:after {
+  left: 31%;
+  width: 38%; }
+
 .advantage-section {
   background: url("../img/home/bg2.jpg");
   background-position: center center;
@@ -11963,7 +12000,28 @@ i {
 .service-type img {
   opacity: 0.2; }
 
+.solution-text {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  width: 8em;
+  color: white;
+  font-family: OpenSansBold; }
+
 .jigsaw1:after {
+  content: "";
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  bottom: -0.8em;
+  z-index: 3;
+  right: 6em;
+  background: #00bfe8;
+  border-radius: 4em; }
+
+.jigsaw1:before {
   content: "";
   width: 2em;
   height: 2em;
@@ -11979,9 +12037,9 @@ i {
   width: 2em;
   height: 2em;
   position: absolute;
-  bottom: -0.8em;
+  bottom: 3.2em;
   z-index: 3;
-  right: 6em;
+  right: -1em;
   background: #00bfe8;
   border-radius: 4em; }
 
@@ -12012,9 +12070,31 @@ i {
   width: 2em;
   height: 2em;
   position: absolute;
-  bottom: -0.8em;
+  bottom: 3.2em;
   z-index: 3;
-  right: 6em;
+  right: -1em;
+  background: #00bfe8;
+  border-radius: 4em; }
+
+.jigsaw6:after {
+  content: "";
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  bottom: 3.2em;
+  z-index: 3;
+  right: -1em;
+  background: #00bfe8;
+  border-radius: 4em; }
+
+.jigsaw7:after {
+  content: "";
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  bottom: 3.2em;
+  z-index: 3;
+  right: -1em;
   background: #00bfe8;
   border-radius: 4em; }
 

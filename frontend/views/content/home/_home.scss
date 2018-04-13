@@ -28,6 +28,23 @@
     }
 }
 
+.test-img {
+    img {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        border: 2px solid $pink;
+        border-radius: 50px;
+    }
+}
+
+.complete-after h4 {
+    &:after {
+        left: 31%;
+        width: 38%;
+    }
+}
+
 .advantage-section {
     background: url('../img/home/bg2.jpg');
     background-position: center center;
@@ -40,16 +57,39 @@
     }
 }
 
-.jigsaw1:after {
-    content: "";
-    width: 2em;
-    height: 2em;
-    position: absolute;
-    bottom: -0.8em;
-    z-index: 3;
-    right: 6em;
-    background: #00bfe8;
-    border-radius: 4em;
+.solution-text {
+    transform: translate(-50%, -50%);
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    width: 8em;
+    color: white;
+    font-family: OpenSansBold;
+}
+
+.jigsaw1 {
+    &:after {
+        content: "";
+        width: 2em;
+        height: 2em;
+        position: absolute;
+        bottom: -0.8em;
+        z-index: 3;
+        right: 6em;
+        background: #00bfe8;
+        border-radius: 4em;
+    }
+    &:before {
+        content: "";
+        width: 2em;
+        height: 2em;
+        position: absolute;
+        bottom: -0.8em;
+        z-index: 3;
+        right: 6em;
+        background: #00bfe8;
+        border-radius: 4em;
+    }
 }
 
 .jigsaw2:after {
@@ -57,9 +97,9 @@
     width: 2em;
     height: 2em;
     position: absolute;
-    bottom: -0.8em;
+    bottom: 3.2em;
     z-index: 3;
-    right: 6em;
+    right: -1em;
     background: #00bfe8;
     border-radius: 4em;
 }
@@ -93,9 +133,33 @@
     width: 2em;
     height: 2em;
     position: absolute;
-    bottom: -0.8em;
+    bottom: 3.2em;
     z-index: 3;
-    right: 6em;
+    right: -1em;
+    background: #00bfe8;
+    border-radius: 4em;
+}
+
+.jigsaw6:after {
+    content: "";
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    bottom: 3.2em;
+    z-index: 3;
+    right: -1em;
+    background: #00bfe8;
+    border-radius: 4em;
+}
+
+.jigsaw7:after {
+    content: "";
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    bottom: 3.2em;
+    z-index: 3;
+    right: -1em;
     background: #00bfe8;
     border-radius: 4em;
 }

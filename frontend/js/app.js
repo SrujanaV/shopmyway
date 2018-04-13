@@ -59,6 +59,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/register",
             templateUrl: tempateURL,
             controller: 'RegisterCtrl'
+        })
+        .state('price', {
+            url: "/price",
+            templateUrl: tempateURL,
+            controller: 'PriceCtrl'
         });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);

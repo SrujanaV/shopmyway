@@ -398,6 +398,10 @@ nav li:hover .dropdown-menu {
     display: block;
 }
 
+.dropdown-menu {
+    top: 95%;
+}
+
 #map img {
     opacity: 1;
 }
@@ -786,11 +790,10 @@ label:hover:before {
     }
 }
 
-.submenu-class:first-child {
-    padding: 10px 0;
-    border-bottom: 1px solid $brand-primary !important;
-}
-
+// .submenu-class:first-child {
+//     padding: 10px 0;
+//     border-bottom: 1px solid $brand-primary !important;
+// }
 .backgoundChange {
     background-color: white !important;
 }
@@ -815,6 +818,9 @@ footer {
     .footer-menu {
         font-size: 15px;
         font-family: Nunito;
+        .form-control {
+            background: rgb(220, 220, 220);
+        }
     }
     .footer-band {
         background: #333333;
@@ -872,4 +878,40 @@ footer {
     background: url('../img/home/bg.png');
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+//scss for price page
+.price-main {
+    padding-top: 70px;
+    table {
+        font-family: OpenSansRegular;
+        thead {
+            color: white;
+        }
+        td {
+            text-align: center;
+        }
+    }
+}
+
+.price-footer {
+    background: rgba(128, 128, 128, 0.09);
+    ul {
+        li {
+            font-family: NunitoSansRegular;
+            padding-bottom: 1em;
+        }
+    }
+}
+
+.price-foot {
+    font-family: OpenSansRegular;
+}
+
+.price-banner {
+    background: url('../img/price/bg-play.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 5em 0;
+    color: #444;
 }
