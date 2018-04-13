@@ -5,7 +5,9 @@
             <div class="align-content">
                 <h1 class="fontOpenSansBold" ng-bind-html="banner.title"></h1>
                 <h6 class="fontOpenSansLight" ng-bind-html="banner.subtitle"></h6>
-                <div class="text-center pt-3" ng-click="modalOpen()"><a class="btn banner-button" role="button">{{banner.btntext}}</a></div>
+                <div class="text-center pt-3" ng-click="modalOpen()">
+                    <a class="btn banner-button" role="button">{{banner.btntext}}</a>
+                </div>
             </div>
         </div>
         <div class="position-absolute banner-image">
@@ -45,7 +47,7 @@
                 <h3 class="color-yellow">Already A Pro Seller?</h3>
                 <p>Recharge Package for Marketplace Manager Tool</p>
             </div>
-            <pricingbox class="marketplace-pricing"></pricingbox>
+            <!-- <pricingbox class="marketplace-pricing"></pricingbox> -->
         </div>
     </div>
 </section>

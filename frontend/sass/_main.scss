@@ -1,7 +1,6 @@
 /* Bootstrap Variables Goes Here */
 
 // Colors
-//
 // Grayscale and brand colors for use across Bootstrap.
 // Start with assigning color names to specific hex values.
 $white: #fff !default;
@@ -33,7 +32,6 @@ $brand-font:$gray-font !default;
 // $brand-warning: $orange !default;
 // $brand-inverse: $gray-dark !default;
 // Options
-//
 // Quickly modify global styling by enabling or disabling optional features.
 $enable-rounded: true !default;
 $enable-shadows: false !default;
@@ -321,6 +319,10 @@ span {
     font-family: NunitoLightItalic;
 }
 
+.NunitoBold {
+    font-family: NunitoBold;
+}
+
 //spacing for all pages
 .main-section-padding {
     @include padding(0rem 5rem);
@@ -484,9 +486,9 @@ header {
 }
 
 .header-button {
-    background: $white;
+    background: $brand-primary;
     border: solid 1px transparent;
-    color: $black !important;
+    color: $white !important;
     border-radius: 25px !important;
     @include padding(0.5rem 1rem !important);
     &:hover {
@@ -701,7 +703,7 @@ label:hover:before {
             margin-bottom: 4px;
             display: block;
             border-radius: 5px;
-            background-color: $white;
+            background-color: $black;
             @include transition (all ease 300ms);
             &.third-line {
                 width: 10px;
@@ -751,6 +753,7 @@ label:hover:before {
 
 .navbar {
     background: transparent;
+    padding: 0px;
     .banner-button {
         background: white;
         color: black !important;
@@ -789,7 +792,7 @@ label:hover:before {
 }
 
 .backgoundChange {
-    background-color: $black !important;
+    background-color: white !important;
 }
 
 //scss for banner position absolute image

@@ -1,16 +1,103 @@
 .home-bg {
-    background: url('../img/home/bg.png');
+    background: url('../img/home/home-bg.jpg');
     background-position: center center;
-    background-size: cover;
-    min-height: 100vh;
-    padding-top: 120px;
+    background-size: cover; // min-height: 100vh;
+    height: 70vh;
 }
 
-.home-bg-2 {
-    background: url('../img/home/bg-2.png');
+.mt-10 {
+    margin-top: 10em
+}
+
+.home-title h4 {
+    @extend .fontOpenSansBold;
+    color: $blue;
+    text-transform: uppercase;
+    position: relative;
+    span {
+        color: $pink !important;
+        font-size: 1.5rem;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 41%;
+        width: 18%;
+        border-bottom: 3px solid #00bfe8;
+    }
+}
+
+.advantage-section {
+    background: url('../img/home/bg2.jpg');
     background-position: center center;
     background-size: cover;
-    min-height: 100vh;
+}
+
+.service-type {
+    img {
+        opacity: 0.2;
+    }
+}
+
+.jigsaw1:after {
+    content: "";
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    bottom: -0.8em;
+    z-index: 3;
+    right: 6em;
+    background: #00bfe8;
+    border-radius: 4em;
+}
+
+.jigsaw2:after {
+    content: "";
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    bottom: -0.8em;
+    z-index: 3;
+    right: 6em;
+    background: #00bfe8;
+    border-radius: 4em;
+}
+
+.jigsaw3:after {
+    content: "";
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    bottom: -0.8em;
+    z-index: 3;
+    right: 6em;
+    background: #00bfe8;
+    border-radius: 4em;
+}
+
+.jigsaw4:after {
+    content: "";
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    bottom: -0.8em;
+    z-index: 3;
+    right: 6em;
+    background: #00bfe8;
+    border-radius: 4em;
+}
+
+.jigsaw5:after {
+    content: "";
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    bottom: -0.8em;
+    z-index: 3;
+    right: 6em;
+    background: #00bfe8;
+    border-radius: 4em;
 }
 
 .home-banner-button {
@@ -32,15 +119,6 @@
     p {
         color: #018caa;
     }
-}
-
-.home-sub-title {
-    color: #018caa;
-}
-
-.home-title {
-    @extend .color-grey-home;
-    @extend .fontOpenSansBold;
 }
 
 .planning-subtitle {
@@ -66,6 +144,7 @@
         height: 30px;
         align-items: center;
         display: inline-flex;
+        font-family: NunitoBold;
     }
 }
 
