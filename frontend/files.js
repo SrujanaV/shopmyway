@@ -53,6 +53,7 @@ module.exports = [
   //Individual controllers
   'frontend/views/content/home/home.js',
   'frontend/views/content/ecommerce/ecommerce.js',
+  'frontend/views/content/price/price.js',
   'frontend/views/content/website/website.js',
   'frontend/views/content/couriers/couriers.js',
   'frontend/views/content/marketing/marketing.js',

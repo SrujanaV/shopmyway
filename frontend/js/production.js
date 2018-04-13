@@ -82868,6 +82868,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/register",
             templateUrl: tempateURL,
             controller: 'RegisterCtrl'
+        })
+        .state('price', {
+            url: "/price",
+            templateUrl: tempateURL,
+            controller: 'PriceCtrl'
         });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
@@ -83076,34 +83081,42 @@ myApp.factory('NavigationService', function ($http) {
     var navigation = [{
         name: "Home",
         classis: "active",
-        icon:"",
+        icon: "",
         anchor: "home",
         subnav: []
     }, {
         name: "Products",
         classis: "active",
         // anchor: "ecommerce",
-        subnav: [{
-            name: "Complete Ecommerce Solution",
-            classis: "active",
-            anchor: "ecommerce",
-        },{
-            name: "Shopmyway Website",
-            classis: "active",
-            anchor: "website",
-        },{
-            name: "Shopmyway Marketing",
-            classis: "active",
-            anchor: "marketing",
-        },{
-            name: "Shopmyway Couriers",
-            classis: "active",
-            anchor: "couriers",
-        },{
-            name: "Shopmyway Marketplace",
-            classis: "active",
-            anchor: "marketplace",
-        }]
+        subnav: [
+            //     {
+            //     name: "Complete Ecommerce Solution",
+            //     classis: "active",
+            //     anchor: "ecommerce",
+            // }, 
+            {
+                name: "Shopmyway Website",
+                classis: "active",
+                anchor: "website",
+            }, {
+                name: "Shopmyway Marketing",
+                classis: "active",
+                anchor: "marketing",
+            }, {
+                name: "Shopmyway Couriers",
+                classis: "active",
+                anchor: "couriers",
+            }, {
+                name: "Shopmyway Marketplace",
+                classis: "active",
+                anchor: "marketplace",
+            }
+        ]
+    }, {
+        name: "Price",
+        classis: "active",
+        icon: "",
+        anchor: "price"
     }];
 
     return {
@@ -83497,6 +83510,25 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
             "name": "Personal Account Manager"
         }]
     }]
+})
+myApp.controller('PriceCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal) {
+    $scope.template = TemplateService.getHTML("content/price/price.html");
+    TemplateService.title = "price"; //This is the Title of the Website
+    $scope.navigation = NavigationService.getNavigation();
+    TemplateService.backgoundChange = "";
+    TemplateService.homefooterNone = "";
+    $scope.modalOpen = function () {
+        $scope.enquiry = $uibModal.open({
+            animation: true,
+            templateUrl: "views/modal/enquiry.html",
+            scope: $scope,
+            size: 'lg',
+            // backdropClass: 'back-drop'
+        });
+        $scope.closeModal = function () {
+            $scope.enquiry.close();
+        };
+    }
 })
 myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal) {
     $scope.template = TemplateService.getHTML("content/website/website.html");
