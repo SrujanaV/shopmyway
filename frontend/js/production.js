@@ -83085,7 +83085,7 @@ myApp.factory('NavigationService', function ($http) {
         anchor: "home",
         subnav: []
     }, {
-        name: "Products",
+        name: "Solutions",
         classis: "active",
         // anchor: "ecommerce",
         subnav: [
@@ -83103,7 +83103,7 @@ myApp.factory('NavigationService', function ($http) {
                 classis: "active",
                 anchor: "marketing",
             }, {
-                name: "Shopmyway Couriers",
+                name: "Shopmyway Logistics",
                 classis: "active",
                 anchor: "couriers",
             }, {
@@ -83113,7 +83113,7 @@ myApp.factory('NavigationService', function ($http) {
             }
         ]
     }, {
-        name: "Price",
+        name: "Pricing Plan",
         classis: "active",
         icon: "",
         anchor: "price",
@@ -83234,6 +83234,9 @@ myApp.controller('headerCtrl', function ($scope, TemplateService, $uibModal, Nav
         } else {
             $(".navbar").removeClass("background-black");
         }
+    });
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
     });
 });
 myApp.controller('languageCtrl', function ($scope, TemplateService, $translate, $rootScope) {
