@@ -1,18 +1,18 @@
 <header ng-controller="headerCtrl">
     <!-- <nav class="navbar navbar-expand-md navbar-light fixed-top {{template.backgoundChange}}"> -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top {{template.backgoundChange}}">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse" aria-controls="nav-collapse"
                 aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" ui-sref="home">
-                <img src="img/logo.png" alt="logo" width="150">
+                <img src="img/logo.svg" alt="logo" width="120">
             </a>
             <div class="collapse navbar-collapse" id="nav-collapse">
                 <ul class="nav justify-content-end" ng-include="template.menu"></ul>
                 <div ng-click="modalOpen()">
-                    <a class="btn header-button" role="button">Start Now</a>
+                    <a class="btn header-button" href="#" data-toggle="tooltip" role="button" data-placement="left" title="Call for free business consultation">Call Now</a>
                 </div>
             </div>
             <!-- <div class="hamburger pointer pull-right" ng-click="getnav();">

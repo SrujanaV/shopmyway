@@ -83116,7 +83116,8 @@ myApp.factory('NavigationService', function ($http) {
         name: "Price",
         classis: "active",
         icon: "",
-        anchor: "price"
+        anchor: "price",
+        subnav: []
     }];
 
     return {

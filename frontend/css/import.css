@@ -11328,7 +11328,7 @@ span {
   background-color: #fff; }
 
 .background-black {
-  background-color: #000 !important; }
+  background-color: #fff !important; }
 
 .fontOpenSansLight {
   font-family: OpenSansLight; }
@@ -11713,7 +11713,7 @@ label:hover:before {
             transform: translateY(0); }
 
 .navbar {
-  background: transparent;
+  background: white;
   padding: 0px; }
   .navbar .banner-button {
     background: white;
@@ -11748,19 +11748,25 @@ footer .footer-bg {
   background: #231f20;
   color: #fff; }
 
-footer .footer-menu {
-  font-size: 15px;
-  font-family: Nunito; }
-  footer .footer-menu .form-control {
-    background: gainsboro; }
-
 footer .footer-band {
   background: #333333;
-  height: 70px; }
-
-footer .footer-desc p {
-  color: #b2b2b2;
-  font-family: NunitoLight; }
+  color: #fff;
+  font-family: OpenSansRegular;
+  font-size: 0.75rem; }
+  footer .footer-band p {
+    font-size: 0.75rem; }
+  footer .footer-band li {
+    position: relative; }
+    footer .footer-band li:after {
+      content: "";
+      position: absolute;
+      border-right: 1px solid #ccc;
+      top: 5px;
+      right: -5px;
+      height: 12px; }
+    footer .footer-band li:last-child:after {
+      content: "";
+      border-right: 1px solid transparent; }
 
 .bg-img {
   background-repeat: no-repeat;
@@ -11794,7 +11800,7 @@ footer .footer-desc p {
   background-repeat: no-repeat; }
 
 .price-main {
-  padding-top: 60px; }
+  padding-top: 50px; }
   .price-main table {
     font-family: OpenSansRegular; }
     .price-main table thead {
@@ -11979,7 +11985,18 @@ i {
     bottom: -2px;
     left: 41%;
     width: 18%;
-    border-bottom: 3px solid #00bfe8; }
+    border-bottom: 3px solid #018caa; }
+
+.shop-text {
+  font-size: 2rem; }
+
+.solution-after h4:after {
+  left: 36%;
+  width: 28%; }
+
+.complete-after h4:after {
+  left: 31%;
+  width: 38%; }
 
 .test-img img {
   width: 60px;
@@ -11987,10 +12004,6 @@ i {
   margin: 0 auto;
   border: 2px solid #cc0099;
   border-radius: 50px; }
-
-.complete-after h4:after {
-  left: 31%;
-  width: 38%; }
 
 .advantage-section {
   background: url("../img/home/bg2.jpg");

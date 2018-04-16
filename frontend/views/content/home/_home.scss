@@ -24,7 +24,25 @@
         bottom: -2px;
         left: 41%;
         width: 18%;
-        border-bottom: 3px solid #00bfe8;
+        border-bottom: 3px solid rgb(1, 140, 170);
+    }
+}
+
+.shop-text {
+    font-size: 2rem
+}
+
+.solution-after h4 {
+    &:after {
+        left: 36%;
+        width: 28%;
+    }
+}
+
+.complete-after h4 {
+    &:after {
+        left: 31%;
+        width: 38%;
     }
 }
 
@@ -35,13 +53,6 @@
         margin: 0 auto;
         border: 2px solid $pink;
         border-radius: 50px;
-    }
-}
-
-.complete-after h4 {
-    &:after {
-        left: 31%;
-        width: 38%;
     }
 }
 

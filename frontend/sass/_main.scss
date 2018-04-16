@@ -287,7 +287,7 @@ span {
 }
 
 .background-black {
-    background-color: $black !important;
+    background-color: $white !important;
 }
 
 //font-family scss
@@ -756,7 +756,7 @@ label:hover:before {
 }
 
 .navbar {
-    background: transparent;
+    background: white;
     padding: 0px;
     .banner-button {
         background: white;
@@ -815,21 +815,28 @@ footer {
         background: #231f20;
         color: $white;
     }
-    .footer-menu {
-        font-size: 15px;
-        font-family: Nunito;
-        .form-control {
-            background: rgb(220, 220, 220);
-        }
-    }
     .footer-band {
         background: #333333;
-        height: 70px;
-    }
-    .footer-desc {
+        color: $white;
+        font-family: OpenSansRegular;
+        font-size: 0.75rem;
         p {
-            color: #b2b2b2;
-            font-family: NunitoLight;
+            font-size: 0.75rem;
+        }
+        li {
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                border-right: 1px solid #ccc;
+                top: 5px;
+                right: -5px;
+                height: 12px;
+            }
+            &:last-child:after {
+                content: "";
+                border-right: 1px solid transparent;
+            }
         }
     }
 }
@@ -882,7 +889,7 @@ footer {
 
 //scss for price page
 .price-main {
-    padding-top: 60px;
+    padding-top: 50px;
     table {
         font-family: OpenSansRegular;
         thead {
