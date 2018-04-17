@@ -47,19 +47,19 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
-        "image": "icon-Compare",
+        "image": "img/couriers/l1.svg",
         "title": "Pricing Evaluation.",
 
     }, {
-        "image": "icon-Schedule",
+        "image": "img/couriers/l2.svg",
         "title": "Shipment Management.        ",
 
     }, {
-        "image": "icon-Handover",
+        "image": "img/couriers/l3.svg",
         "title": "Streamline Last mile Delivery.",
 
     }, {
-        "image": "icon-Handover",
+        "image": "img/couriers/l4.svg",
         "title": "End-to-End logistics integrations.",
 
     }]

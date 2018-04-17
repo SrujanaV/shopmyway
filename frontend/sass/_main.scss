@@ -257,6 +257,10 @@ span {
     color: $gray-home;
 }
 
+.ml-10 {
+    margin-left: -10px;
+}
+
 //background-color scss
 .background-pink {
     background-color: $brand-pink;
@@ -919,6 +923,14 @@ footer {
         li {
             font-family: NunitoSansRegular;
             padding-bottom: 1em;
+            list-style: none;
+            position: relative;
+            &:before {
+                content: url(../img/home/icon/smw-01.svg);
+                position: absolute;
+                width: 15px;
+                left: -30px;
+            }
         }
     }
 }
@@ -946,4 +958,10 @@ footer {
     .background-color {
         background-color: $pink;
     }
+}
+
+.product-heading {
+    height: 141px;
+    align-items: center;
+    display: flex;
 }

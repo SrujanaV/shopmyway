@@ -44,29 +44,29 @@ myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationSer
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
-        "image": "icon-Mobile-Optimized-2",
+        "image": "img/website/w1.svg",
         "title": "Beautiful Mobile Optimized Website."
     }, {
-        "image": "icon-Customization2",
+        "image": "img/website/w2.svg",
         "title": "Unlimited Customization Options."
     }, {
-        "image": "icon-Courier2",
+        "image": "img/website/w3.svg",
         "title": "Secure Socket Layer."
     }, {
-        "image": "icon-Support2",
+        "image": "img/website/w4.svg",
         "title": "Multi Language Support."
     }]
     //data for alternatediv html directive    
     $scope.alternatesection = [{
-        "image1": "img/website/section1.png",
+        "image1": "img/website/banner1.png",
         "subcontent1": "Get beautiful responsive mobile optimized websites with ShopMyWay Website Solutions.",
-        "image2": "img/website/section2.png",
+        "image2": "img/website/banner2.png",
         "maintitle2": "1000+ themes to choose from with customization options to create a truly unique brand identity experience.",
         "subcontent2": "1000+ themes to choose from with customization options to create a truly unique brand identity experience. "
     }, {
-        "image1": "img/website/section1.png",
+        "image1": "img/website/banner3.png",
         "subcontent1": "Get the Secure Socket Layer ready websites with the ShopMyWay Website Solution",
-        "image2": "img/website/section4.png",
+        "image2": "img/website/banner4.png",
         "subcontent2": "Reach to the global audience through multiple language support with ShopMyWay Website."
 
     }]

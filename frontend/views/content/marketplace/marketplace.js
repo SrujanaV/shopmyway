@@ -45,31 +45,31 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
-        "image": "icon-Order_nventory",
+        "image": "img/marketplace/p1.svg",
         "title": "Order & Inventory Management.        ",
     }, {
-        "image": "icon-Registration",
+        "image": "img/marketplace/p2.svg",
         "title": "GST complainte Reconciliation & Accounting.",
     }, {
-        "image": "icon-Registration",
+        "image": "img/marketplace/p3.svg",
         "title": "Onboarding Assistance.",
     }, {
-        "image": "icon-Registration",
+        "image": "img/marketplace/p4.svg",
         "title": "Advertise Products on Marketplace.        ",
     }]
     //data for alternatediv html directive    
     $scope.alternatesection = [{
-        "image1": "img/marketplace/section1.png",
+        "image1": "img/marketplace/banner1.png",
 
         "subcontent1": "Manage Multiple marketplaces through single ShopMyWay Dashboard.        ",
-        "image2": "img/marketplace/section2.png",
+        "image2": "img/marketplace/banner2.png",
 
         "subcontent2": "Easy to Manage GST complainte Reconciliation & Accounting through ShopMyWay Marketplace Solutions.        "
     }, {
-        "image1": "img/marketplace/section3.png",
+        "image1": "img/marketplace/banner3.png",
 
         "subcontent1": "Let ShopMyWay experts assist you to get seamless experience of Marketplace.        ",
-        "image2": "img/marketplace/section4.png",
+        "image2": "img/marketplace/banner4.png",
 
         "subcontent2": "Make your Marketplace products stand apart increasing your sales with ShopMyWay Marketplace advertising solutions.        "
     }]

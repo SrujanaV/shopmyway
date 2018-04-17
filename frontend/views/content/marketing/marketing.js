@@ -47,28 +47,28 @@ myApp.controller('MarketingCtrl', function ($scope, TemplateService, NavigationS
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
-        "image": "icon-Social-media",
+        "image": "img/marketing/m1.svg",
         "title": "Online Ads Marketing"
     }, {
-        "image": "icon-Social-media",
+        "image": "img/marketing/m2.svg",
         "title": "Social Media Management"
     }, {
-        "image": "icon-Email-sms",
+        "image": "img/marketing/m3.svg",
         "title": "E-Mail And SMS Marketing"
     }, {
-        "image": "icon-Seo",
+        "image": "img/marketing/m4.svg",
         "title": "Advance Search Engine Optimization"
     }]
     //data for alternatediv html directive    
     $scope.alternatesection = [{
-        "image1": "img/marketing/mac1.png",
+        "image1": "img/marketing/banner1.png",
         "subcontent1": "ShopMyWay Solutions are designed to enhance your business presence online and help you to target broader audience.",
-        "image2": "img/marketing/mac2.png",
+        "image2": "img/marketing/banner2.png",
         "subcontent2": "Manage a Unique Social Media presence on Multiple Platforms. "
     }, {
-        "image1": "img/marketing/mac1.png",
+        "image1": "img/marketing/banner3.png",
         "subcontent1": "Enhance your Marketing capabilities with the ShopMyWay Email & SMS marketing Solutions.        ",
-        "image2": "img/marketing/mac2.png",
+        "image2": "img/marketing/banner4.png",
         "subcontent2": "Grow your online presence and reach the right audience with ShopMyWay Advance Search Engine Optimizations."
     }]
 })
