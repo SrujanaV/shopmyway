@@ -1,7 +1,4 @@
 .marketplace-section {
-    .background-color {
-        background-color: $brand-yellow;
-    }
     .text-color {
         color: $brand-yellow;
     }
@@ -18,7 +15,7 @@
     .content-height {
         height: 25px;
     }
-    h6{
+    h6 {
         @extend .fontOpenSansRegular;
     }
 }

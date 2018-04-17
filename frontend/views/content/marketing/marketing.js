@@ -42,8 +42,7 @@ myApp.controller('MarketingCtrl', function ($scope, TemplateService, NavigationS
     //data for banner image and content
     $scope.banners = [{
         "image": "img/marketing/marketing_bg.png",
-        "title": "Grow Your Online Sales!",
-        "subtitle": "We understand your business <br> and provide you ROI guaranteed digital marketing services",
+        "title": "Promote and grow your business through<br> online and mobile sales with your <span class='shop'>Shop</span><span class='myway'>MyWay</span> Solutions",
         "btntext": "Start your free trial"
     }]
     //data for pagedivision html directive
@@ -58,26 +57,18 @@ myApp.controller('MarketingCtrl', function ($scope, TemplateService, NavigationS
         "title": "E-Mail And SMS Marketing"
     }, {
         "image": "icon-Seo",
-        "title": "SEO Optimization"
+        "title": "Advance Search Engine Optimization"
     }]
     //data for alternatediv html directive    
     $scope.alternatesection = [{
         "image1": "img/marketing/mac1.png",
-        "maintitle1": "Reach Broader Audiences With Online Ads Marketing",
-        "subtitle1": "Run Product Ads On Top Social Media Platforms",
-        "subcontent1": "<p>Run Product Ads across Facebook and Instagram with Social Media Advertising.</p><p>Attract the right audience on your website with great Ad relevancy and Accurate Targeting</p> <p>Get Real-time Report of your every campaign's ROI with Ad Analytics</p>",
+        "subcontent1": "ShopMyWay Solutions are designed to enhance your business presence online and help you to target broader audience.",
         "image2": "img/marketing/mac2.png",
-        "maintitle2": "Build Your Brand Online With Social Media Management",
-        "subtitle2": "Manage Brand Presence Across Multiple Social Media Channels",
-        "subcontent2": "<p>Develop a powerful suite of Followers with our effective brand positioning strategy</p><p>Engross your visitors with powerful social media content & high-quality visuals</p><p>Analyze performance metrics to analyze your social media performance</p>"
+        "subcontent2": "Manage a Unique Social Media presence on Multiple Platforms. "
     }, {
         "image1": "img/marketing/mac1.png",
-        "maintitle1": "Ensure Constant Customer-Interaction With SMS And Email Marketing",
-        "subtitle1": "Maximize Customer Engagement With Effective Email & SMS Campaigns",
-        "subcontent1": "<p>Never lose out on consistent traffic with weekly/Monthly E-mail and SMS campaigns</p><p>Set Custom triggers and events to deliver E-mails and SMS'es for quicker conversions</p><p>Use Push notifications & Pop-ups to promote latest products and offers</p>",
+        "subcontent1": "Enhance your Marketing capabilities with the ShopMyWay Email & SMS marketing Solutions.        ",
         "image2": "img/marketing/mac2.png",
-        "maintitle2": "Increase Your Website Traffic With SEO",
-        "subtitle2": "Optimize Your Site's Online Presence For Improved Traffic & Discovery",
-        "subcontent2": "<p>Improve relevant organic traffic with our Site Performance, Security and Server analysis</p><p>Implement best on-site SEO practices with Optimized Content, URLs, and Images</p><p>Boost your Referral traffic with Backlink analysis,Visibility optimization and Domain Referrals</p>"
+        "subcontent2": "Grow your online presence and reach the right audience with ShopMyWay Advance Search Engine Optimizations."
     }]
 })

@@ -329,7 +329,7 @@ span {
 }
 
 .spacing-padd-y {
-    @include padding(5em null);
+    @include padding(1em null);
 }
 
 .padd-x {
@@ -481,6 +481,16 @@ header {
 
 .nav-up {
     transform: translateY(-100%);
+}
+
+.shop {
+    color: $pink;
+    font-size: 2rem;
+}
+
+.myway {
+    color: $blue;
+    font-size: 2rem;
 }
 
 //scss  for buttons
@@ -757,7 +767,7 @@ label:hover:before {
 
 .navbar {
     background: white;
-    padding: 0px;
+    padding: 5px;
     .banner-button {
         background: white;
         color: black !important;
@@ -812,7 +822,9 @@ label:hover:before {
 
 footer {
     .footer-bg {
-        background: #231f20;
+        background: url("/img/footer-bg.png"), #231f20;
+        background-repeat: no-repeat;
+        background-position: center center; // background: #231f20;
         color: $white;
     }
     .footer-band {
@@ -921,4 +933,17 @@ footer {
     background-repeat: no-repeat;
     padding: 5em 0;
     color: #444;
+}
+
+//scss for product page
+.product-alternate:nth-child(even) {
+    .background-color {
+        background-color: $blue;
+    }
+}
+
+.product-alternate:nth-child(odd) {
+    .background-color {
+        background-color: $pink;
+    }
 }

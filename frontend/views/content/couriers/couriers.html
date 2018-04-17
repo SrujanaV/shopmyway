@@ -3,23 +3,22 @@
     <div class="row align-items-center position-absolute w-100 h-100 main-section-padding color-white bg-desc">
         <div class="col col-lg-8">
             <div class="align-content">
-                <h1 class="fontOpenSansBold" ng-bind-html="banner.title"></h1>
-                <h6 class="fontOpenSansLight" ng-bind-html="banner.subtitle"></h6>
+                <h2 class="NunitoBold" ng-bind-html="banner.title"></h2>
                 <div class="text-center pt-3" ng-click="modalOpen()">
                     <a class="btn banner-button" role="button">{{banner.btntext}}</a>
                 </div>
             </div>
         </div>
-        <div class="position-absolute banner-image">
+        <!-- <div class="position-absolute banner-image">
             <img src="../img/couriers/macbook.png" class="img-fluid">
-        </div>
+        </div> -->
     </div>
 </div>
 <section class="couriers-section my-5">
     <div class="text-center">
-        <h3 class="color-blue mb-4">
+        <!-- <h3 class="color-blue mb-4">
             How Shopmyway Couriers Work?
-        </h3>
+        </h3> -->
         <solutionpagediv></solutionpagediv>
     </div>
     <alternatediv ng-repeat="alternate in alternatesection"></alternatediv>

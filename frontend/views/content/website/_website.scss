@@ -1,14 +1,11 @@
 .website-section {
-    .background-color {
-        background-color: $brand-danger;
-    }
     .text-color {
         color: $brand-danger;
     }
     .pricing-option {
         @extend .for-red
     }
-    .small-button{
+    .small-button {
         display: none;
     }
 }

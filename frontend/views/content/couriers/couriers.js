@@ -1,4 +1,4 @@
-myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http,$uibModal) {
+myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal) {
     $scope.template = TemplateService.getHTML("content/couriers/couriers.html");
     TemplateService.title = "Couriers"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
@@ -12,7 +12,7 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
             templateUrl: "views/modal/enquiry.html",
             scope: $scope,
             size: 'lg',
-           // backdropClass: 'back-drop'
+            // backdropClass: 'back-drop'
         });
         $scope.closeModal = function () {
             $scope.enquiry.close();
@@ -42,38 +42,38 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
     //data for banner image and content   
     $scope.banners = [{
         "image": "img/couriers/couriers_bg.jpg",
-        "title": "Simplified Courier Solution <br> For Your Business!",
-        "subtitle": "Manage & send all your e-commerce shipments <br> at a discounted rate with an easy-to-use dashboard.",
+        "title": "Manage Multiple logistics partners and keep track of the orders with easy to use <span class='shop'>Shop</span><span class='myway'>MyWay</span> Logistics Solutions.",
         "btntext": "Start your free trial"
     }]
     //data for pagedivision html directive
-    $scope.pagedivision=[{
+    $scope.pagedivision = [{
         "image": "icon-Compare",
-        "title": "Compare Prices",
-        "subtitle": "Provide your product details and Compare prices of the courier partner"
-    },{
+        "title": "Pricing Evaluation.",
+
+    }, {
         "image": "icon-Schedule",
-        "title": "Schedule Pickup",
-        "subtitle": "Choose the Courier partner that best fits your expected rate and schedule the pickup"
-    },{
+        "title": "Shipment Management.        ",
+
+    }, {
         "image": "icon-Handover",
-        "title": "Print Shipping Label",
-        "subtitle": "Print necessary invoices and wait for the Pickup by courier guy to happen before the Daily Cutoff time"
-    },{
+        "title": "Streamline Last mile Delivery.",
+
+    }, {
         "image": "icon-Handover",
-        "title": "Handover Shipments",
-        "subtitle": "Handover the shipments & Stay updated about the shipping status"
+        "title": "End-to-End logistics integrations.",
+
     }]
     //data for alternatediv html directive    
-    $scope.alternatesection=[{
+    $scope.alternatesection = [{
         "image1": "img/couriers/mac.png",
-        "maintitle1": "Choose From Multiple Courier Partners & Services",
-        "subtitle1":"Run Product Ads On Top Social Media Platforms",
-        "subcontent1": "<p>Run Product Ads across Facebook and Instagram with Social Media Advertising.</p><p>Attract the right audience on your website with great Ad relevancy and Accurate Targeting.</p><p>Get Real-time Report of your every campaign's ROI with Ad Analytics.</p>",
+        "subcontent1": "Compare multi vendor prices through ShopMyWay Dashboard.        ",
         "image2": "img/couriers/mac.png",
-        "maintitle2": "Choose From Multiple Courier Partners & Services",
-        "subtitle2":"Run Product Ads On Top Social Media Platforms",
-        "subcontent2": "<p>Run Product Ads across Facebook and Instagram with Social Media Advertising.</p><p>Attract the right audience on your website with great Ad relevancy and Accurate Targeting.</p><p>Get Real-time Report of your every campaign's ROI with Ad Analytics.</p>"
+        "subcontent2": "Manage multiple shipment activities through one Dashboard.        "
+    }, {
+        "image1": "img/marketplace/section3.png",
+        "subcontent1": "Get streamlined last mile delivery through ShopMyWay Logistics Solutions.",
+        "image2": "img/marketplace/section4.png",
+        "subcontent2": "Keep Inventory count Updated with ShopMyWay end-to-end logistics integrations."
     }]
     //data for pricing html directive    
     $scope.pricing = [{

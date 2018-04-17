@@ -40,47 +40,38 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
     //data for banner image and content
     $scope.banners = [{
         "image": "img/marketplace/marketplace_bg.png",
-        "title": "One Stop Solution For Selling <br> On Marketplaces",
-        "subtitle": "Choose India's leading E-Commerce website service & <br> grow your brand online!",
+        "title": "Manage Multiple Marketplaces with ShopMyWay MarketPlace Solutions with your <span class='shop'>Shop</span><span class='myway'>MyWay</span> Solutions",
         "btntext": "Start your free trial"
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
         "image": "icon-Order_nventory",
-        "title": "Order And Inventory Management",
-        "btn": "Know More",
+        "title": "Order & Inventory Management.        ",
     }, {
         "image": "icon-Registration",
-        "title": "Reconciliation & Accounting Compliance",
-        "btn": "Know More",
+        "title": "GST complainte Reconciliation & Accounting.",
     }, {
         "image": "icon-Registration",
-        "title": "Listing & Registration Assistance",
-        "btn": "Know More",
+        "title": "Onboarding Assistance.",
     }, {
         "image": "icon-Registration",
-        "title": "Advertise Products On Marketplaces.",
-        "btn": "Know More",
+        "title": "Advertise Products on Marketplace.        ",
     }]
     //data for alternatediv html directive    
     $scope.alternatesection = [{
         "image1": "img/marketplace/section1.png",
-        "maintitle1": "Process Orders From Multiple Marketplaces And Your Website",
-        "subtitle1": "Manage Orders Of All Marketplaces In A Single Dashboard",
-        "subcontent1": "<p>Process all orders with Ease with Centralized order management and bulk order processing</p><p>Sync Inventory across channels with real-time syncing and centralized inventory update</p><p>Generate Shipping Labels and Manifests and deliver using Integrated Couriers</p>",
+
+        "subcontent1": "Manage Multiple marketplaces through single ShopMyWay Dashboard.        ",
         "image2": "img/marketplace/section2.png",
-        "maintitle2": "The Most Advanced Marketplace Reconciliation Dashboard",
-        "subtitle2": "Get Paid Right By Keeping A Track Of Your Reconciliations",
-        "subcontent2": "<p>Get Automatic Reconciliation reports with Minimal Human intervention</p><p>Track your Reconciliation by checking penalties and Claim unpaid orders</p><p>Manage your account with integration with accounting softwares like Tally & Busy</p>"
+
+        "subcontent2": "Easy to Manage GST complainte Reconciliation & Accounting through ShopMyWay Marketplace Solutions.        "
     }, {
         "image1": "img/marketplace/section3.png",
-        "maintitle1": "Get Straight To Growing Your Business",
-        "subtitle1": "Directly Start Selling On Marketplaces With Our Assistance",
-        "subcontent1": "<p>Get registered on Marketplaces with brand approval and necessary documentation processing</p><p>Provide basic product details and get listed on Marketplaces without hassle</p><p>Get Search engine optimized content writing for better organic visibility</p>",
+
+        "subcontent1": "Let ShopMyWay experts assist you to get seamless experience of Marketplace.        ",
         "image2": "img/marketplace/section4.png",
-        "maintitle2": "Get More Sales With Marketplace Ads",
-        "subtitle2": "Boost Your Sales With Targeted Product Ads",
-        "subcontent2": "<p>Advertise your products with Sponsored ads on top Marketplaces.</p><p>Increase your sales with better visibility for as low as Rs 10,000/-</p><p>Get Free consultation on Marketplace promotions and listing</p>"
+
+        "subcontent2": "Make your Marketplace products stand apart increasing your sales with ShopMyWay Marketplace advertising solutions.        "
     }]
     //data for pricing html directive    
     $scope.pricing = [{

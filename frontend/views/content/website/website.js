@@ -39,43 +39,36 @@ myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationSer
     //data for banner image and content
     $scope.banners = [{
         "image": "img/ecommerce/ecommerce_bg.png",
-        "title": "Give Your Brand The Website <br> It Deserves",
-        "subtitle": "Choose India's leading E-Commerce website service & <br> grow your brand online!",
+        "title": "Establish your brand recognition and <br> Online Presence with your <span class='shop'>Shop</span><span class='myway'>MyWay</span> Solutions",
         "btntext": "Arrange A Call Back"
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
         "image": "icon-Mobile-Optimized-2",
-        "title": "Beautiful Mobile-Optimized Website"
+        "title": "Beautiful Mobile Optimized Website."
     }, {
         "image": "icon-Customization2",
-        "title": "Unlimited Customization Options"
+        "title": "Unlimited Customization Options."
     }, {
         "image": "icon-Courier2",
-        "title": "Integrated Courier Solution"
+        "title": "Secure Socket Layer."
     }, {
         "image": "icon-Support2",
-        "title": "Complete Business Support"
+        "title": "Multi Language Support."
     }]
     //data for alternatediv html directive    
     $scope.alternatesection = [{
         "image1": "img/website/section1.png",
-        "maintitle1": "Make Your Brand Shine With A Stunning E-Commerce Website",
-        "subtitle1": "Ensure Your Brand's Success With A Beautiful, Responsive E-Commerce Website",
-        "subcontent1": "<p>Design your personalised store with 100+ mobile-responsive themes</p><p>Sell from anywhere with a Facebook store & custom Android/iOS mobile apps</p><p>Manage your online store with a powerful dashboard</p>",
+        "subcontent1": "Get beautiful responsive mobile optimized websites with ShopMyWay Website Solutions.",
         "image2": "img/website/section2.png",
-        "maintitle2": "Create A Truly Unique Website With Endless Customization",
-        "subtitle2": "Create A Unique Brand Identity With A Customized Website",
-        "subcontent2": "<p>Get extensive website customization services at competitive rates</p><p>Get custom fonts and text & background color of your choice on your website</p><p>Get structural and layout changes made to your website for higher conversions</p><p>Get multiple custom add-on integrations on your website for added punch</p>"
+        "maintitle2": "1000+ themes to choose from with customization options to create a truly unique brand identity experience.",
+        "subcontent2": "1000+ themes to choose from with customization options to create a truly unique brand identity experience. "
     }, {
         "image1": "img/website/section1.png",
-        "maintitle1": "Choose From Multiple Courier Partners & Services",
-        "subtitle1": "Run Product Ads On Top Social Media Platforms",
-        "subcontent1": "<p>Process orders easily to 15000+ pincodes in one click</p><p>Choose from 6 leading courier service providers</p><p>Use NDR & Return Reduction Service to minimize your return shipments</p><p>Get live shipment tracking for you & your customer via email & SMS</p>",
+        "subcontent1": "Get the Secure Socket Layer ready websites with the ShopMyWay Website Solution",
         "image2": "img/website/section4.png",
-        "maintitle2": "Choose From Multiple Courier Partners & Services",
-        "subtitle2": "Run Product Ads On Top Social Media Platforms",
-        "subcontent2": "<p>Get extensive website customization services at competitive rates</p><p>Get custom fonts and text & background color of your choice on your website</p><p>Get structural and layout changes made to your website for higher conversions</p><p>Get multiple custom add-on integrations on your website for added punch</p>"
+        "subcontent2": "Reach to the global audience through multiple language support with ShopMyWay Website."
+
     }]
     //data for pricing html directive    
     $scope.pricing = [{
