@@ -11837,6 +11837,9 @@ footer .footer-band {
 .price-foot {
   font-family: OpenSansRegular; }
 
+.border-enterprise {
+  border: 1px solid #ccc; }
+
 .price-banner {
   background: url("../img/price/bg-play.png");
   background-position: center center;
