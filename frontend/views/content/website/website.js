@@ -39,8 +39,8 @@ myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationSer
     //data for banner image and content
     $scope.banners = [{
         "image": "img/ecommerce/ecommerce_bg.png",
-        "title": "Establish your brand recognition and <br> Online Presence with your <span class='shop'>Shop</span><span class='myway'>MyWay</span> Solutions",
-        "btntext": "Arrange A Call Back"
+        "title": "Establish your brand recognition and <br> Online Presence with your<br> <span class='shop'>ShopMy</span><span class='myway'>Way</span> Solutions",
+        "btntext": "Call for free Business Consultation"
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{

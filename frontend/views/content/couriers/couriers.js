@@ -42,8 +42,8 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
     //data for banner image and content   
     $scope.banners = [{
         "image": "img/couriers/couriers_bg.jpg",
-        "title": "Manage Multiple logistics partners and keep track of the orders with easy to use <span class='shop'>Shop</span><span class='myway'>MyWay</span> Logistics Solutions.",
-        "btntext": "Start your free trial"
+        "title": "Manage Multiple logistics partners and keep track of the orders with easy to use <span class='shop'>ShopMy</span><span class='myway'>Way</span> Logistics Solutions.",
+        "btntext": "Call for free Business Consultation"
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
@@ -70,9 +70,9 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
         "image2": "img/couriers/banner2.png",
         "subcontent2": "Manage multiple shipment activities through one Dashboard.        "
     }, {
-        "image1": "img/marketplace/banner3.png",
+        "image1": "img/couriers/banner3.png",
         "subcontent1": "Get streamlined last mile delivery through ShopMyWay Logistics Solutions.",
-        "image2": "img/marketplace/banner4.png",
+        "image2": "img/couriers/banner4.png",
         "subcontent2": "Keep Inventory count Updated with ShopMyWay end-to-end logistics integrations."
     }]
     //data for pricing html directive    

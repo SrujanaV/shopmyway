@@ -7,10 +7,16 @@
                 </h4>
             </div> -->
             <div class="row mt-5">
-                <div class="col-sm align-sm-content d-flex align-items-center">
+                <div class="col-sm align-sm-content  ">
                     <!-- <h6 class="mb-3 fontOpenSansSemiBold">{{alternate.subtitle1}}</h6> -->
-
-                    <h4 class="fontOpenSansSemiBold background-pink color-white p-4 product-heading" ng-bind-html="alternate.subcontent1"></h4>
+                    <div class="row background-pink fontOpenSansSemiBold  color-white p-4 product-heading">
+                        <div class="col-sm-12 align-items-center">
+                            <h5 ng-bind-html="alternate.subcontent1"></h5>
+                        </div>
+                        <div class="col-sm-12">
+                            <a class='btn mt-1 small-button background-blue' role='button' ng-click='modalOpen()'>Know More</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm">
                     <img src="{{alternate.image1}}" width="80%" class="img-fluid float-right">
@@ -30,9 +36,16 @@
             <div class="col-sm">
                 <img src="{{alternate.image2}}" width="80%" class="img-fluid float-left">
             </div>
-            <div class="col-sm align-sm-content d-flex align-items-center">
+            <div class="col-sm align-sm-content align-items-center">
                 <!-- <h6 class="mb-3 fontOpenSansSemiBold">{{alternate.subtitle2}}</h6> -->
-                <h4 class="fontOpenSansSemiBold background-blue color-white p-4 product-heading" ng-bind-html="alternate.subcontent2"></h4>
+                <div class="row fontOpenSansSemiBold background-blue color-white p-4 product-heading">
+                    <div class=" col-sm-12 align-items-center">
+                        <h5 ng-bind-html="alternate.subcontent2 "></h5>
+                    </div>
+                    <div class="col-sm-12 ">
+                        <a class='btn mt-1 small-button background-pink' role='button' ng-click='modalOpen()'>Know More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

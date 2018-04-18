@@ -40,8 +40,8 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
     //data for banner image and content
     $scope.banners = [{
         "image": "img/marketplace/marketplace_bg.png",
-        "title": "Manage Multiple Marketplaces with ShopMyWay MarketPlace Solutions with your <span class='shop'>Shop</span><span class='myway'>MyWay</span> Solutions",
-        "btntext": "Start your free trial"
+        "title": "Manage Multiple Marketplaces with ShopMyWay MarketPlace Solutions<br> with your <span class='shop'>ShopMy</span><span class='myway'>Way</span> Solutions",
+        "btntext": "Call for free Business Consultation"
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
@@ -61,7 +61,7 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
     $scope.alternatesection = [{
         "image1": "img/marketplace/banner1.png",
 
-        "subcontent1": "Manage Multiple marketplaces through single ShopMyWay Dashboard.        ",
+        "subcontent1": "Manage Multiple marketplaces through single ShopMyWay Dashboard.",
         "image2": "img/marketplace/banner2.png",
 
         "subcontent2": "Easy to Manage GST complainte Reconciliation & Accounting through ShopMyWay Marketplace Solutions.        "

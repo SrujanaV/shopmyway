@@ -83575,43 +83575,36 @@ myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationSer
     //data for banner image and content
     $scope.banners = [{
         "image": "img/ecommerce/ecommerce_bg.png",
-        "title": "Give Your Brand The Website <br> It Deserves",
-        "subtitle": "Choose India's leading E-Commerce website service & <br> grow your brand online!",
+        "title": "Establish your brand recognition and <br> Online Presence with your <span class='shop'>Shop</span><span class='myway'>MyWay</span> Solutions",
         "btntext": "Arrange A Call Back"
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
-        "image": "icon-Mobile-Optimized-2",
-        "title": "Beautiful Mobile-Optimized Website"
+        "image": "img/website/w1.svg",
+        "title": "Beautiful Mobile Optimized Website."
     }, {
-        "image": "icon-Customization2",
-        "title": "Unlimited Customization Options"
+        "image": "img/website/w2.svg",
+        "title": "Unlimited Customization Options."
     }, {
-        "image": "icon-Courier2",
-        "title": "Integrated Courier Solution"
+        "image": "img/website/w3.svg",
+        "title": "Secure Socket Layer."
     }, {
-        "image": "icon-Support2",
-        "title": "Complete Business Support"
+        "image": "img/website/w4.svg",
+        "title": "Multi Language Support."
     }]
     //data for alternatediv html directive    
     $scope.alternatesection = [{
-        "image1": "img/website/section1.png",
-        "maintitle1": "Make Your Brand Shine With A Stunning E-Commerce Website",
-        "subtitle1": "Ensure Your Brand's Success With A Beautiful, Responsive E-Commerce Website",
-        "subcontent1": "<p>Design your personalised store with 100+ mobile-responsive themes</p><p>Sell from anywhere with a Facebook store & custom Android/iOS mobile apps</p><p>Manage your online store with a powerful dashboard</p>",
-        "image2": "img/website/section2.png",
-        "maintitle2": "Create A Truly Unique Website With Endless Customization",
-        "subtitle2": "Create A Unique Brand Identity With A Customized Website",
-        "subcontent2": "<p>Get extensive website customization services at competitive rates</p><p>Get custom fonts and text & background color of your choice on your website</p><p>Get structural and layout changes made to your website for higher conversions</p><p>Get multiple custom add-on integrations on your website for added punch</p>"
+        "image1": "img/website/banner1.png",
+        "subcontent1": "Get beautiful responsive mobile optimized websites with ShopMyWay Website Solutions.",
+        "image2": "img/website/banner2.png",
+        "maintitle2": "1000+ themes to choose from with customization options to create a truly unique brand identity experience.",
+        "subcontent2": "1000+ themes to choose from with customization options to create a truly unique brand identity experience. "
     }, {
-        "image1": "img/website/section1.png",
-        "maintitle1": "Choose From Multiple Courier Partners & Services",
-        "subtitle1": "Run Product Ads On Top Social Media Platforms",
-        "subcontent1": "<p>Process orders easily to 15000+ pincodes in one click</p><p>Choose from 6 leading courier service providers</p><p>Use NDR & Return Reduction Service to minimize your return shipments</p><p>Get live shipment tracking for you & your customer via email & SMS</p>",
-        "image2": "img/website/section4.png",
-        "maintitle2": "Choose From Multiple Courier Partners & Services",
-        "subtitle2": "Run Product Ads On Top Social Media Platforms",
-        "subcontent2": "<p>Get extensive website customization services at competitive rates</p><p>Get custom fonts and text & background color of your choice on your website</p><p>Get structural and layout changes made to your website for higher conversions</p><p>Get multiple custom add-on integrations on your website for added punch</p>"
+        "image1": "img/website/banner3.png",
+        "subcontent1": "Get the Secure Socket Layer ready websites with the ShopMyWay Website Solution",
+        "image2": "img/website/banner4.png",
+        "subcontent2": "Reach to the global audience through multiple language support with ShopMyWay Website."
+
     }]
     //data for pricing html directive    
     $scope.pricing = [{
@@ -83718,7 +83711,7 @@ myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationSer
         }]
     }]
 })
-myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http,$uibModal) {
+myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal) {
     $scope.template = TemplateService.getHTML("content/couriers/couriers.html");
     TemplateService.title = "Couriers"; //This is the Title of the Website
     $scope.navigation = NavigationService.getNavigation();
@@ -83732,7 +83725,7 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
             templateUrl: "views/modal/enquiry.html",
             scope: $scope,
             size: 'lg',
-           // backdropClass: 'back-drop'
+            // backdropClass: 'back-drop'
         });
         $scope.closeModal = function () {
             $scope.enquiry.close();
@@ -83762,38 +83755,38 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
     //data for banner image and content   
     $scope.banners = [{
         "image": "img/couriers/couriers_bg.jpg",
-        "title": "Simplified Courier Solution <br> For Your Business!",
-        "subtitle": "Manage & send all your e-commerce shipments <br> at a discounted rate with an easy-to-use dashboard.",
+        "title": "Manage Multiple logistics partners and keep track of the orders with easy to use <span class='shop'>Shop</span><span class='myway'>MyWay</span> Logistics Solutions.",
         "btntext": "Start your free trial"
     }]
     //data for pagedivision html directive
-    $scope.pagedivision=[{
-        "image": "icon-Compare",
-        "title": "Compare Prices",
-        "subtitle": "Provide your product details and Compare prices of the courier partner"
-    },{
-        "image": "icon-Schedule",
-        "title": "Schedule Pickup",
-        "subtitle": "Choose the Courier partner that best fits your expected rate and schedule the pickup"
-    },{
-        "image": "icon-Handover",
-        "title": "Print Shipping Label",
-        "subtitle": "Print necessary invoices and wait for the Pickup by courier guy to happen before the Daily Cutoff time"
-    },{
-        "image": "icon-Handover",
-        "title": "Handover Shipments",
-        "subtitle": "Handover the shipments & Stay updated about the shipping status"
+    $scope.pagedivision = [{
+        "image": "img/couriers/l1.svg",
+        "title": "Pricing Evaluation.",
+
+    }, {
+        "image": "img/couriers/l2.svg",
+        "title": "Shipment Management.        ",
+
+    }, {
+        "image": "img/couriers/l3.svg",
+        "title": "Streamline Last mile Delivery.",
+
+    }, {
+        "image": "img/couriers/l4.svg",
+        "title": "End-to-End logistics integrations.",
+
     }]
     //data for alternatediv html directive    
-    $scope.alternatesection=[{
-        "image1": "img/couriers/mac.png",
-        "maintitle1": "Choose From Multiple Courier Partners & Services",
-        "subtitle1":"Run Product Ads On Top Social Media Platforms",
-        "subcontent1": "<p>Run Product Ads across Facebook and Instagram with Social Media Advertising.</p><p>Attract the right audience on your website with great Ad relevancy and Accurate Targeting.</p><p>Get Real-time Report of your every campaign's ROI with Ad Analytics.</p>",
-        "image2": "img/couriers/mac.png",
-        "maintitle2": "Choose From Multiple Courier Partners & Services",
-        "subtitle2":"Run Product Ads On Top Social Media Platforms",
-        "subcontent2": "<p>Run Product Ads across Facebook and Instagram with Social Media Advertising.</p><p>Attract the right audience on your website with great Ad relevancy and Accurate Targeting.</p><p>Get Real-time Report of your every campaign's ROI with Ad Analytics.</p>"
+    $scope.alternatesection = [{
+        "image1": "img/couriers/banner1.png",
+        "subcontent1": "Compare multi vendor prices through ShopMyWay Dashboard.        ",
+        "image2": "img/couriers/banner2.png",
+        "subcontent2": "Manage multiple shipment activities through one Dashboard.        "
+    }, {
+        "image1": "img/marketplace/banner3.png",
+        "subcontent1": "Get streamlined last mile delivery through ShopMyWay Logistics Solutions.",
+        "image2": "img/marketplace/banner4.png",
+        "subcontent2": "Keep Inventory count Updated with ShopMyWay end-to-end logistics integrations."
     }]
     //data for pricing html directive    
     $scope.pricing = [{
@@ -83944,43 +83937,34 @@ myApp.controller('MarketingCtrl', function ($scope, TemplateService, NavigationS
     //data for banner image and content
     $scope.banners = [{
         "image": "img/marketing/marketing_bg.png",
-        "title": "Grow Your Online Sales!",
-        "subtitle": "We understand your business <br> and provide you ROI guaranteed digital marketing services",
+        "title": "Promote and grow your business through<br> online and mobile sales with your <span class='shop'>Shop</span><span class='myway'>MyWay</span> Solutions",
         "btntext": "Start your free trial"
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
-        "image": "icon-Social-media",
+        "image": "img/marketing/m1.svg",
         "title": "Online Ads Marketing"
     }, {
-        "image": "icon-Social-media",
+        "image": "img/marketing/m2.svg",
         "title": "Social Media Management"
     }, {
-        "image": "icon-Email-sms",
+        "image": "img/marketing/m3.svg",
         "title": "E-Mail And SMS Marketing"
     }, {
-        "image": "icon-Seo",
-        "title": "SEO Optimization"
+        "image": "img/marketing/m4.svg",
+        "title": "Advance Search Engine Optimization"
     }]
     //data for alternatediv html directive    
     $scope.alternatesection = [{
-        "image1": "img/marketing/mac1.png",
-        "maintitle1": "Reach Broader Audiences With Online Ads Marketing",
-        "subtitle1": "Run Product Ads On Top Social Media Platforms",
-        "subcontent1": "<p>Run Product Ads across Facebook and Instagram with Social Media Advertising.</p><p>Attract the right audience on your website with great Ad relevancy and Accurate Targeting</p> <p>Get Real-time Report of your every campaign's ROI with Ad Analytics</p>",
-        "image2": "img/marketing/mac2.png",
-        "maintitle2": "Build Your Brand Online With Social Media Management",
-        "subtitle2": "Manage Brand Presence Across Multiple Social Media Channels",
-        "subcontent2": "<p>Develop a powerful suite of Followers with our effective brand positioning strategy</p><p>Engross your visitors with powerful social media content & high-quality visuals</p><p>Analyze performance metrics to analyze your social media performance</p>"
+        "image1": "img/marketing/banner1.png",
+        "subcontent1": "ShopMyWay Solutions are designed to enhance your business presence online and help you to target broader audience.",
+        "image2": "img/marketing/banner2.png",
+        "subcontent2": "Manage a Unique Social Media presence on Multiple Platforms. "
     }, {
-        "image1": "img/marketing/mac1.png",
-        "maintitle1": "Ensure Constant Customer-Interaction With SMS And Email Marketing",
-        "subtitle1": "Maximize Customer Engagement With Effective Email & SMS Campaigns",
-        "subcontent1": "<p>Never lose out on consistent traffic with weekly/Monthly E-mail and SMS campaigns</p><p>Set Custom triggers and events to deliver E-mails and SMS'es for quicker conversions</p><p>Use Push notifications & Pop-ups to promote latest products and offers</p>",
-        "image2": "img/marketing/mac2.png",
-        "maintitle2": "Increase Your Website Traffic With SEO",
-        "subtitle2": "Optimize Your Site's Online Presence For Improved Traffic & Discovery",
-        "subcontent2": "<p>Improve relevant organic traffic with our Site Performance, Security and Server analysis</p><p>Implement best on-site SEO practices with Optimized Content, URLs, and Images</p><p>Boost your Referral traffic with Backlink analysis,Visibility optimization and Domain Referrals</p>"
+        "image1": "img/marketing/banner3.png",
+        "subcontent1": "Enhance your Marketing capabilities with the ShopMyWay Email & SMS marketing Solutions.        ",
+        "image2": "img/marketing/banner4.png",
+        "subcontent2": "Grow your online presence and reach the right audience with ShopMyWay Advance Search Engine Optimizations."
     }]
 })
 myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal) {
@@ -84025,47 +84009,38 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
     //data for banner image and content
     $scope.banners = [{
         "image": "img/marketplace/marketplace_bg.png",
-        "title": "One Stop Solution For Selling <br> On Marketplaces",
-        "subtitle": "Choose India's leading E-Commerce website service & <br> grow your brand online!",
+        "title": "Manage Multiple Marketplaces with ShopMyWay MarketPlace Solutions with your <span class='shop'>Shop</span><span class='myway'>MyWay</span> Solutions",
         "btntext": "Start your free trial"
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
-        "image": "icon-Order_nventory",
-        "title": "Order And Inventory Management",
-        "btn": "Know More",
+        "image": "img/marketplace/p1.svg",
+        "title": "Order & Inventory Management.        ",
     }, {
-        "image": "icon-Registration",
-        "title": "Reconciliation & Accounting Compliance",
-        "btn": "Know More",
+        "image": "img/marketplace/p2.svg",
+        "title": "GST complainte Reconciliation & Accounting.",
     }, {
-        "image": "icon-Registration",
-        "title": "Listing & Registration Assistance",
-        "btn": "Know More",
+        "image": "img/marketplace/p3.svg",
+        "title": "Onboarding Assistance.",
     }, {
-        "image": "icon-Registration",
-        "title": "Advertise Products On Marketplaces.",
-        "btn": "Know More",
+        "image": "img/marketplace/p4.svg",
+        "title": "Advertise Products on Marketplace.        ",
     }]
     //data for alternatediv html directive    
     $scope.alternatesection = [{
-        "image1": "img/marketplace/section1.png",
-        "maintitle1": "Process Orders From Multiple Marketplaces And Your Website",
-        "subtitle1": "Manage Orders Of All Marketplaces In A Single Dashboard",
-        "subcontent1": "<p>Process all orders with Ease with Centralized order management and bulk order processing</p><p>Sync Inventory across channels with real-time syncing and centralized inventory update</p><p>Generate Shipping Labels and Manifests and deliver using Integrated Couriers</p>",
-        "image2": "img/marketplace/section2.png",
-        "maintitle2": "The Most Advanced Marketplace Reconciliation Dashboard",
-        "subtitle2": "Get Paid Right By Keeping A Track Of Your Reconciliations",
-        "subcontent2": "<p>Get Automatic Reconciliation reports with Minimal Human intervention</p><p>Track your Reconciliation by checking penalties and Claim unpaid orders</p><p>Manage your account with integration with accounting softwares like Tally & Busy</p>"
+        "image1": "img/marketplace/banner1.png",
+
+        "subcontent1": "Manage Multiple marketplaces through single ShopMyWay Dashboard.        ",
+        "image2": "img/marketplace/banner2.png",
+
+        "subcontent2": "Easy to Manage GST complainte Reconciliation & Accounting through ShopMyWay Marketplace Solutions.        "
     }, {
-        "image1": "img/marketplace/section3.png",
-        "maintitle1": "Get Straight To Growing Your Business",
-        "subtitle1": "Directly Start Selling On Marketplaces With Our Assistance",
-        "subcontent1": "<p>Get registered on Marketplaces with brand approval and necessary documentation processing</p><p>Provide basic product details and get listed on Marketplaces without hassle</p><p>Get Search engine optimized content writing for better organic visibility</p>",
-        "image2": "img/marketplace/section4.png",
-        "maintitle2": "Get More Sales With Marketplace Ads",
-        "subtitle2": "Boost Your Sales With Targeted Product Ads",
-        "subcontent2": "<p>Advertise your products with Sponsored ads on top Marketplaces.</p><p>Increase your sales with better visibility for as low as Rs 10,000/-</p><p>Get Free consultation on Marketplace promotions and listing</p>"
+        "image1": "img/marketplace/banner3.png",
+
+        "subcontent1": "Let ShopMyWay experts assist you to get seamless experience of Marketplace.        ",
+        "image2": "img/marketplace/banner4.png",
+
+        "subcontent2": "Make your Marketplace products stand apart increasing your sales with ShopMyWay Marketplace advertising solutions.        "
     }]
     //data for pricing html directive    
     $scope.pricing = [{

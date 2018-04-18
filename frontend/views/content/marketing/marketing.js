@@ -42,8 +42,8 @@ myApp.controller('MarketingCtrl', function ($scope, TemplateService, NavigationS
     //data for banner image and content
     $scope.banners = [{
         "image": "img/marketing/marketing_bg.png",
-        "title": "Promote and grow your business through<br> online and mobile sales with your <span class='shop'>Shop</span><span class='myway'>MyWay</span> Solutions",
-        "btntext": "Start your free trial"
+        "title": "Promote and grow your business through<br> online and mobile sales with your <br><span class='shop'>ShopMy</span><span class='myway'>Way</span> Solutions",
+        "btntext": "Call for free Business Consultation"
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
