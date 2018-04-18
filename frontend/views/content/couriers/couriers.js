@@ -65,14 +65,14 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
     }]
     //data for alternatediv html directive    
     $scope.alternatesection = [{
-        "image1": "img/couriers/mac.png",
+        "image1": "img/couriers/banner1.png",
         "subcontent1": "Compare multi vendor prices through ShopMyWay Dashboard.        ",
-        "image2": "img/couriers/mac.png",
+        "image2": "img/couriers/banner2.png",
         "subcontent2": "Manage multiple shipment activities through one Dashboard.        "
     }, {
-        "image1": "img/marketplace/section3.png",
+        "image1": "img/marketplace/banner3.png",
         "subcontent1": "Get streamlined last mile delivery through ShopMyWay Logistics Solutions.",
-        "image2": "img/marketplace/section4.png",
+        "image2": "img/marketplace/banner4.png",
         "subcontent2": "Keep Inventory count Updated with ShopMyWay end-to-end logistics integrations."
     }]
     //data for pricing html directive    
