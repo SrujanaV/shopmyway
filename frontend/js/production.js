@@ -83575,8 +83575,8 @@ myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationSer
     //data for banner image and content
     $scope.banners = [{
         "image": "img/ecommerce/ecommerce_bg.png",
-        "title": "Establish your brand recognition and <br> Online Presence with your <span class='shop'>Shop</span><span class='myway'>MyWay</span> Solutions",
-        "btntext": "Arrange A Call Back"
+        "title": "Establish your brand recognition and <br> Online Presence with your<br> <span class='shop'>ShopMy</span><span class='myway'>Way</span> Solutions",
+        "btntext": "Call for free Business Consultation"
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
@@ -83755,8 +83755,8 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
     //data for banner image and content   
     $scope.banners = [{
         "image": "img/couriers/couriers_bg.jpg",
-        "title": "Manage Multiple logistics partners and keep track of the orders with easy to use <span class='shop'>Shop</span><span class='myway'>MyWay</span> Logistics Solutions.",
-        "btntext": "Start your free trial"
+        "title": "Manage Multiple logistics partners and keep track of the orders with easy to use <span class='shop'>ShopMy</span><span class='myway'>Way</span> Logistics Solutions.",
+        "btntext": "Call for free Business Consultation"
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
@@ -83783,9 +83783,9 @@ myApp.controller('CouriersCtrl', function ($scope, TemplateService, NavigationSe
         "image2": "img/couriers/banner2.png",
         "subcontent2": "Manage multiple shipment activities through one Dashboard.        "
     }, {
-        "image1": "img/marketplace/banner3.png",
+        "image1": "img/couriers/banner3.png",
         "subcontent1": "Get streamlined last mile delivery through ShopMyWay Logistics Solutions.",
-        "image2": "img/marketplace/banner4.png",
+        "image2": "img/couriers/banner4.png",
         "subcontent2": "Keep Inventory count Updated with ShopMyWay end-to-end logistics integrations."
     }]
     //data for pricing html directive    
@@ -83937,8 +83937,8 @@ myApp.controller('MarketingCtrl', function ($scope, TemplateService, NavigationS
     //data for banner image and content
     $scope.banners = [{
         "image": "img/marketing/marketing_bg.png",
-        "title": "Promote and grow your business through<br> online and mobile sales with your <span class='shop'>Shop</span><span class='myway'>MyWay</span> Solutions",
-        "btntext": "Start your free trial"
+        "title": "Promote and grow your business through<br> online and mobile sales with your <br><span class='shop'>ShopMy</span><span class='myway'>Way</span> Solutions",
+        "btntext": "Call for free Business Consultation"
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
@@ -84009,8 +84009,8 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
     //data for banner image and content
     $scope.banners = [{
         "image": "img/marketplace/marketplace_bg.png",
-        "title": "Manage Multiple Marketplaces with ShopMyWay MarketPlace Solutions with your <span class='shop'>Shop</span><span class='myway'>MyWay</span> Solutions",
-        "btntext": "Start your free trial"
+        "title": "Manage Multiple Marketplaces with ShopMyWay MarketPlace Solutions<br> with your <span class='shop'>ShopMy</span><span class='myway'>Way</span> Solutions",
+        "btntext": "Call for free Business Consultation"
     }]
     //data for pagedivision html directive
     $scope.pagedivision = [{
@@ -84030,7 +84030,7 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
     $scope.alternatesection = [{
         "image1": "img/marketplace/banner1.png",
 
-        "subcontent1": "Manage Multiple marketplaces through single ShopMyWay Dashboard.        ",
+        "subcontent1": "Manage Multiple marketplaces through single ShopMyWay Dashboard.",
         "image2": "img/marketplace/banner2.png",
 
         "subcontent2": "Easy to Manage GST complainte Reconciliation & Accounting through ShopMyWay Marketplace Solutions.        "
