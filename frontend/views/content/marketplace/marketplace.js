@@ -49,7 +49,7 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
         "title": "Order & Inventory Management.        ",
     }, {
         "image": "img/marketplace/p2.svg",
-        "title": "GST complainte Reconciliation & Accounting.",
+        "title": "GST compliant Reconciliation & Accounting.",
     }, {
         "image": "img/marketplace/p3.svg",
         "title": "Onboarding Assistance.",
@@ -64,7 +64,7 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
         "subcontent1": "Manage Multiple marketplaces through single ShopMyWay Dashboard.",
         "image2": "img/marketplace/banner2.png",
 
-        "subcontent2": "Easy to Manage GST complainte Reconciliation & Accounting through ShopMyWay Marketplace Solutions.        "
+        "subcontent2": "Easy to Manage GST compliant Reconciliation & Accounting through ShopMyWay Marketplace Solutions.        "
     }, {
         "image1": "img/marketplace/banner3.png",
 
