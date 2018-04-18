@@ -49,7 +49,7 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
         "title": "Order & Inventory Management.        ",
     }, {
         "image": "img/marketplace/p2.svg",
-        "title": "GST compliant  Reconciliation & Accounting.",
+        "title": "GST compliant Reconciliation & Accounting.",
 
     }, {
         "image": "img/marketplace/p3.svg",
