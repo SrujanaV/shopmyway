@@ -83095,19 +83095,19 @@ myApp.factory('NavigationService', function ($http) {
             //     anchor: "ecommerce",
             // }, 
             {
-                name: "Shopmyway Website",
+                name: "ShopMyWay Website",
                 classis: "active",
                 anchor: "website",
             }, {
-                name: "Shopmyway Marketing",
+                name: "ShopMyWay Marketing",
                 classis: "active",
                 anchor: "marketing",
             }, {
-                name: "Shopmyway Logistics",
+                name: "ShopMyWay Logistics",
                 classis: "active",
                 anchor: "couriers",
             }, {
-                name: "Shopmyway Marketplace",
+                name: "ShopMyWay Marketplace",
                 classis: "active",
                 anchor: "marketplace",
             }
@@ -83406,7 +83406,7 @@ myApp.controller('EcommerceCtrl', function ($scope, TemplateService, NavigationS
     }
 
     $scope.banners = [{
-        "image": "img/ecommerce/ecommerce_bg.png",
+        "image": "img/ecommerce/ecommerce_bg.jpg",
         "title": "Introducing - Your Online <br> Business Partner!",
         "subtitle": "With our Complete E-commerce Solution, we guarantee you growth in your online sales!",
         "btntext": "Arrange A Call Back"
@@ -83574,7 +83574,7 @@ myApp.controller('WebsiteCtrl', function ($scope, TemplateService, NavigationSer
     }
     //data for banner image and content
     $scope.banners = [{
-        "image": "img/ecommerce/ecommerce_bg.png",
+        "image": "img/website/website_bg.jpg",
         "title": "Establish your brand recognition and <br> Online Presence with your<br> <span class='shop'>ShopMy</span><span class='myway'>Way</span> Solutions",
         "btntext": "Call for free Business Consultation"
     }]
@@ -83936,7 +83936,7 @@ myApp.controller('MarketingCtrl', function ($scope, TemplateService, NavigationS
     }
     //data for banner image and content
     $scope.banners = [{
-        "image": "img/marketing/marketing_bg.png",
+        "image": "img/marketing/marketing_bg.jpg",
         "title": "Promote and grow your business through<br> online and mobile sales with your <br><span class='shop'>ShopMy</span><span class='myway'>Way</span> Solutions",
         "btntext": "Call for free Business Consultation"
     }]
@@ -84008,7 +84008,7 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
     }
     //data for banner image and content
     $scope.banners = [{
-        "image": "img/marketplace/marketplace_bg.png",
+        "image": "img/marketplace/marketplace_bg.jpg",
         "title": "Manage Multiple Marketplaces with ShopMyWay MarketPlace Solutions<br> with your <span class='shop'>ShopMy</span><span class='myway'>Way</span> Solutions",
         "btntext": "Call for free Business Consultation"
     }]
