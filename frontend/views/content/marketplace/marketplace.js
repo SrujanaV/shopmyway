@@ -39,7 +39,7 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
     }
     //data for banner image and content
     $scope.banners = [{
-        "image": "img/marketplace/marketplace_bg.png",
+        "image": "img/marketplace/marketplace_bg.jpg",
         "title": "Manage Multiple Marketplaces with ShopMyWay MarketPlace Solutions<br> with your <span class='shop'>ShopMy</span><span class='myway'>Way</span> Solutions",
         "btntext": "Call for free Business Consultation"
     }]
