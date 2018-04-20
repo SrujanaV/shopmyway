@@ -16,19 +16,19 @@ myApp.factory('NavigationService', function ($http) {
             //     anchor: "ecommerce",
             // }, 
             {
-                name: "Shopmyway Website",
+                name: "ShopMyWay Website",
                 classis: "active",
                 anchor: "website",
             }, {
-                name: "Shopmyway Marketing",
+                name: "ShopMyWay Marketing",
                 classis: "active",
                 anchor: "marketing",
             }, {
-                name: "Shopmyway Logistics",
+                name: "ShopMyWay Logistics",
                 classis: "active",
                 anchor: "couriers",
             }, {
-                name: "Shopmyway Marketplace",
+                name: "ShopMyWay Marketplace",
                 classis: "active",
                 anchor: "marketplace",
             }

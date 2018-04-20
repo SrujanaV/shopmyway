@@ -939,6 +939,12 @@ footer {
     font-family: OpenSansRegular;
 }
 
+.price-table {
+    td {
+        text-transform: capitalize;
+    }
+}
+
 .border-enterprise {
     border: 1px solid #ccc;
 }
