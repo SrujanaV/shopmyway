@@ -11784,7 +11784,8 @@ footer .footer-band {
 .bg-img {
   background-repeat: no-repeat;
   background-position: center center;
-  height: 70vh; }
+  height: 70vh;
+  background-size: 100% auto; }
 
 .bg-overlay {
   top: 0;
