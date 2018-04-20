@@ -83102,7 +83102,11 @@ myApp.factory('NavigationService', function ($http) {
                 name: "ShopMyWay Marketing",
                 classis: "active",
                 anchor: "marketing",
-            }, {
+            },
+
+
+
+            {
                 name: "ShopMyWay Logistics",
                 classis: "active",
                 anchor: "couriers",
