@@ -1,0 +1,22 @@
+.about-us-bg {
+    background: url('../img/aboutus/aboutus.jpg');
+    background-position: center center;
+    background-size: cover; // min-height: 100vh;
+    height: 70vh;
+}
+
+.about-bg {
+    background: url('../img/aboutus/about.jpg');
+    background-position: center center;
+    background-size: cover; // min-height: 100vh;
+}
+
+.about-white-bg {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.about-button {
+    a {
+        font-size: 1.25rem;
+    }
+}

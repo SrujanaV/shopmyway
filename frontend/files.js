@@ -58,4 +58,5 @@ module.exports = [
   'frontend/views/content/couriers/couriers.js',
   'frontend/views/content/marketing/marketing.js',
   'frontend/views/content/marketplace/marketplace.js',
+  'frontend/views/content/about-us/about-us.js',
 ];
