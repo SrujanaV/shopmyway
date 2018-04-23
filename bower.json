@@ -67,7 +67,8 @@
     "angular-promise-buttons": "^0.1.21",
     "ui-bootstrap4": "https://github.com/Morgul/ui-bootstrap4.git#^3.0.2",
     "popper.js": "^1.14.1",
-    "swiper": "^4.2.2"
+    "swiper": "^4.2.2",
+    "bootstrap-sass": "^3.3.7"
   },
   "resolutions": {
     "angular": "1.6.6"

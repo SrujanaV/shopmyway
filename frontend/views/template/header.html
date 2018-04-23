@@ -1,32 +1,17 @@
 <header ng-controller="headerCtrl">
-    <!-- <nav class="navbar navbar-expand-md navbar-light fixed-top {{template.backgoundChange}}"> -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top fontOpenSansSemiBold">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse" aria-controls="nav-collapse"
-                aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" ui-sref="home">
-                <img src="img/logo.svg" alt="logo" width="120">
-            </a>
-            <div class="collapse navbar-collapse" id="nav-collapse">
-                <ul class="nav justify-content-end" ng-include="template.menu"></ul>
-                <div ng-click="modalOpen()">
-                    <a class="btn header-button" href="#" data-toggle="tooltip" role="button" data-placement="left" title="Call for free business consultation">Call Now</a>
-                </div>
+    <nav class="navbar navbar-expand-md navbar-light px-5 fixed-top fontOpenSansSemiBold">
+        <a class="navbar-brand" ui-sref="home">
+            <img src="img/logo.svg" alt="logo" width="120">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="nav justify-content-end" ng-include="template.menu"></ul>
+            <div ng-click="modalOpen()">
+                <a class="btn header-button" href="#" data-toggle="tooltip" role="button" data-placement="left" title="Call for free business consultation">Call Now</a>
             </div>
-            <!-- <div class="hamburger pointer pull-right" ng-click="getnav();">
-                <div class="menu-line">
-                    <span class="icon-bar box-shadow {{onebar}}"></span>
-                    <span class="icon-bar box-shadow {{secondbar}}"></span>
-                    <span class="icon-bar box-shadow third-line {{thirdbar}}"></span>
-                </div>
-            </div> -->
         </div>
     </nav>
-    <div class="sidemenu {{getslide}}">
-        <div class="navbar-collapse">
-            <div ng-include="template.menu" class="template menu"></div>
-        </div>
-    </div>
 </header>

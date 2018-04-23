@@ -524,6 +524,7 @@ header {
     &:hover {
         background: white;
         color: $brand-primary !important;
+        border: 1px solid $brand-primary;
     }
 }
 
