@@ -12334,7 +12334,7 @@ i {
   background: rgba(255, 255, 255, 0.8); }
 
 .about-button .w-10 {
-  font-size: 10rem; }
+  width: 10rem; }
 
 #fancybox-loading,
 .fancybox-close,

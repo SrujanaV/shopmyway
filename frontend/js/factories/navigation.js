@@ -24,9 +24,6 @@ myApp.factory('NavigationService', function ($http) {
                 classis: "active",
                 anchor: "marketing",
             },
-
-
-
             {
                 name: "ShopMyWay Logistics",
                 classis: "active",
@@ -42,6 +39,12 @@ myApp.factory('NavigationService', function ($http) {
         classis: "active",
         icon: "",
         anchor: "price",
+        subnav: []
+    }, {
+        name: "About Us",
+        classis: "active",
+        icon: "",
+        anchor: "about-us",
         subnav: []
     }];
 
