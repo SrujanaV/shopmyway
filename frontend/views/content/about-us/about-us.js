@@ -4,4 +4,5 @@ myApp.controller('AboutUsCtrl', function ($scope, TemplateService, NavigationSer
     TemplateService.backgoundChange = "";
     TemplateService.homefooterNone = "";
     $scope.navigation = NavigationService.getNavigation();
+
 })
