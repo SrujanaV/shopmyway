@@ -82873,6 +82873,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/price",
             templateUrl: tempateURL,
             controller: 'PriceCtrl'
+        })
+        .state('about-us', {
+            url: "/about-us",
+            templateUrl: tempateURL,
+            controller: 'AboutUsCtrl'
         });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
@@ -83103,9 +83108,6 @@ myApp.factory('NavigationService', function ($http) {
                 classis: "active",
                 anchor: "marketing",
             },
-
-
-
             {
                 name: "ShopMyWay Logistics",
                 classis: "active",
@@ -83121,6 +83123,12 @@ myApp.factory('NavigationService', function ($http) {
         classis: "active",
         icon: "",
         anchor: "price",
+        subnav: []
+    }, {
+        name: "About Us",
+        classis: "active",
+        icon: "",
+        anchor: "about-us",
         subnav: []
     }];
 
@@ -84151,4 +84159,12 @@ myApp.controller('MarketplaceCtrl', function ($scope, TemplateService, Navigatio
             "name": "Personal Account Manager"
         }]
     }]
+})
+myApp.controller('AboutUsCtrl', function ($scope, TemplateService, NavigationService, $timeout, toastr, $http, $uibModal) {
+    $scope.template = TemplateService.getHTML("content/about-us/about-us.html");
+    TemplateService.title = "About-us"; //This is the Title of the Website
+    TemplateService.backgoundChange = "";
+    TemplateService.homefooterNone = "";
+    $scope.navigation = NavigationService.getNavigation();
+
 })
