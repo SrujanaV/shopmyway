@@ -510,9 +510,9 @@ header {
     border-radius: 25px !important;
     @include padding(0.5rem 1rem !important);
     &:hover {
-        background: $black;
-        color: $white !important;
-        border: solid 1px white;
+        background: $white;
+        color: $brand-primary !important;
+        border: solid 1px $brand-primary;
     }
 }
 
