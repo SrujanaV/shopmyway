@@ -925,20 +925,16 @@ footer {
         li {
             font-family: NunitoSansRegular;
             padding-bottom: 1em;
-            list-style: none;
             position: relative;
             &:before {
                 content: url(../img/home/icon/smw-01.svg);
                 position: absolute;
                 width: 15px;
                 left: -30px;
+                top: 0;
             }
         }
     }
-}
-
-.price-foot {
-    font-family: OpenSansRegular;
 }
 
 .price-table {
@@ -970,10 +966,4 @@ footer {
     .background-color {
         background-color: $pink;
     }
-}
-
-.product-heading {
-    height: 165px;
-    align-items: center;
-    display: flex;
 }

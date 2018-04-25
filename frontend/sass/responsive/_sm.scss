@@ -2,7 +2,7 @@
 
 @include media-breakpoint-down(sm) {
     .bg-img {
-        height: 125vh;
+        height: 100vh;
     }
     .align-sm-content {
         text-align: center;
@@ -17,4 +17,10 @@
             width: 100% !important;
         }
     }
+    .jigsaw2:after{
+left: -1em;
+    }
+    .jigsaw5:after{
+        left: -1em;
+            }
 }
