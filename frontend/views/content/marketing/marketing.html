@@ -1,17 +1,14 @@
-<div class="d-flex position-relative bg-img" ng-repeat="banner in banners" style="background-image:url({{banner.image}})">
+<div class="position-relative bg-img" ng-repeat="banner in banners" style="background-image:url({{banner.image}})">
     <div class="position-absolute w-100 h-100 bg-overlay"></div>
-    <div class="row align-items-center position-absolute w-100 h-100 main-section-padding color-white bg-desc">
+    <div class="row no-gutters align-items-center position-absolute w-100 h-100 main-section-padding color-white bg-desc">
         <div class="col col-lg-8">
-            <div class="align-content website">
+            <div class="align-content banner-title">
                 <h2 class="NunitoBold" ng-bind-html="banner.title"></h2>
-                <div class=" pt-3" ng-click="modalOpen()">
+                <div class="pt-3" ng-click="modalOpen()">
                     <a class="btn banner-button" role="button">{{banner.btntext}}</a>
                 </div>
             </div>
         </div>
-        <!-- <div class="position-absolute banner-image">
-            <img src="img/marketing/banner_mac.png" class="img-fluid">
-        </div> -->
     </div>
 </div>
 <section class="marketing-section my-5">

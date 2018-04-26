@@ -813,13 +813,6 @@ label:hover:before {
     background-color: white !important;
 }
 
-//scss for banner position absolute image
-.banner-image {
-    width: 46%;
-    right: 2%;
-    bottom: -20px;
-}
-
 //scss for footer
 .homefooterNone {
     display: none !important;
@@ -861,7 +854,7 @@ footer {
 //Banner Image Scss
 .bg-img {
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top left;
     height: 70vh;
     background-size: 100% auto;
 }
@@ -940,6 +933,7 @@ footer {
 .price-table {
     td {
         text-transform: capitalize;
+        padding: 0.75rem 0;
     }
 }
 

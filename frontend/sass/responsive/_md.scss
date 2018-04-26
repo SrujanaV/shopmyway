@@ -1,12 +1,11 @@
 /* Breakpoint for medium viewport */
 
 @include media-breakpoint-down(md) {
+    .bg-img {
+        height: 47vh;
+    }
     .align-content{
         text-align: center;
-    }
-    .banner-image{
-        right: 22%;
-        bottom: -10px;
     }
     .bg-desc{
         @include padding(1em 0);

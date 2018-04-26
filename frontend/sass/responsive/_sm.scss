@@ -1,15 +1,14 @@
 /* Breakpoint for medium viewport */
 
 @include media-breakpoint-down(sm) {
+    body{
+        padding-top: 70px;
+    }
     .bg-img {
-        height: 100vh;
+        height: 30vh !important;
     }
     .align-sm-content {
         text-align: center;
-    }
-    .banner-image {
-        width: 70%;
-        right: 12% !important;
     }
     .section1,
     .section2 {
@@ -17,10 +16,20 @@
             width: 100% !important;
         }
     }
-    .jigsaw2:after{
-left: -1em;
-    }
-    .jigsaw5:after{
+    .jigsaw2:after {
         left: -1em;
-            }
+    }
+    .jigsaw5:after {
+        left: -1em;
+    }
+    .price-footer{
+        text-align: center;
+    }
+    //scss for website page banner
+    .banner-title{
+        h2{
+
+            font-size: 1rem !important;
+        }
+    }
 }
