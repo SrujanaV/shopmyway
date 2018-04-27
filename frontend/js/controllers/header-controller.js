@@ -65,7 +65,7 @@ myApp.controller('headerCtrl', function ($scope, TemplateService, $uibModal, Nav
             $(".navbar").removeClass("background-black");
         }
     });
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
+    // $(document).ready(function () {
+    //     $('[data-toggle="tooltip"]').tooltip();
+    // });
 });
